@@ -7,6 +7,8 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    :maxdepth: 2
    :caption: Contents:
 
+   diablo2.rst
+   d2-mp3.rst
    sphinx.rst
    plugy.rst
 
