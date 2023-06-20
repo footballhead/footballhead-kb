@@ -43,8 +43,8 @@ To modify machine code in memory: PlugY works its way into ``Game.exe`` process 
 
 It gets into the process space in one of a few ways:
 
-#. Injection shortly after launch, via ``PlugY.exe``
-#. Modyfing ``Game.exe`` on the file system to load ``PlugY.dll``, via ``PatchD2File.exe``
+#. The ``PlugY.exe`` way: Injection shortly after launch by acting like a debugger
+#. The ``PatchD2File.exe`` way: Modyfing ``Game.exe`` on the file system to load ``PlugY.dll``
 
 Why
 ---

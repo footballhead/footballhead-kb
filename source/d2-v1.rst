@@ -1,0 +1,59 @@
+==============
+Diablo II v1.0
+==============
+
+I have a strange fascination with playing older versions of games. Diablo 2 is no exception.
+
+---------------
+Installing v1.0
+---------------
+
+- I have ISOs of the original discs from the game launch. 
+- Due to SecuROM, I have the best luck running Alcohol 52% on Windows XP with "Sub-Data Channel Fixed and Emulation"
+
+-----------------
+Other Multiplayer
+-----------------
+
+If you don't have a NIC then you might find that you can't use Other Multiplayer. If this is the case, install the Microsoft Loopback Adapter. This will give you an IP address and let you use Other Multiplayer.
+
+Follow Microsoft's guide called "`How to install the Microsoft Loopback Adapter <https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/install-microsoft-loopback-adapter>`_"; I had succes with Method 2.
+
+---------
+"Self-MP"
+---------
+
+There are a couple of drawbacks of running v1.0:
+
+- No ``/players X``
+- Stash space is small and can't use PlugY
+
+You can get around this by running multiple copies of the game in Other Multiplayer. This gives you:
+
+- Analog to ``/players X``: increase difficulty by joining with additional characters
+- Effectively infinite stash space via mules
+
+You can run multiple copies of the game using Sandboxie. If you're running on Windows XP then download ``SandboxieInstall32_xp.exe``: https://github.com/sandboxie-plus/Sandboxie/releases/tag/v5.40
+
+-----------
+Video Modes
+-----------
+
+I've had the best luck with DirectDraw and Glide3D (with a wrapper). I prefer Glide3D since DirectDraw in windowed mode (launch with ``-w``) is very dark and unsaturated. However, if you're running on real hardware, DirectDraw might be more performant.
+
+You can get the Glide3D wrapper here: https://www.svenswrapper.de/english/text/downloads.html
+
+------
+Issues
+------
+
+Diablo 2 will chew up 100% of one core. This means in Self-MP scenarios, if you don't have up to 8 cores, you could be overwhleming your CPU and slowing everything down.
+
+--------
+See also
+--------
+
+These old forum threads document the experience of some people also playing v1.0:
+
+- http://web.archive.org/web/20210225050032/https://www.diabloii.net/forums/threads/the-time-travelers-vortex-part-1-a-guide-to-spf-time-travel.933724/
+- http://web.archive.org/web/20210225030823/https://www.diabloii.net/forums/threads/the-time-travelers-vortex-part-2-a-guide-to-version-1-00.933726/

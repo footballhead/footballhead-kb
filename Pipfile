@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 sphinx = "*"
-sphinx-rtd-theme = "*"
+sphinx-press-theme = "*"
 
 [dev-packages]
 

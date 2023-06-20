@@ -1,6 +1,6 @@
-========
-Diablo 2
-========
+=========
+Diablo II
+=========
 
 Notes for getting Diablo 2 running, etc. I have ISOs backups of the CDs.
 

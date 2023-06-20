@@ -1,60 +1,55 @@
-Diablo II MP3s
-==============
+Diablo II MP3 of the Week
+=========================
+
+Blizzard released Diablo II music as MP3s to the `Arreat Summit <http://classic.battle.net/diablo2exp/mp3/>`_ over the course of 2 years. Some of these are the original tracks shipped with game, although some of them are alternate cuts! To a Diablo nerd and music nerd like me, the tracks (and accompanying liner notes) are interesting.
+
+I have done my best to catalogue the liner notes and working links to get the files. The liner notes are from `Arreat Summit <http://classic.battle.net/diablo2exp/mp3/>`_ but I've also included the notes from the ``.zip`` file if they are different. Most of the links come from the Wayback Machine but I also have other sources:
 
 * https://archive.org/details/matt-uelmen-diablo-ii-soundtrack-outtakes
-* http://classic.battle.net/diablo2exp/mp3/bonus.shtml
-* http://classic.battle.net/diablo2exp/mp3/lod.shtml
-* http://classic.battle.net/diablo2exp/mp3/
-* http://classic.battle.net/supersecrest: My guess is thatthis was used by the Flash music player?
 * https://tl.net/blogs/431201-blizzard-old-games-music
+* http://classic.battle.net/diablo2exp/mp3/
+
+Additionally, I've annotated each track with its similarity to tracks in the final game.
 
 "Ice Caves" - Liner Notes - June 4, 2002
 ----------------------------------------
 
 Link: http://classic.battle.net/supersecrest/icecaves.mp3
 
-.. tip:: This is the same as icecaves.wav from d2music.mpq
-
-.. note::
+This is the same as icecaves.wav from d2xmusic.mpq
 
     "Ice Caves" - Liner Notes - June 4, 2002
 
     Though I was hoping for a combination of some of my favorite moments from Bernard Herrmann's "Vertigo" and a sequence in Orff's "Trionfo di Afrodite" with this one, I ended up with a rather frustrating product which really didn't work as well as either of my two models. The jarring breaks between the hypnotic harp ostinato and the brass hits succeeded more in breaking a consistent mood than creating one. If I were to step back into the time machine and rewrite this one, I would try to keep the pacing away from the extremes used here, and would have also used a bit more of the electronic and choral textures which I consciously avoided in these sessions. What remains after too much editing only goes half of the way there - a bit of a shame seeing as how interesting an enviroment like "ice caves" should be.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Halls" - Liner Notes - May 31, 2002
 ------------------------------------
 
 Link: http://classic.battle.net/supersecrest/halls.mp3
 
-.. note::
-
     "Halls" - Liner Notes - May 31, 2002
 
     If one were to break down the structure of the levels of Diablo 2 into a flowchart, you would make the surprising discovery that some areas, often including some excellent unique background art, are able to be ignored without impeding completion of the act. Though it might seem strange to "waste" perfectly good content, I have always like the idea that the player can either choose to rampage through the level or can opt for the scenic route, letting no miniboss escape their wrath. On my end, this structure creates a different set of demands from pieces located in different places in the structure of the act. Tunes like this one, featured in a "sidequest", have much more freedom to explore different musical elements than music which the player will face inevitably and repeatedly, like the songs featured in the town or opening fight sequence. I attempted to take advantage of this freedom with this track, pushing the elements of the horror soundtrack - clusters, atonality, glissandi, sudden hits - as much as possible. I was quite happy with the way this worked in the game, and felt it did the job as a backdrop to the nefarious plans of Nihlathak.
 
-    \- Matt Uelmen 
+    -- Matt Uelmen 
 
 "Outtake II" - Liner Notes - October 31, 2001
 ---------------------------------------------
 
 Link: http://classic.battle.net/supersecrest/outtake2.mp3
 
-.. note::
-
     "Outtake II" - Liner Notes - October 31, 2001
 
     The original Diablo II mp3s are complete! And you thought we would never get around to it. For those of you of who wondered what we actually do here at Blizzard in our marathon development cycles, this outtake provides a pretty good example of the difference another year or two can make. This track is the original tune recorded around January 1998, which became the fifth minute of what was eventually the wilderness combat music in Act 1 when I was able to take a look at her again in January 2000. The first half made it into the game with many snips, additional pedal steel and orchestral sample textures, and some mastering magic from Scott Petersen. The second half of the piece in all of its rocker glory was chucked entirely, unheard by the public until now. Much like a fine piece of california cheese sitting in the backyard sun for weeks, we will release no track before the appropriate time. This particular tune tries pretty hard to rock out, but seemed pretty silly as a background to the opening few scenes of the game.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Ancients" - Liner Notes - October 1, 2001
 ------------------------------------------
 
 Link: http://classic.battle.net/supersecrest/ancients.mp3
-
-.. note::
 
     Earlier this year, a composer and crew from Blizzard North went to Bratislava, Slovakia to record the Diablo II: Lord of Destruction score with the Slovak Radio Philharmonic. Kirk Trevor of the Knoxville Symphony Orchestra conducted and "Ancients" is one of the tracks that resulted from these sessions. 
 
@@ -68,8 +63,6 @@ Link: http://classic.battle.net/supersecrest/ancients.mp3
 ------------------------------------------
 
 Link: http://classic.battle.net/supersecrest/siege.mp3
-
-.. note::
 
     Earlier this year, a composer and crew from Blizzard North went to Bratislava, Slovakia to record the Diablo II: Lord of Destruction score with the Slovak Radio Philharmonic. Kirk Trevor of the Knoxville Symphony Orchestra conducted and "Siege" is one of the tracks that resulted from these sessions. 
 
@@ -86,22 +79,18 @@ Link: http://classic.battle.net/supersecrest/siege.mp3
 
 Link: http://classic.battle.net/supersecrest/fortress.mp3
 
-.. note::
-
     "Fortress" - Liner Notes - March 27, 2001
 
     "This track invites the player into the snowy, violent world of our expansion pack. The barbarians and their endless war against the forces of evil required something that explored the lyrical side of the orchestra without becoming too feminine or frilly. Though people here at the office teased me with tortured renditions of Luke Skywalker monologues while mixing this one down, the direct influences on this were a bit more highfalutin'. A variety of operatic scores provided inspiration for the textures and pacing which I hoped to achieve in the all-important "town" theme. The use of pentatonic themes in Debussy's Peleas and Melisande deserves a special mention as a nice model for what I wanted to do harmonically. The pentatonic scale (the black keys on a piano) was the ideal sound for the barbarians, as it suggests all of the qualities we associate with the classic image of a warrior--primitive but grounded and not prone to emotional extremes. This simple melodic framework provides a nice contrast to the chromatic writing found in the unpredictable world that awaits our heroes later on in the quest to destroy Baal and his nasty minions. Conductor Kirk Trevor and the Slovak Radio Symphony Orchestra hit this one out of the park, with the violins and horns making good use of the spotlight."
 
-    \- Matt Uelmen, Composer 
+    -- Matt Uelmen, Composer 
 
 "Outtake IV" - Liner Notes - December 6, 2000
 ---------------------------------------------
 
 Link: http://web.archive.org/web/20040311142420/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/outtake4.zip
 
-.. tip:: This is not present in the game.
-
-.. note::
+This is not present in the game.
 
     "Outtake IV" - Liner Notes - December 6, 2000
 
@@ -109,16 +98,14 @@ Link: http://web.archive.org/web/20040311142420/http://ftp.blizzard.com/pub/diab
 
     The flowing triplet pattern found in the loop reminded me of some of the go-go music I enjoyed in Washington D.C. when I went to school there in the early 90's. The breakdown also reminds me a great deal of some of the music made by The Orb around that time as well, with all of it being anchored by the humming 909 kick drum. Pump up that 20hz range and visualize yourself in a minivan somewhere in East San Jose for the intended effect.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Outtake III" - December 6, 2000?
 ---------------------------------
 
 Link: http://web.archive.org/web/20030403204400/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/outtake3.zip
 
-.. tip:: This is not present in the game
-
-.. note::
+This is not present in the game.
 
     "Outtake III"
 
@@ -126,16 +113,14 @@ Link: http://web.archive.org/web/20030403204400/http://ftp.blizzard.com/pub/diab
 
     When you are creating a track which loops, chief among the things to avoid is a lack of harmonic movement. If you stay in the same place for too long, as this piece does with its simple mandolin open chords, you run a big risk of creating deadly monotony. This stasis earned the piece a yellow card that turned into a red card when stacked up with the echoing whisper effects which never quite worked, as they were much too obviously derived from the whispering voices used to such great effect in "Friday the 13th".
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Temple" - December 6, 2000?
 ----------------------------
 
 Link: http://web.archive.org/web/20050303143040/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/temple.zip
 
-.. tip:: This is the same as kurastsewer.wav in d2music.mpq
-
-.. note::
+This is the same as kurastsewer.wav in d2music.mpq
 
     "Temple"
 
@@ -143,7 +128,7 @@ Link: http://web.archive.org/web/20050303143040/http://ftp.blizzard.com/pub/diab
 
     Often, composers will exploit the stranger sounds possible with conventional orchestral instruments to get the sense of anxiety that atonality gives you. With the log drum and other percussion elements, I tried to use the naturally semi-tonal qualities found in these instruments to create a similarly menacing atmosphere. Of course, the use of these African percussion textures also helped to integrate act 3 as a whole, which had the conga-driven jungle as its centerpiece.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 
 "Outtake I" - Liner Notes - November 29, 2000
@@ -151,9 +136,7 @@ Link: http://web.archive.org/web/20050303143040/http://ftp.blizzard.com/pub/diab
 
 Link: http://web.archive.org/web/20010706022138/http://ftp.blizzard.com/pub/diablo2/Mp3ofTheWeek/outtake1.zip
 
-.. tip:: This is not present in the game.
-
-.. note::
+This is not present in the game.
 
     "Outtake I" - Liner Notes - November 29, 2000
 
@@ -161,16 +144,14 @@ Link: http://web.archive.org/web/20010706022138/http://ftp.blizzard.com/pub/diab
 
     You may notice an instrument which makes it nowhere else into this little game -- the classical guitar. Even though I have probably fallen asleep to the sound of Segovia more than any other recording artist, I was never able to reconcile the Spanish sound of this instrument with the feel of the game. There is something inescabably warm and seductive about the sound of nylon which just did not fit with the feel that the steel strings established in the original game. The flamenco riffs I tried to insert always seemed a bit forced. Some people around the office liked this track, despite the fact that those open mandolin chords now make me wince.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Toru" - Liner Notes - November 15, 2000
 ----------------------------------------
 
 Link: http://web.archive.org/web/20010706015857/http://ftp.blizzard.com/pub/diablo2/Mp3ofTheWeek/toru.zip
 
-.. tip:: This is the same as town2.wav from d2music.mpq
-
-.. note::
+This is the same as town2.wav from d2music.mpq
 
     "Toru" - Liner Notes - November 15, 2000
 
@@ -178,16 +159,14 @@ Link: http://web.archive.org/web/20010706015857/http://ftp.blizzard.com/pub/diab
 
     The foundation of this piece, like the Arcane Sanctuary music, is found in a Chinese wind gong whose exciting dynamics I was hoping to exploit. I love the way this instrument radically changes color from a steady mysterious drone to a harsh, fearsome noise, and felt it was not only perfect for the pacing which our second town needed, but also gave a properly exotic feeling to the strange new world players could enter upon slaying Andariel. The original Diablo theme proved quite rugged and serviceable in supplying this piece with a resolution.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Crypt" - Liner Notes - November 1, 2000
 ----------------------------------------
 
 Link: http://web.archive.org/web/20010602195549/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/crypt.zip
 
-.. tip:: crypt.wav from d2music.mpq is 43s longer
-
-.. note::
+crypt.wav from d2music.mpq is 43s longer
 
     "Crypt" - Liner Notes - November 1, 2000
 
@@ -195,16 +174,14 @@ Link: http://web.archive.org/web/20010602195549/http://ftp.blizzard.com/pub/diab
 
     As much fun as it is to play metal guitar solos, they can be less exciting to listen to repeatedly. Deep in the mix alongside the rainsticks and cymbal scrapes, you may notice the choral phrase "Miserere". Though I wanted to use more of the phrase clips from Spectrasonics' excellent "Symphony of Voices", this was the only one which seemed to have the proper diabolic ambience. I suppose the misery of souls in eternal anguish just has a more appropriate ring to it than the grateful praise of the saved.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Leoric" - Liner Notes - October 25, 2000
 -----------------------------------------
 
 Link: http://web.archive.org/web/20010613151151/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/leoric.zip
 
-.. tip:: This is 33s longer than diablo.wav from d2music.mpq. The additional material is somewhere in the middle; the beginning and ends are the same.
-
-.. note::
+This is 33s longer than diablo.wav from d2music.mpq. The additional material is somewhere in the middle; the beginning and ends are the same.
 
     "Leoric" - Liner Notes - October 25, 2000
 
@@ -212,18 +189,16 @@ Link: http://web.archive.org/web/20010613151151/http://ftp.blizzard.com/pub/diab
 
     I wish I could have come a bit closer to capturing the sound of the Semana Santa marches in Guatemala. While there in the spring of 1997, I was struck by the sound of the small marching bands which follow the incredibly heavy wood "floats" carried by the community's youth over the beautiful sand "alfombras" in the Holy Week parades. The marches are paced with a truly gothic sound, like a less-swinging New Orleans funeral band. Still, there remains what could have been - three years is not nearly enough time to make a true epic.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Hell" - Liner Notes - October 18, 2000
 ---------------------------------------
 
 Link: http://web.archive.org/web/20050303095556/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/hell.zip
 
-.. tip:: This is the same as mesa.wav from d2music.mpq
+This is the same as mesa.wav from d2music.mpq
 
 From the zip:
-
-.. note::
 
     "Hell" - Liner Notes - October 18, 2000
 
@@ -244,11 +219,9 @@ From the zip:
     original Diablo. I loved the animating tiles in the lava set in this level, though I 
     still feel like Act IV could have used still more love, both musically and otherwise."
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 From the website:
-
-.. note::
 
     "Hell" - Liner Notes - October 18, 2000
 
@@ -256,16 +229,14 @@ From the website:
 
     In his drunken state, Bernie had produced a very memorable rhythm, however, that gave me the structural basis for this tune. You may recognize one of those beats which dominate the beginning of the second minute of the piece if you played through the second set of levels in the original Diablo. I loved the animating tiles in the lava set in this level, though I still feel like Act IV could have used still more love, both musically and otherwise.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Mephisto" - Liner Notes - October 11, 2000
 -------------------------------------------
 
 Link: http://web.archive.org/web/20050318110143/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/mephisto.zip
 
-.. tip:: This is 1m 2s longer than town4.wav from d2music.mpq. The tracks sync up from the end, with roughly the first 2 minutes of mephisto.mp3 being additional/different material
-
-.. note::
+This is 1m 2s longer than town4.wav from d2music.mpq. The tracks sync up from the end, with roughly the first 2 minutes of mephisto.mp3 being additional/different material
 
     "Mephisto" - Liner Notes - October 11, 2000
 
@@ -273,17 +244,15 @@ Link: http://web.archive.org/web/20050318110143/http://ftp.blizzard.com/pub/diab
 
     The real reason the name stuck is because of a melody directly lifted from Franz Liszt's Mephisto Waltz, a piano piece which one day I will be able to actually play. Though I liked the way the town in Act IV looked, I was a bit dissapointed that we did not do something colder, and more mechanical- looking, for Hell. Of course, I am one of those sick individuals that likes to destroy genres more than anything else. Lasers in hell... HELL NEEDS LASERS!!
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 
 "Spider" - Liner Notes - October 4, 2000
 ----------------------------------------
 
-.. tip:: spider.wav from d2music.mpq is 7s longer due to a longer fade out
-
 Link: http://web.archive.org/web/20010706020905/http://ftp.blizzard.com/pub/diablo2/Mp3ofTheWeek/spider.zip
 
-.. note::
+spider.wav from d2music.mpq is 7s longer due to a longer fade out
 
     "Spider" - Liner Notes - October 4, 2000
 
@@ -291,16 +260,14 @@ Link: http://web.archive.org/web/20010706020905/http://ftp.blizzard.com/pub/diab
 
     Since I have already mentioned Penderecki in this series, I am forced to name-drop the other person who I hear when I listen to this - Henry Manfredini. Though it was placed behind a slasher series which was never particularly inspired, Manfredini's arrangements and textures in the first few Friday flicks were truly original, influential and SCARY. That strange timpani bass line is two different timpani samples stacked up, one with a strange gate-tremolo effect on top of it. The artistic setting of the Spider level was quite well done, making my job much easier again.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Kurast" - Liner Notes - September 27, 2000
 -------------------------------------------
 
-.. tip:: This has ~15 s more (around 1:16 mark) compared to kurast.wav from d2music.mpq
-
 Link: https://www.gamefront.com/games/diablo-2/file/kurast-zip
 
-.. note::
+This has ~15 s more (around 1:16 mark) compared to kurast.wav from d2music.mpq
 
     "Kurast" - Liner Notes - September 27, 2000
 
@@ -310,18 +277,16 @@ Link: https://www.gamefront.com/games/diablo-2/file/kurast-zip
 
     While adventuring through this formerly-proud civilization you may hear a little bit of the Kurastafarian language, which bears a strange similarity to Vulcan. Don't be alarmed. Don't try to understand it, or the true secrets of their dark perversion of the formerly beneficent faith of Zakarum may become all too clear.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Jungle" - Liner Notes - September 20, 2000
 -------------------------------------------
 
-.. tip:: jungle.wav from d2music.mpq has an addition 12s, which is the strings at the end.
-
 Link: https://web.archive.org/web/20050905000000*/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/jungle.zip
 
-From the zip:
+jungle.wav from d2music.mpq has an addition 12s, which is the strings at the end.
 
-.. note::
+From the zip:
 
     "Jungle" - Liner Notes - September 20, 2000
 
@@ -331,11 +296,9 @@ From the zip:
 
     Beer with Ben and Patty, a Macintosh that never worked and a strange instrument sold to me by the neighbor of our producer, Matt Householder. This devise, developed by the world famous Sputnik Percussion, it is a stick with a thick rubber band around it, much like a bull-roarer. It is this instrument that is responsible for that neat little 16th note wooshing sound which holds this musical oddity together in the first few minutes, so I can assure you that no animals were harmed in the making of Diablo II."
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 From the website:
-
-.. note::
 
     "Jungle" - Liner Notes - September 20, 2000
 
@@ -345,16 +308,14 @@ From the website:
 
     Nostalgia . . . Beer with Ben and Patty, a Macintosh that never worked and a strange instrument sold to me by the neighbor of our producer, Matt Householder. Developed by the world famous Sputnik Percussion, it is a stick with a thick rubber band around it, like a bull-roarer, and is responsible for that neat little 16th note wooshing sound which holds this oddity together in the first few minutes. No animals were harmed in the making of Diablo II.
 
-    \- Matt Uelmen 
+    -- Matt Uelmen 
 
 "Docks" - Liner Notes - September 13, 2000
 ------------------------------------------
 
-.. tip:: This is the same as town3.wav from d2music.mpq
-
 Link: http://web.archive.org/web/20010613175130/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/docks.zip
 
-.. note::
+This is the same as town3.wav from d2music.mpq
 
     "Docks" - Liner Notes - September 13, 2000
 
@@ -362,16 +323,14 @@ Link: http://web.archive.org/web/20010613175130/http://ftp.blizzard.com/pub/diab
 
     Act III was a great deal of fun for me, in part because of a trip to Guatemala shortly before writing it. I think there is a bit more "Rain Dogs" in here, though, than anything too tropical. The brass just needed more personality than I knew how to give, at the time. Thankfully, I didn't need too - Alex Munn did some really fun stuff for the backgrounds, and Ormus was probably the only NPC who I didn't instantly want to kill. I had a strange, begrudging respect for the Act II palace guards, though.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Harem" - Liner Notes - September 6, 2000
 -----------------------------------------
 
-.. tip:: This has an additional 1m 18s compared to harem.wav from d2music.mpq. This additional material made its way into sanctuary.wav from d2music.mpq
-
 Link: http://web.archive.org/web/20010611182755/http://ftp.blizzard.com/pub/diablo2/mp3oftheweek/harem.zip
 
-.. note::
+This has an additional 1m 18s compared to harem.wav from d2music.mpq. This additional material made its way into sanctuary.wav from d2music.mpq
 
     "Harem" - Liner Notes - September 6, 2000
 
@@ -379,16 +338,14 @@ Link: http://web.archive.org/web/20010611182755/http://ftp.blizzard.com/pub/diab
 
     I have often hated my lack of ability to put a voice out front and center, though with this track I managed to get a nice alto up there. Hindi? Sanskrit? Someone out there knows. The last two minutes are goofy, but in a much different way. I am a great fan of the music of the "Twilight Zone" series, and loved being able to use the vibraphone, even if it was only samples.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Maggot" - Liner Notes - August 30, 2000
 ----------------------------------------
 
-.. tip:: This is a slightly different arrangement compared to lair.wav from d2music.mpq
-
 Link: http://classic.battle.net/supersecrest/maggot.mp3
 
-.. note::
+This is a slightly different arrangement compared to lair.wav from d2music.mpq
 
     "Maggot" - Liner Notes - August 30, 2000
 
@@ -398,17 +355,14 @@ Link: http://classic.battle.net/supersecrest/maggot.mp3
 
     Although big percussion stacks with little or no harmonic structure may be musically shallow, they are incredibly fun ear-candy. In a world where I have more talent, this would sound much like Takemitsu's "From Me Flows What You Call Time".
 
-    \- Matt Uelmen
-
+    -- Matt Uelmen
 
 "Desert" - Liner Notes - August 23, 2000
 ----------------------------------------
 
-.. tip:: This is a slightly different arrangement compared to desert.wav from d2music.mpq. Some of this material can be found in valley.wav from d2music.mpq.
-
 Link: http://classic.battle.net/supersecrest/desert.mp3
 
-.. note::
+This is a slightly different arrangement compared to desert.wav from d2music.mpq. Some of this material can be found in valley.wav from d2music.mpq.
 
     "Desert" - Liner Notes - August 23, 2000
 
@@ -418,16 +372,14 @@ Link: http://classic.battle.net/supersecrest/desert.mp3
 
     The material I came up with is a definite mixed bag - somehow I ended up with moments that seemed more like 70's jazz fusion or particularly strange euro-disco than anything "middle eastern" in spots, but I was still largely happy with the results. I could not resist putting down that synth bassline which enters at 1:00 in the track - the 303 had been trying to work its way into the soundtrack from the beginning, and I had to give it its half-minute of raver glory somewhere.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Sewer" - Liner Notes - August 16, 2000
 ---------------------------------------
 
-.. tip:: This is the same as sewer.wav from d2music.mpq
-
 Link: http://classic.battle.net/supersecrest/sewer.mp3
 
-.. note::
+This is the same as sewer.wav from d2music.mpq
 
     "Sewer" - Liner Notes - August 16, 2000
 
@@ -437,16 +389,14 @@ Link: http://classic.battle.net/supersecrest/sewer.mp3
 
     This track was a bit easier than most, though, simply because the drips and echoes of the sewer enviroment suggested a relatively clear musical direction. I tried to take a few pages out of the classical playbook in the pacing used around 3 minutes into the piece, and enjoyed tweaking the tempo faster and slower to create a more definite climax and resolution than the piece might have had otherwise.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Rogue" - Liner Notes - August 9, 2000
 --------------------------------------
 
-.. tip:: This has an additional 37s compared to town1.wav from d2music.mpq
-
 Link: http://classic.battle.net/supersecrest/rogue.mp3
 
-.. note::
+This has an additional 37s compared to town1.wav from d2music.mpq
 
     "Rogue" - Liner Notes - August 9, 2000
 
@@ -456,16 +406,14 @@ Link: http://classic.battle.net/supersecrest/rogue.mp3
 
     If this piece has any problems, they are probably due to my excess of fascination with texture, at the occassional expense of melody and rhythm. It was too much fun to contrast the acoustic 12-string with its electric counterpart in the first half and then to mix it up with the mandolin and the dulcimer in the newer half. As far as that slide part goes, I could not resist taking the Joe Walsh shtick to its logical extreme after all of the "Hotel California" comments I heard from Diablo players. I am a weak man...
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Wilderness" - Liner Notes - August 2, 2000
 -------------------------------------------
 
-.. tip:: This has an addition 4s compared to wild.wav from d2music.mpq
-
 Link: http://classic.battle.net/supersecrest/wilderness.mp3
 
-.. note::
+This has an addition 4s compared to wild.wav from d2music.mpq
 
     "Wilderness" - Liner Notes - August 2, 2000
 
@@ -475,16 +423,14 @@ Link: http://classic.battle.net/supersecrest/wilderness.mp3
 
     My favorite moments on this piece come with the pedal steel lines supplied by Bernie Wilkens. Bernie Wilkens, of course, is the video game legend who currently runs our HR department. Few people know that Bernie also worked as a pedal steel player in Nashville back in his teenage years. He has a real gift for ripping off that great Dave Gilmour creepiness. John Carpenter and Johnny Marr also fight for space here.
 
-    \- Matt Uelmen 
+    -- Matt Uelmen 
 
 "Cave" - Liner Notes - July 26, 2000
 ------------------------------------
 
-.. tip:: This has additional 10s not present in cave.wav from d2music.mpq
-
 Link: http://classic.battle.net/supersecrest/cave.mp3
 
-.. note::
+This has additional 10s not present in cave.wav from d2music.mpq
 
     "Cave" - Liner Notes - July 26, 2000
 
@@ -492,16 +438,14 @@ Link: http://classic.battle.net/supersecrest/cave.mp3
 
     The creaky orchestrations of the first minute were created over a year after the middle section, which uses the heavy beats and choral textures which predominate many of our indoor/dungeon sequences. When we finally inserted musical resolutions for the quests in March 2000, it was fun to hear a track which had existed for so long in a new context, providing a glimpse of the kinds of musical interactivity which I hope we will be exploring in the future. I originally threw this one out, along with the rest of the original pass at Act IV music, in 1997, but reinserted this track in the game at the insistence of Bernie Wilkens. Edits from this tune also appeared under the title screen of the DVD which came with the Collector's Edition. There's some very strange stuff in those last twenty seconds, if you listen closely enough...
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Tristram" - Liner Notes - July 19, 2000
 ----------------------------------------
 
-.. tip:: This is the same as tristram.wav from d2music.mpq
-
 Link: http://classic.battle.net/supersecrest/tristram.mp3
 
-.. note::
+This is the same as tristram.wav from d2music.mpq
 
     "Tristram" - Liner Notes - July 19, 2000
 
@@ -513,16 +457,14 @@ Link: http://classic.battle.net/supersecrest/tristram.mp3
 
     The track was recorded bar by bar, and originally consisted of at least two dozen chords and phrases which were stitched together in the sampler. Some retuning was done to make those harmonic runs possible, and some of those chords are impossible to perform in a manner which sounds as smooth as the final product. What strikes me when I listen to this track now is, believe it or not, the Peruvian influence. The selection of tunes on my favorite tape back in 1996 featured many gorgeous waltzes written by the legendary Chabuca Granda, and I spent a fair amount of time trying to emulate the finger-picking style used by the guitarist who accompanied the vocalist on this tape. The newer material was originally intended to be used as the Act 1 music in Diablo 2 way back in 1997, though I ended up finding the pacing a bit too tense and linear for the dreamy feel that makes for ideal shopping music.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
 
 "Monastery" - Liner Notes - July 12, 2000
 -----------------------------------------
 
-.. tip:: This has additional material not present in monastery.wav from d2music.mpq
-
 Link: http://classic.battle.net/supersecrest/monastery.mp3
 
-.. note::
+This has additional material not present in monastery.wav from d2music.mpq
 
     "Monastery" - Liner Notes - July 12, 2000
 
@@ -534,4 +476,4 @@ Link: http://classic.battle.net/supersecrest/monastery.mp3
 
     It seemed appropriate for the game, seeing as the monastery/cathedral sequence in the last third of Act I aims to give the player the sense of indoor claustrophobia that Diablo did so well. Big extra points are awarded to those who notice that the prepared piano melody in the last few seconds makes an appearance again in Act III town as well as the jungle.
 
-    \- Matt Uelmen
+    -- Matt Uelmen
