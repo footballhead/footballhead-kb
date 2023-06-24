@@ -41,3 +41,13 @@ There are many built-in themes and many community themes. My personal go-to at t
 #. ``pipenv install sphinx-rtd-theme``
 #. Open ``source/conf.py``, change ``html_theme`` to ``sphinx_rtd_theme``
 #. Rebuild: ``pipenv run make html``
+
+Quirks
+------
+
+If a new file is added to ToC, the sidebar on old pages may not be updated. This may not be a problem if you're iterating, but can be an issue when you go to publish artifacts.
+
+If you want to regenerate the sidebar on old pages, you'll need to do a clean build::
+
+    pipenv run make clean
+    pipenv run make html

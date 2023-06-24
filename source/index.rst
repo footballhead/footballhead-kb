@@ -13,12 +13,14 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    diablo2.rst
    d2-v1.rst
    d2-mp3.rst
+   d2-mp3-player.rst
    sphinx.rst
    plugy.rst
-
+   preablo.rst
+   jpexs-free-flash-decompiler.rst
 
 Indices and tables
-==================
+------------------
 
 * :ref:`genindex`
 * :ref:`modindex`
