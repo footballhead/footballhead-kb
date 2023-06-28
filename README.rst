@@ -1,7 +1,9 @@
 README
 ======
 
-Michael Hitchens Knowledge Base. Authored as reStructuredText and rendered with Sphinx
+Michael Hitchens Knowledge Base. Authored as reStructuredText and rendered with Sphinx.
+
+Hosted at http://www.michaelhitchens.com/kb
 
 Developing
 ----------
