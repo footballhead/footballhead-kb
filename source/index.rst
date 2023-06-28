@@ -18,6 +18,8 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    plugy.rst
    preablo.rst
    jpexs-free-flash-decompiler.rst
+   rsync.rst
+   wsl.rst
 
 Indices and tables
 ------------------
