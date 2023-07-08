@@ -20,6 +20,7 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    jpexs-free-flash-decompiler.rst
    rsync.rst
    wsl.rst
+   gif.rst
 
 Indices and tables
 ------------------
