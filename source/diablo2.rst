@@ -4,6 +4,12 @@ Diablo II
 
 Notes for getting Diablo 2 running, etc. I have ISOs backups of the CDs.
 
+--------------
+Save Directory
+--------------
+
+On Windows 11 it's ``%USERPROFILE\Saved Games\Diablo II``
+
 -------------
 General Notes
 -------------

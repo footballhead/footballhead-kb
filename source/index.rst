@@ -11,6 +11,7 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    d1beta.rst
    d1beta-quest.rst
    diablo2.rst
+   d2-mod.rst
    d2-v1.rst
    d2-mp3.rst
    d2-mp3-player.rst
@@ -21,6 +22,7 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    rsync.rst
    wsl.rst
    gif.rst
+   playdate.rst
 
 Indices and tables
 ------------------

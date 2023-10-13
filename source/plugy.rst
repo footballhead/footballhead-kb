@@ -147,15 +147,15 @@ PlugY.exe acts as a debugger in order to catch CREATE_PROCESS_DEBUG_EVENT or LOA
 
 Trace:
 
-* WinMain
-    * LaunchGameXP
-        * CreateProcess(DEBUG_PROCESS)
-        * CREATE_PROCESS_DEBUG_EVENT or LOAD_DLL_DEBUG_EVENT
-            * installPlugY
-                * Get 200 bytes of memory, either by VirtualAllocEx or finding room at the end of the segment
-                * Load DLL data and instructions into 200 bytes
-                * Patch some calling code 
-            * DebugActiveProcessStop
+- WinMain
+    - LaunchGameXP
+        - CreateProcess(DEBUG_PROCESS)
+        - CREATE_PROCESS_DEBUG_EVENT or LOAD_DLL_DEBUG_EVENT
+            - installPlugY
+                - Get 200 bytes of memory, either by VirtualAllocEx or finding room at the end of the segment
+                - Load DLL data and instructions into 200 bytes
+                - Patch some calling code 
+            - DebugActiveProcessStop
 
 I can't give a line-by-line explanation due to magic numbers and other magic...
 

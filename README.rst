@@ -1,7 +1,7 @@
 README
 ======
 
-Michael Hitchens Knowledge Base. Authored as reStructuredText and rendered with Sphinx.
+Michael Hitchens's's's Knowledge Base. Authored as reStructuredText and rendered with Sphinx.
 
 Hosted at http://www.michaelhitchens.com/kb
 
@@ -21,3 +21,12 @@ Viewing::
 
     cd build/html
     python -m http.server 8000
+
+Deploying
+---------
+
+Sometimes Sphinx doesn't generate the sitemap properly on all pages. I recommend cleaning before making and deploying::
+
+    pipenv run make clean
+    pipenv run make html
+    # Deploy build/html/*

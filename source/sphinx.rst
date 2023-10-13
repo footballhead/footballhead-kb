@@ -42,6 +42,11 @@ There are many built-in themes and many community themes. My personal go-to at t
 #. Open ``source/conf.py``, change ``html_theme`` to ``sphinx_rtd_theme``
 #. Rebuild: ``pipenv run make html``
 
+Picking a theme
+---------------
+
+Don't like the defaults? Try https://sphinx-themes.readthedocs.io/en/latest/
+
 Quirks
 ------
 
