@@ -23,6 +23,7 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    wsl.rst
    gif.rst
    playdate.rst
+   nms-103.rst
 
 Indices and tables
 ------------------
