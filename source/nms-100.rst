@@ -1,0 +1,176 @@
+==================
+No Man's Sky v1.00
+==================
+
+1.00 is the version shipped on the PS4 disk. Most people probably haven't played it since `the developers urged people to download the day-one patch <http://web.archive.org/web/20160807221156/http://www.no-mans-sky.com/2016/08/update-1-03/>`_. Since 1.00 isn't on Steam, a release-day PS4 disk is the only way to play 1.00.
+
+There are a few videos on YouTube exploring this (now rare) version:
+
+- https://www.youtube.com/channel/UCp69jiGFojjtLhoifpIiAbQ
+- https://www.youtube.com/playlist?list=PLpjQuVN0TqNGTLXF9EZzkDcAaECvPbojc
+- https://www.youtube.com/playlist?list=PLpjQuVN0TqNFfauXrRNT3T1OS5w5yMoT9
+- https://nomansskyretro.com/wiki/Welcome
+- https://www.twitch.tv/videos/84650668?t=0h0m43s
+- https://www.reddit.com/r/NoMansSkyTheGame/comments/4ymc0x/i_decided_to_try_a_no_patch_nms_run_and_this_my/
+- https://www.reddit.com/r/NoMansSkyTheGame/comments/6hd2nx/guide_to_no_mans_sky_100_rc1_ps4_blu_ray_version/
+
+--------------
+My rough notes
+--------------
+
+I don't own a 1.00 disk, these are things I've noted watching the above videos.
+
+- Resources stack to 100 (both in exosuit and starship)
+- Cannot “Move and Stack” items (no reordering inventory)
+- Item details lack per-item and total worth
+- Exosuit hazard protection can be repaired with Iron
+- Distress Beacon uses different model
+- Atlas Path dialogue is different
+- Use Scanner by pressing Circle button (PS4 controller)
+- Mining Beam overheats as soon as the bar is full
+- Heridium deposits are mound-shaped, gold color
+- Emeril deposits are pillar shaped, blackish color
+- The Analysis Visor doesn't show dots under creatures
+- ??? mining tool doesn't damage storage depots
+- Options > Discoveries > Records displays planet stats
+    - I survived for __ SOLS
+    - I walked for __. and swam for __.
+    - I regenerated __ times
+    - I discovered __ new forms of life
+    - I met __ intelligent aliens
+    - I extracted __ of resources
+    - I learned __ new words
+- Distance is “.” not “units”
+- Currency symbol is “U” in text (rather than actual unit symbol)
+- Each uploaded discovered provides 2 messages (no batching)
+    - Discovery uploaded
+    - __U credited. The galactic library thanks you
+- Knowledge stones are tall bois
+- ??? Different Damaged Machinery sound
+- ??? Damaged Machinery // Get blueprint
+- Upgrade tiers are v1, v2, v3, v4 (not Sigma, Tau, etc)
+- Can talk to the distress beacon more than once (may require exploring and coming back, also might be only before first lift-off?)
+- No save graphic (message is only “restore point saved”)
+- Destroying one wave of sentinels escalates and spawns the next. Only way to de-escalate is to flee
+- ??? Different ship boost sfx
+- Analyse Multi-tool Tech (found in buildings) requires 20 carbon
+- ??? Different ship launch sfx
+- Launching once takes 50% of fuel
+- Cost to refuel launcher from empty to full is 100 plutonium
+- Ship auto target is super bad (trying to shoot manufacturing facility door is yikes)
+- LOD transitions are shorter, makes pop-in noticeable
+- Galaxy map UI looks slightly different
+- On Galaxy map, Atlas Stations have read indicators and black holes have black indicators
+- POI icons are different
+- Space station right side (if you're looking towards space) not protected, has save location and two Atlas Pass v1 door. Those doors protect a multi-tool, some cargo drops, and plants
+- Space station launch pads have white outline which becomes red as you approach
+- Space station left side not protected, has Atlas Pass v1 doors. Those doors protect a exosuit upgrade
+- Sell dialog only shows items you have (no grayed out entries)
+- Models are noticeably low-res
+- Different alien sfx - sounds like Simlish 
+- ??? Ship seems to turn very fast, “zippier” handling
+- Bugged discoveries model (floating jelly fish thing for radnox)
+- ??? Different mining beam sfx
+- Low LOD models are very noticeably chunky, low poly
+- Options menu has different units icon (underneath name, top-left corner)
+- Jetpack upgrade has wrong icon
+- Different outpost icon
+- ??? Can get much closer to land, hint to help land at outpost?
+- ??? Flashlight
+- All sales +- 5% of galactic avg
+- Exosuit upgrades require iron and units
+- ??? Starship targeting
+- All exosuit upgrades cost the same?
+
+----------
+Milestones
+----------
+
+- In general
+    - No milestone for sentinel kills!
+    - “Longest lifespan” instead of “extreme survival” (“Survived __ SOLS” instead of “Survived __ SOLS in extreme conditions”)
+    - “Uploaded discoveries” instead of “planet zoology scanned” (“Discovered __ creatures” instead of “Discovered all species on __ planets”)
+- Milestone - Naturalist - Discovered 1 creature
+- Milestone - Collector - Discovered 5 creatures
+- Milestone - Scanner - Discovered 10 creatures
+- Milestone - Analyst - Discovered 15 creatures
+- Milestone - Researcher - Discovered 20 creatures
+- Milestone - Undaunted - Survived 1.0 SOLS
+- Milestone - Resolute - Survived 3.0 SOLS
+- Milestone - Determined - Survived 5.0 SOLS
+- Milestone - Spirited - Survived 8.0 SOLS
+- Milestone - Setting Out - Travelled 5,000.
+- Milestone - Setting Ambulatory - Travelled 7,500.
+- Milestone - Drifter - Travelled 10,000.
+- Milestone - Wayfarer - Travelled 15,000.
+- Milestone - Babbler - Learned 5 words
+- Milestone - Beginner - Learned 8 words
+- Milestone - Confused - Learned 10 words
+- Milestone - Confused - Learned 15 words
+- Milestone - Misunderstood - Learned 20 words
+- Milestone - New Business - Earned 50000
+- Milestone - Known - Met 2 aliens
+- “Milestone” - Detractor - Vy'keen standing -1
+- “Milestone” - ??? - Go from -1 to 0 Vy'Keen standing
+
+-------------------
+Atlas Path Dialogue
+-------------------
+
+Distress Beacon
+===============
+
+Initial text:
+
+    I've seen things, a few things, before.
+
+    I left the sun and moon far behind. Galaxies were waiting to be found.
+
+    It begins and ends with you. Infinity awaits.
+
+    - Resist
+    - Refuse
+    - Begin
+
+Resist:
+
+?
+
+Refuse:
+
+?
+
+Begin:
+
+    It begins.
+
+    I feel as if an unknown power is guiding me. We are combined as one.
+
+Hyperdrive
+==========
+
+Acquire Hyperdrive Technology
+
+Follow Mysterious Signal
+
+(Interact with Waypoint // Beacon, get coords for Outpost)
+
+Acquire Hyperdrive Technology
+
+Follow Signal to Contact Lifeform
+
+    I am greeted by a strange warrior lifeform. It has been tracking my starship's movements through the planet's atmosphere, but gives the impression that it has been waiting for far longer.
+
+    It tilts its head, and curls its lips back over its teeth. I am aboutto speak, when it abruptly raises its arm to silence me. It produces what looks (sic) the schematics of an advanced technology. It barks, and indicates that I should take it.
+
+    - Take the blueprint
+
+Take the blueprint
+
+    The warrior barks again in satisfaction. Faint red orbs appear briefly in its eyes.
+
+    Its mission appears complete.
+
+Build Hyperdrive
+
+Travel to Space Station
