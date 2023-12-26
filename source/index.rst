@@ -5,7 +5,6 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
 
    d1demo.rst
    d1beta.rst
@@ -24,6 +23,8 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    gif.rst
    playdate.rst
    nms-103.rst
+   genshin.rst
+   pkm.rst
 
 Indices and tables
 ------------------
