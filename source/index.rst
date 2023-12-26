@@ -26,6 +26,8 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    genshin.rst
    pkm.rst
    crypt-underworld-ost.rst
+   monorepo.rst
+   git-lfs.rst
 
 Indices and tables
 ------------------
