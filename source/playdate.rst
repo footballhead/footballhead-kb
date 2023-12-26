@@ -13,13 +13,14 @@ There's two flavors:
 #. Lua. Seems like they expect you to use this one. It provides more goodies and a cleaner workflow.
 #. C. Technically more performant than Lua but more DIY... And you need to know C.
 
------------------
-SDK Commonalities
------------------
+I would highly recommend reading the Lua SDK reference (even if you only plan on using C) since important details like using ``pdc`` are only mentioned there.
 
-Whether you use Lua or C:
+--------
+Workflow
+--------
 
 #. Put all assets (except C code) into ``Source/`` dir. This includes fonts, sounds, images, and Lua code. Technically, you can name this whatever you want... except the makefile support in the SDK assumes that this is the name for that folder
+#. Put C source wherever. Use either Make or CMake to compile.
 #. Run ``pdc Source myproject.pdx`` to assemble the final app
 #. Use the simulator to sideload the code onto a Playdate
 

@@ -25,6 +25,7 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    nms-103.rst
    genshin.rst
    pkm.rst
+   crypt-underworld-ost.rst
 
 Indices and tables
 ------------------
