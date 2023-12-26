@@ -14,9 +14,9 @@ The basics::
 
 ``SRC`` and ``DEST`` can be a local file (``./foo.txt``) or SSH location (``user@example.com``).
 
-Use ``-r`` to upload recusrively.
+Use ``-r`` to upload recursively. Use ``-P`` for progress. Use ``--exclude`` to ignore certain files; if you have enough exclusions then you can put them in a file and use ``--exclude-from`` instead.
 
-If you want to upload everything from the current directory to a specific folder on a host::
+Example::
 
-    cd your/directory/to/upload
-    rsync -r . user@example.com:your/specific/folder
+    rsync -r -P --exclude-from rsync-excludes.txt your/local/folder/ user@example.com:your/dest/folder/
+

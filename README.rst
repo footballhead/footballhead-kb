@@ -29,4 +29,4 @@ Sometimes Sphinx doesn't generate the sitemap properly on all pages. I recommend
 
     pipenv run make clean
     pipenv run make html
-    # Deploy build/html/*
+    rsync -r -P --exclude-from rsync-excludes.txt build/html DEST
