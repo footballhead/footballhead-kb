@@ -8,3 +8,6 @@ I play a lot of video games.
 
    nms-103.rst
    genshin.rst
+   dungeon-explorer.rst
+   vampyr.rst
+   time-bandit.rst
