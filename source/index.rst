@@ -28,10 +28,3 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    crypt-underworld-ost.rst
    monorepo.rst
    git-lfs.rst
-
-Indices and tables
-------------------
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
