@@ -8,3 +8,4 @@ A catch-all bucket for content
 
    pkm.rst
    crypt-underworld-ost.rst
+   remote-play.rst

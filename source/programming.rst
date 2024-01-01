@@ -14,3 +14,4 @@ I'm a full-time software developer so I have a lot to say when it comes to progr
    playdate.rst
    monorepo.rst
    git-lfs.rst
+   git-server-windows.rst
