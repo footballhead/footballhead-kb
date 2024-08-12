@@ -22,6 +22,45 @@ Mod makers tend to make their mods PlugY compatible (or otherwise intentionally 
 
 I've done a breakdown of their source in :doc:`plugy`
 
+--------------------
+Sven's Glide Wrapper
+--------------------
+
+Link: http://www.svenswrapper.de/english/
+
+Basically required on modern Windows. Translates the glide3d mode into OpenGL. IMO results in better colors and performance on modern systems compared to DirectDraw.
+
+Configuration is done through a custom GUI.
+
+In 1.14, need to launch Diablo 2 with ``-3dfx``. Otherwise, run Video Test and choose Glide.
+
+----
+d2dx
+----
+
+Link: 
+
+This is kinda like a (better?) Sven's Glide Wrapper that includes SGD2FreeRes. Improvements over Sven's Glide Wrapper:
+
+- Higher FPS, especially felt with the smoothness of the mouse cursor
+- Widescreen thanks to SGD2FreeRes
+
+Configuration is done via ``d2dx.cfg``
+
+In 1.14, need to launch Diablo 2 with ``-3dfx``. Otherwise, run Video Test and choose Glide.
+
+.. note:: If running with PlugY then also need to copy ``glide3x.dll`` into the PlugY folder. Same goes for the config file. The Plugy shortcut will need ``-3dfx``
+
+.. note:: Toggle windowed/fullscreen with Alt+Enter
+
+-----------
+SGD2FreeRes
+-----------
+
+Link: https://github.com/mir-diablo-ii-tools/SlashGaming-Diablo-II-Free-Resolution
+
+Adds widescreen support. Not standalone, needs something like d2dx to load it.
+
 ----------
 d2modmaker
 ----------

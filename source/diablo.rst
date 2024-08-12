@@ -16,3 +16,4 @@ Diablo 1 and 2 are tied for my favourite video games.
    d2-mp3-player.rst
    plugy.rst
    preablo.rst
+   d2-necro-speedrun.rst

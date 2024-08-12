@@ -12,3 +12,4 @@ I play a lot of video games.
    dungeon-explorer.rst
    vampyr.rst
    time-bandit.rst
+   steam-deck.rst

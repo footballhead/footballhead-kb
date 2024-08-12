@@ -4,6 +4,9 @@ Genshin Impact
 
 Yes, I play Genshin Impact. No, I will be taking not be taking further questions at this time.
 
+.. toctree::
+    genshin-rv.rst
+
 -----
 Tools
 -----
@@ -12,6 +15,7 @@ Tools
 - `Keqing Mains <https://keqingmains.com/>`_: Best character and team build guides.
 - `Genshin Optimizer <https://frzyc.github.io/genshin-optimizer/>`_: A tool to find the best artifacts for a given character. Can help you sort through your artifacts to find the best piece, or make suggestions that you wouldn't have thought of.
 - `Enka Network <https://enka.network/>`_: Share summary card of your character's stats using your public profile. Just input your UID!
+- `Akasha <https://akasha.cv>`_: Genshin leader board using Enka data. Rank your builds against other participants!
 
 Genshin Optimizer
 =================
