@@ -40,6 +40,14 @@ Current annoyances
 - You need to keep the screen on to download games. Burn-in isn't a problem with the OLED under normal use though so this is more a LOL than anything else.
 - Steam+X is the soft keyboard. This is not easy to discover and is necessary for Desktop Mode. It also doesn't work as well as a physical keyboard (problems with text field focus, etc).
 
+--------
+Hardware
+--------
+
+The Steam Deck ships with a 45W charger. For comparison, my MacBook Air M1 shipped with a 30W charger and my Pixel phone shipped with a 15W charger.
+
+If you don't use a 45W charger, the LED will be solid yellow/orange while charging. Id you do use a 45W charger, the LED will be a solid white while charging. When charged, the LED is solid green.
+
 ------
 Heroic
 ------
