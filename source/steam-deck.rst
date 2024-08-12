@@ -40,6 +40,20 @@ Current annoyances
 - You need to keep the screen on to download games. Burn-in isn't a problem with the OLED under normal use though so this is more a LOL than anything else.
 - Steam+X is the soft keyboard. This is not easy to discover and is necessary for Desktop Mode. It also doesn't work as well as a physical keyboard (problems with text field focus, etc).
 
+------
+Heroic
+------
+
+This is a open-source Epic Games launcher for Linux. It uses Proton/Wine to run games.
+
+How to add games to steam:
+
+#. Open Heroic
+#. Navigate to your library
+#. Find the game you want to add to Steam and open the Details. You can either click the picture of the game or right click > Details. This should open a screen with a larger version of the art.
+#. Click the 3 dots in the top-right. Select Add to Steam
+#. Restart Steam
+
 ------------
 Programming
 ------------
