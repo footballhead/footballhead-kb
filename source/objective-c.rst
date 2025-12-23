@@ -221,6 +221,56 @@ E.g. here's the basics layout of any .app:
         * foo.jpg
         * ... etc
 
+Info.plist
+----------
+
+If you need to embed it for whatever reason:
+
+.. code-block:: cmake
+
+    # https://discourse.cmake.org/t/how-to-embed-info-plist-in-a-simple-mac-binary-file/512
+    target_link_options(MyTarget
+        PRIVATE
+            LINKER:-sectcreate,__TEXT,__info_plist,${CMAKE_CURRENT_SOURCE_DIR}/Info.plist
+    )
+
+Required and recommended keys are here: https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html#//apple_ref/doc/uid/10000123i-CH101-SW1
+
+Here's a example from the Metal 4 Hello Triangle sample:
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>CFBundleDevelopmentRegion</key>
+        <string>en</string>
+        <key>CFBundleExecutable</key>
+        <string>$(EXECUTABLE_NAME)</string>
+        <key>CFBundleIconFile</key>
+        <string></string>
+        <key>CFBundleIdentifier</key>
+        <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+        <key>CFBundleInfoDictionaryVersion</key>
+        <string>6.0</string>
+        <key>CFBundleName</key>
+        <string>$(PRODUCT_NAME)</string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleShortVersionString</key>
+        <string>1.0</string>
+        <key>CFBundleVersion</key>
+        <string>1</string>
+        <key>LSMinimumSystemVersion</key>
+        <string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+        <key>NSMainStoryboardFile</key>
+        <string>Main</string>
+        <key>NSPrincipalClass</key>
+        <string>NSApplication</string>
+    </dict>
+    </plist>
+
 
 See Also
 --------
@@ -235,6 +285,7 @@ See Also
 * `Mac App Programming Guide (2015)`_
 * `Resource Programming Guide (2016)`_
 * `Bundle Programming Guide (2017)`_
+* `Information Property List Key Reference (2018)`_
 * `Foundation Reference`_
 * `AppKit Reference`_
 
@@ -248,5 +299,6 @@ See Also
 .. _Mac App Programming Guide (2015): https://developer.apple.com/library/archive/documentation/General/Conceptual/MOSXAppProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010543-CH1-SW1
 .. _Resource Programming Guide (2016): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i
 .. _Bundle Programming Guide (2017): https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i
+.. _Information Property List Key Reference (2018): https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html
 .. _Foundation Reference: https://developer.apple.com/documentation/foundation?language=objc
 .. _AppKit Reference: https://developer.apple.com/documentation/appkit?language=objc
