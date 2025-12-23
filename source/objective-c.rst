@@ -229,14 +229,22 @@ See Also
 * `Concepts in Objective-C Programming (2012)`_
 * `The Objective-C Programming Language (2013)`_
 * `Transitioning to ARC Release Notes (2013)`_
+* `Exception Programming Topics (2013)`_
 * `Programming with Objective-C (2014)`_
 * `Mac App Programming Guide (2015)`_
+* `Resource Programming Guide (2016)_`
 * `Bundle Programming Guide (2017)`_
+* `Foundation Reference`_
+* `AppKit Reference`_
 
 .. _Advanced Memory Management Programming Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011-SW1
 .. _Concepts in Objective-C Programming (2012) : https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Initialization/Initialization.html#//apple_ref/doc/uid/TP40010810-CH6-SW1
 .. _The Objective-C Programming Language (2013): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html
 .. _Transitioning to ARC Release Notes (2013): https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011226
+.. _Exception Programming Topics (2013): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Exceptions/Exceptions.html#//apple_ref/doc/uid/10000012i
 .. _Programming with Objective-C (2014): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1
 .. _Mac App Programming Guide (2015): https://developer.apple.com/library/archive/documentation/General/Conceptual/MOSXAppProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010543-CH1-SW1
+.. _Resource Programming Guide (2016): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i
 .. _Bundle Programming Guide (2017): https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i
+.. _Foundation Reference: https://developer.apple.com/documentation/foundation?language=objc
+.. _AppKit Reference: https://developer.apple.com/documentation/appkit?language=objc
