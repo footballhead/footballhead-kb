@@ -273,7 +273,39 @@ Here's a example from the Metal 4 Hello Triangle sample:
     </dict>
     </plist>
 
+Debugging with LLDB
+-------------------
 
+If things aren't working, open your program in lldb. I find that some prints and exceptions only show up there!
+
+For example, I had this code:
+
+.. code-block:: objective-c
+
+    [NSTimer scheduledTimerWithTimeInterval:1.0
+                                     target:self
+                                   selector:@selector(timerFireMethod)
+                                   userInfo:nil
+                                    repeats:YES];
+
+But the timer wasn't firing. I got nothing in the console. As soon as I opened it in LLDB I got what I wanted::
+
+    -[MyApplicationDelegate timerFireMethod]: unrecognized selector sent to instance 0x1232092b0
+
+This is because I used the wrong selector syntax. I was missing a colon:
+
+.. code-block:: objective-c
+
+    [NSTimer scheduledTimerWithTimeInterval:1.0
+                                     target:self
+                                   selector:@selector(timerFireMethod:)
+                                   userInfo:nil
+                                    repeats:YES];
+
+Selectors
+---------
+
+Selectors are kinda like run-time function pointers? It's like "there's a method with this name".
 
 See Also
 --------
