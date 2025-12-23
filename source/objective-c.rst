@@ -225,6 +225,7 @@ E.g. here's the basics layout of any .app:
 See Also
 --------
 
+* `Cocoa Drawing Guide (2012)`_
 * `Advanced Memory Management Programming Guide (2012)`_
 * `Concepts in Objective-C Programming (2012)`_
 * `The Objective-C Programming Language (2013)`_
@@ -232,11 +233,12 @@ See Also
 * `Exception Programming Topics (2013)`_
 * `Programming with Objective-C (2014)`_
 * `Mac App Programming Guide (2015)`_
-* `Resource Programming Guide (2016)_`
+* `Resource Programming Guide (2016)`_
 * `Bundle Programming Guide (2017)`_
 * `Foundation Reference`_
 * `AppKit Reference`_
 
+.. _Cocoa Drawing Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290
 .. _Advanced Memory Management Programming Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011-SW1
 .. _Concepts in Objective-C Programming (2012) : https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Initialization/Initialization.html#//apple_ref/doc/uid/TP40010810-CH6-SW1
 .. _The Objective-C Programming Language (2013): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html
