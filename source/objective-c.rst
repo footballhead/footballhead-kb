@@ -317,6 +317,7 @@ See Also
 * `Transitioning to ARC Release Notes (2013)`_
 * `Exception Programming Topics (2013)`_
 * `Coding Guidelines for Cocoa (2013) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CodingGuidelines/>`_
+* `Getting Pixels onto the Screen (2013) <https://www.objc.io/issues/3-views/moving-pixels-onto-the-screen/>`_
 * `Programming with Objective-C (2014)`_
 * `Adopting Modern Objective-C (2014) <https://developer.apple.com/library/archive/releasenotes/ObjectiveC/ModernizationObjC/>`_
 * `Thread Programming Guide (2014) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/>`_
