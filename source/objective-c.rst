@@ -286,6 +286,7 @@ See Also
 * `Exception Programming Topics (2013)`_
 * `Coding Guidelines for Cocoa (2013) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CodingGuidelines/>`_
 * `Programming with Objective-C (2014)`_
+* `Adopting Modern Objective-C (2014) <https://developer.apple.com/library/archive/releasenotes/ObjectiveC/ModernizationObjC/>`_
 * `Mac App Programming Guide (2015)`_
 * `Resource Programming Guide (2016)`_
 * `Bundle Programming Guide (2017)`_
