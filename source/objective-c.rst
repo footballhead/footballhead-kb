@@ -323,9 +323,11 @@ See Also
 * `Mac App Programming Guide (2015)`_
 * `Resource Programming Guide (2016)`_
 * `Bundle Programming Guide (2017)`_
+* `Quartz2D Programming Guide (2017) <https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/>`_
 * `Information Property List Key Reference (2018)`_
 * `Foundation Reference`_
 * `AppKit Reference`_
+* `CoreGraphics Reference <https://developer.apple.com/documentation/coregraphics?language=objc>`_
 * `Microsoft Objective-C style guide <https://microsoft.github.io/objc-guide/>`_
 
 .. _Cocoa Drawing Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/
