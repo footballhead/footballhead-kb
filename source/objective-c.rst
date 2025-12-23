@@ -284,6 +284,7 @@ See Also
 * `The Objective-C Programming Language (2013)`_
 * `Transitioning to ARC Release Notes (2013)`_
 * `Exception Programming Topics (2013)`_
+* `Coding Guidelines for Cocoa (2013) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CodingGuidelines/>`_
 * `Programming with Objective-C (2014)`_
 * `Mac App Programming Guide (2015)`_
 * `Resource Programming Guide (2016)`_
@@ -291,6 +292,7 @@ See Also
 * `Information Property List Key Reference (2018)`_
 * `Foundation Reference`_
 * `AppKit Reference`_
+* `Microsoft Objective-C style guide <https://microsoft.github.io/objc-guide/>`_
 
 .. _Cocoa Drawing Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290
 .. _Advanced Memory Management Programming Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011-SW1
