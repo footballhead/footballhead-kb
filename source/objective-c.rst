@@ -221,6 +221,8 @@ E.g. here's the basics layout of any .app:
         * foo.jpg
         * ... etc
 
+Applications launched outside a bundle may not have their windows shown in the doc or brought forward. This is goverened the the activation policy: https://developer.apple.com/documentation/appkit/nsapplication/activationpolicy-swift.enum?language=objc
+
 Info.plist
 ----------
 
@@ -270,6 +272,7 @@ Here's a example from the Metal 4 Hello Triangle sample:
         <string>NSApplication</string>
     </dict>
     </plist>
+
 
 
 See Also
