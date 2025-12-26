@@ -6,16 +6,16 @@ I'm a full-time software developer so I have a lot to say when it comes to progr
 .. toctree::
    :maxdepth: 2
 
-   sphinx.rst
-   jpexs-free-flash-decompiler.rst
-   rsync.rst
-   wsl.rst
+   3d-graphics.rst
    gif.rst
-   playdate.rst
-   monorepo.rst
+   jpexs-free-flash-decompiler.rst
    git-lfs.rst
    git-server-windows.rst
-   vulkan.rst
    metal.rst
+   monorepo.rst
    objective-c.rst
-   3d-graphics.rst
+   playdate.rst
+   rsync.rst
+   sphinx.rst
+   vulkan.rst
+   wsl.rst

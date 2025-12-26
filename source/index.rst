@@ -7,6 +7,6 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    :maxdepth: 2
 
    diablo.rst
-   programming.rst
-   video-games.rst
    other.rst
+   programming/index.rst
+   video-games.rst
