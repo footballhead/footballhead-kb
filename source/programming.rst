@@ -18,3 +18,4 @@ I'm a full-time software developer so I have a lot to say when it comes to progr
    vulkan.rst
    metal.rst
    objective-c.rst
+   3d-graphics.rst
