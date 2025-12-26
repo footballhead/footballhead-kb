@@ -82,7 +82,9 @@ By defaut, there is no workspace since there's just one package. You need to add
 * to get them build, they need to be path dependencies of the root project
 * NOTE: The package is implicitly available for use; don't need to explicitly import it somehow (i.e. no ``mod`` or ``use``).
 
-(Just run ``cargo new my_package`` again)
+(Just run ``cargo new my_package`` again. This also adds the package as a workspace member in Cargo.toml)
+
+TODO does a package in a workspace need to be a workspace member? Or is the path dependency enough?
 
 When all packages are in subdirectories, it's called a "virtual workspace" and the ``members`` field must be specified.
 
@@ -121,26 +123,93 @@ In general, things seem heavily tied to `filesystem layout <https://doc.rust-lan
             ├── main.rs
             └── test_module.rs
 
-Module
-======
+Build scripts
+=============
 
-Visibility mechanism within a target. The build system doesn't seem to care about these. Modules are a Rust concept; cargo doesn't care about them.
+https://doc.rust-lang.org/cargo/reference/build-scripts.html
 
-Package vs target vs Module
----------------------------
+Put ``build.rs`` in the root of the package (alongside Cargo.toml). Define ``fn main()``. Tell cargo what you made by printing lines starting with ``cargo::`` (.e.g ``cargo::rerun-if-changed=src/foo.c``). Specify depencencies in ``[build-dependencies]``.
 
-When integrating with a third-party library, which to use? The simplest is module
+List of build-dependencies: https://crates.io/keywords/build-dependencies . E.g. CMake: https://crates.io/crates/cmake
 
-https://doc.rust-lang.org/cargo/reference/cargo-targets.html#configuring-a-target
+Can use ``std::process`` to invoke other programs. https://doc.rust-lang.org/std/process/index.html
 
-https://doc.rust-lang.org/rust-by-example/mod/split.html
+NOTE if you don't output errors (print ``cargo::error=``) then the build script will be considered successful.
 
-Calling CMake from Cargo
-------------------------
+Example
+-------
 
-TODO
+Assuming that your package looks like this::
+
+    package/
+        Config.toml
+        build.rs
+        SDL/     <-- git submodule add https://github.com/libsdl-org/SDL.git
+        src/
+            lib.rs
+
+Here's an example ``build.rs`` for running cmake:
+
+.. code-block:: rust
+    
+    // Get build directory from OUT_DIR env var given to us by Cargo
+    // Run process: cmake -B${OUT_DIR} -GNinja -DCMAKE_BUILD_TYPE=Debug SDL
+    // Run process: cmake --build ${OUT_DIR}
+    // Report cmake errors by printing cargo::error=
+
+    fn configure(
+        build_dir: &str,
+        source_dir: &str,
+        generator: &str,
+        config: &str,
+    ) -> std::io::Result<std::process::Output> {
+        // Run CMake using std::process::Command
+        return std::process::Command::new("cmake")
+            .arg(format!("-B{}", build_dir))
+            .arg(format!("-G{}", generator))
+            .arg(format!("-DCMAKE_BUILD_TYPE={}", config))
+            .arg(source_dir)
+            .output();
+    }
+
+    fn build(build_dir: &str) -> std::io::Result<std::process::Output> {
+        return std::process::Command::new("cmake")
+            .args(["--build", build_dir])
+            .output();
+    }
+
+    fn cargo_error(output: &std::process::Output) {
+        // Printing "cargo::error=foo" causes Cargo to halt.
+        println!("cargo::error=CMake failed");
+        println!(
+            "cargo::error=stdout: {}",
+            str::from_utf8(output.stdout.as_slice()).unwrap()
+        );
+        println!(
+            "cargo::error=stderr: {}",
+            str::from_utf8(output.stderr.as_slice()).unwrap()
+        );
+    }
+
+    fn main() {
+        // OUT_DIR is given to us by Cargo
+        let build_dir = std::env::var("OUT_DIR").unwrap();
+
+        let output = configure(&build_dir, "SDL", "Ninja", "Debug").unwrap();
+        if !output.status.success() {
+            cargo_error(&output);
+            return;
+        }
+
+        let output = build(&build_dir).unwrap();
+        if !output.status.success() {
+            cargo_error(&output);
+            return;
+        }
+    }
+
 
 Calling C code with Foreign Function Interface
-----------------------------------------------
+==============================================
 
 TODO https://doc.rust-lang.org/nomicon/ffi.html
