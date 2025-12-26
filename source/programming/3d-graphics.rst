@@ -54,24 +54,24 @@ The first thing you need is a device. This represents your app's use of the GPU.
 
 Vulkan and Direct3D 12 require you to know up front which graphics card you want to use. Vulkan calls these physical devices; Direct3D 12 calls them adapters. In a desktop tower, there's likely only 1 graphics card. However, some computers have multiple! For example, I have a laptop with both an integrated and dedicated GPU; I may want to use the integrated for applications that play video, or the dedicated GPU for video games. You might also want to choose a software renderer in niche scenarios.
 
-In Direct3D 12, you use DGXI to get the adapter, then call ``D3D12CreateDevice()``:
+In Direct3D 12, call ``D3D12CreateDevice()``. This requires an adapter, which you get from DXGI.
+
+.. tip::
+    
+    New to COM? here's a primer: it's IPC that dates back to early versions of Windows (think 3.1 or 95). It effectively adds objects to C. Each object implements one or more interfaces, each represented by a UUID. Being C, it has explicit ref counting via AddRef and Release.
+
+    ``ComPtr`` is a smart pointer that does the AddRef and Release for you. (Though it looks like it's been replaced with ``winrt::com_ptr``)
+
+    `IID_PPV_ARGS`_ is a quirk of how COM is implemented in C. It does better type checking. My guess is the name is short for "Interface IDenfifier and Pointer to Pointer to Void for ARGuments"
+
+.. _IID_PPV_ARGS: https://learn.microsoft.com/en-us/windows/win32/LearnWin32/com-coding-practices#the-iid_ppv_args-macro
 
 .. code-block:: c++
 
-    // If you're new to COM, here's a primer: it's IPC that dates back to early versions of Windows (think 3.1 or 95).
-    // It effectively adds objects to C. Each object implements one or more interfaces, each represented by a UUID.
-    // Being C, it has explicit ref counting via AddRef and Release.
-    //
-    // ComPtr is a smart pointer that does the AddRef and Release for you.
-    //
-    // IID_PPV_ARGS is a quirk of how COM is implemented in C. It does better type checking. Read more about it here:
-    // https://learn.microsoft.com/en-us/windows/win32/LearnWin32/com-coding-practices#the-iid_ppv_args-macro
-    // My guess is the name is short for "Interface IDenfifier and Pointer to Pointer to Void for ARGuments"
-    
-    // TODO: The new hotness is winrt::com_ptr.
     using Windows::WRL::ComPtr;
 
-    // featureLevel is the D3D version you want, e.g. D3D_FEATURE_LEVEL_12_0 for 12.0
+    // feature_level is the D3D version you want, e.g. D3D_FEATURE_LEVEL_12_0
+    // for 12.0
     ComPtr<ID3D12Device> MakeDevice(D3D_FEATURE_LEVEL feature_level) {
         // Need DXGI to list adapters.
         ComPtr<IDXGIFactory4> factory;
