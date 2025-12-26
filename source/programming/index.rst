@@ -15,6 +15,7 @@ I'm a full-time software developer so I have a lot to say when it comes to progr
    monorepo.rst
    objective-c.rst
    playdate.rst
+   powershell.rst
    rsync.rst
    sphinx.rst
    vulkan.rst
