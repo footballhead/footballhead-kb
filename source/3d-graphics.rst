@@ -318,6 +318,8 @@ Direct3D 12 fences are similar to Metal shared events, which are similar to Vulk
 
 Vulkan also has binary semaphores which control GPU dependencies between commands within a command buffer, and fences for more explicit CPU-GPU synchronization. You'll likely see these more in tutorials since timeline semaphores were an extension until Vulkan 1.2 (in 2020).
 
+Signaling Fences/shared events is done explicitly by function calls on the commnd queue. In Vulkan, timeline semaphores are included as part of VkSubmitInfo.
+
 Graphics vs Compute
 -------------------
 
