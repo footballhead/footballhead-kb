@@ -13,3 +13,4 @@ I play a lot of video games.
    vampyr.rst
    time-bandit.rst
    steam-deck.rst
+   minecraft.rst
