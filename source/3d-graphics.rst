@@ -24,7 +24,7 @@ DXGI                              MetalKit                            WSI
 Fence                             MTLSharedEvent                      timeline VkSemaphore
 CommandAllocator                  ???                                 VkCommandPool
 CommandList                       MTLCommandBuffer                    VkCommandBuffer
-CommandList::*()                  MTLRenderCommandEncoder             vkCmd*()
+CommandList::\*()                 MTLRenderCommandEncoder             vkCmd\*()
 CommandList::Reset()              MTLCommandQueue commandBuffer       vkBeginCommandBuffer()
 CommandList::Stop()               MTLRenderCommandEncoder endEncoding vkEndCommandBuffer()
 CommandQueue::ExecuteCommandLists MTLCommandBuffer commit             vkQueueSubmit()
@@ -314,7 +314,7 @@ Synchronization
 
 You can kind of think of the GPU as a thread. And it's hungry! Once you submit work to it, it goes off and asynchronously starts chewing on the data. That leaves the CPU free to do... whatever it wants. But it won't be long until the GPU needs more. That means that you need some way to know when the GPU needs to be fed more data.
 
-Direct3D 12 fences are similar to Metal sync events, which are similar to Vulkan has timeline semaphores.
+Direct3D 12 fences are similar to Metal shared events, which are similar to Vulkan has timeline semaphores.
 
 Vulkan also has binary semaphores which control GPU dependencies between commands within a command buffer, and fences for more explicit CPU-GPU synchronization. You'll likely see these more in tutorials since timeline semaphores were an extension until Vulkan 1.2 (in 2020).
 
