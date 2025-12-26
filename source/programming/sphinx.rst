@@ -1,6 +1,8 @@
 Sphinx
 ======
 
+Sphinx generates a website from text markdown.
+
 Why Sphinx?
 -----------
 
