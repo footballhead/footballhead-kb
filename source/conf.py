@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'footballhead-kb'
-copyright = '2023, Michael Hitchens'
+copyright = '2026, Michael Hitchens'
 author = 'Michael Hitchens'
 
 # -- General configuration ---------------------------------------------------
