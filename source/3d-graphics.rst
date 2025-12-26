@@ -13,6 +13,25 @@ Fortunately, at a high level, they all use similar concepts; learning one gives 
 
 (There's also WebGPU but I don't have a lot of experience with it so can't comment. And OpenGL is popular but works slightly differently.)
 
+Equivalences
+------------
+
+================================= =================================== ====================
+Direct3D 12                       Metal                               Vulkan
+================================= =================================== ====================
+Adapter                           ???                                 VkPhysicalDevice
+DXGI                              MetalKit                            WSI
+Fence                             MTLSharedEvent                      timeline VkSemaphore
+CommandAllocator                  ???                                 VkCommandPool
+CommandList                       MTLCommandBuffer                    VkCommandBuffer
+CommandList::*()                  MTLRenderCommandEncoder             vkCmd*()
+CommandList::Reset()              MTLCommandQueue commandBuffer       vkBeginCommandBuffer()
+CommandList::Stop()               MTLRenderCommandEncoder endEncoding vkEndCommandBuffer()
+CommandQueue::ExecuteCommandLists MTLCommandBuffer commit             vkQueueSubmit()
+RenderTarget                      ???                                 VkImage
+RenderTargetView (RTV)            MTLDrawable                         VkImageView
+================================= =================================== ====================
+
 Core versus Auxiliary
 ---------------------
 
