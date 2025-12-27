@@ -27,6 +27,7 @@ Build systems for a monorepo often have a prescribed workflow and one command to
 - Supports building for multiple architectures. E.g. one command to build both the host tools and the target binaries.
 - How do I elegantly integrate other build ecosystems? E.g. Cargo, Python
 - Does it support every platform? Bazel support on Windows is bad.
+- How do third party dependencies work? Is each folder allowed to bring their own? Or do you have one copy somewhere?
 
 If you look at other projects:
 
@@ -39,6 +40,7 @@ Some thoughts on CMake:
 
 - It supports targets via ``cmake --build <build_dir> --target <target>``... however, most people are taught to run ``cmake --build <build_dir>`` which compiles the ``all`` target which includes everything. You need to manually annotate things with ``EXCLUDE_FROM_ALL``.
 - Each target architecture is a separate cmake invocation and separate build dir. This means that, for example, your target artifacts can't depend on host build tools (without a lot of work...)
+- CMake parses all build files during configure. This is typically where people fetch their dependencies. However, since you're not building the ``all`` target, this code should ideally by deferred until the target is build (otherwise, cmake configure will take a long time and will likely fail because you're missing something that's unrelated to the target you want to build). CMake doesn't have a good way to specify this.
 
 Importing into git (via subtrees)
 ---------------------------------
