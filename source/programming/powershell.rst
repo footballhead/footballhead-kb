@@ -11,3 +11,7 @@ PowerShell looks like a great scripting language but is incredibly verbose for a
     * cmd: ``set``
     * sh: ``printenv``
     * PowerShell ``Get-Item env:``
+* Deleting a directory:
+    * cmd: ``rmdir /S /Q <dir>``
+    * sh: ``rm -rf <dir>``
+    * PowerShell: ``Remove-Item -Path <path> -Recurse``
