@@ -13,6 +13,65 @@ Making a new project::
 
 Build with ``cargo build``
 
+--------
+Language
+--------
+
+Error Handling via returns
+==========================
+
+Rust doesn't use exceptions. Instead, functions return any errors that were encountered via ``Result``. This is very similar to ``absl::Status`` and ``absl::StatusOr``:
+
+.. code-block:: c++
+
+    // Authenticates with the ATM. Returns !ok() if authentication failed.
+    absl::Status EnterPin(std::string_view pin) {
+        if (!IsUserPin(pin)) {
+            return absl::UnauthenticatedError("Incorrect PIN")
+        }
+        return absl::OkStatus();
+    }
+
+    // Deducts the requested dollar value from the account and returns a list of bills. Returns !ok() if the withdrawl could not happen.
+    absl::StatusOr<std::vector<Bill>> WithdrawFunds(int amount) {
+        if (amount <= 0) {
+            return absl::InvalidArgumentError("amount must be positive");
+        }
+        if (amount < GetCurrentBalance()) {
+            return absl::FailedPreconditionError("Not enough money in account");
+        }
+        DeductFunds(amount)
+        return FewestBillsForAmount(amount);
+    }
+
+The same in Rust:
+
+.. code-block:: rust
+
+    // Result has 2 generic parameters: T for success, E for error.
+    // Notice that T here is `()` (the unit type) which essentially means "there is no consumable type on success"
+    fn enter_pin(&str pin) -> Result<(), &'static str> {
+        if !is_user_pin(pin) {
+            return Err("Incorrect PIN");
+        }
+    }
+
+    fn withdraw_funds(int amount) -> Result<Vec<Bill>, &'static str> {
+        if amount <= 0 {
+            return Err("amount must be positive");
+        }
+        if amount < get_current_balance() {
+            return Err("Not enough money in account");
+        }
+        deduct_funds(amount);
+        return Ok(fewest_bills_for_amount(amount));
+    }
+
+Unit type: ``()`` is ``void``
+============================
+
+In Rust, a function that "returns nothing" or "takes nothing" or a generic that "has no type" uses ``()``. Most of the time you can treat this like void ``void`` but, as wikipedia points out, there are some subtle differences: https://en.wikipedia.org/wiki/Unit_type See the ``enter_pin()`` in the previous section.
+
 -----
 rustc
 -----
