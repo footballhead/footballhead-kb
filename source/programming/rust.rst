@@ -68,7 +68,7 @@ The same in Rust:
     }
 
 Unit type: ``()`` is ``void``
-============================
+=============================
 
 In Rust, a function that "returns nothing" or "takes nothing" or a generic that "has no type" uses ``()``. Most of the time you can treat this like void ``void`` but, as wikipedia points out, there are some subtle differences: https://en.wikipedia.org/wiki/Unit_type See the ``enter_pin()`` in the previous section.
 
@@ -96,7 +96,7 @@ In Rust, you get this instead:
         // This means that the Vec and String are never `Drop`'d!
     }
 
-You can return a Result though:
+You can return a Result though: https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html
 
 .. code-block:: rust
 
@@ -106,7 +106,25 @@ You can return a Result though:
     // You're saying "I don't know exactly what this thing is, but it at least adheres to this contract".
     //
     // std::error::Error is an interface for describing errors. Rust uses this to print the error.
-    fn main() -> Result<(), Box<dyn std::error::Error>>
+    fn main() -> Result<(), Box<dyn std::error::Error>> {
+        // This is useful since you can use ? and be lazy with error propagation
+        enter_pin("1234")?;
+        // ? is shorthand for:
+        // match enter_pin() {
+        //    Ok(_) => (),
+        //    Err(e) => return Err(e),
+        // }
+
+        let withdrawn_bills = withdraw_funds(100)?;
+        // ? is shorthand for:
+        // let withdrawn_bills = match withdraw_funds(00) {
+        //    Ok(bills) => bills,
+        //    Err(e) => return Err(e),
+        // }
+
+        // Notice that you have to be explicit with the success return type now
+        Ok(())
+    }
 
 You might be able to request rust to give you access to ``pub extern fn main(argc: i32, argv: *const *const u8) -> i32``. But I can't find a lot of info on it:
 
