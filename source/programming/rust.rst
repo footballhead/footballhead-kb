@@ -67,6 +67,49 @@ The same in Rust:
         return Ok(fewest_bills_for_amount(amount));
     }
 
+Composing Errors
+----------------
+
+Sometimes a function can return more than 1 error. But Result only has 1 error type. What do?
+
+While it doesn't have to, the expectation is that the error type implements ``std::error::Error``. To do this, it must also implement ``Debug`` and ``std::fmt::Display``. This means you need to do these things to define a new error:
+
+1. Define an ``enum FooError`` (variant) containing all your errors
+2. ``impl std::error::Error for FooError``
+3. ``#[derive(Debug)]`` for ``FooError``
+4. ``impl std::format::Display for FooError``; implement ``fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result``
+
+This author recommends defining a custom ``std::error::Error`` using ``enums`` (a.k.a variants) https://www.howtocodeit.com/guides/the-definitive-guide-to-rust-error-handling
+
+.. code-block::
+
+    // Implement Debug
+    #[derive(Debug)]
+    pub enum UmbrellaError {
+        // Put all your errors here
+        NulError(std::ffi::NulError),
+        SdlError(String),
+    }
+
+    // The end goal; requires implemting Debug and Display
+    impl std::error::Error for UmbrellaError {}
+
+    // Implement display
+    impl std::fmt::Display for UmbrellaError {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+            // Just call the fmt function on the errors
+            match self {
+                UmbrellaError::NulError(err) => write!(f, "{}", err),
+                UmbrellaError::SdlError(err) => write!(f, "{}", err),
+            }
+        }
+    }
+
+    // Use Result.map_err to make your error
+    let title = std::ffi::CString::new(title).map_err(|x| UmbrellaError::NulError(x))?;
+
+Though they don't recommend umbrella enums. Nor do they recommend an error enum for each function. The answer is somewhere in the middle
+
 Unit type: ``()`` is ``void``
 =============================
 
