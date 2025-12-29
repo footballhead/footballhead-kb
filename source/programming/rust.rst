@@ -72,6 +72,50 @@ Unit type: ``()`` is ``void``
 
 In Rust, a function that "returns nothing" or "takes nothing" or a generic that "has no type" uses ``()``. Most of the time you can treat this like void ``void`` but, as wikipedia points out, there are some subtle differences: https://en.wikipedia.org/wiki/Unit_type See the ``enter_pin()`` in the previous section.
 
+main is not main
+================
+
+In C you're used to:
+
+.. code-block:: c
+
+    int main(int argc, char** argv) {
+        return 0;
+    }
+
+In Rust, you get this instead:
+
+.. code-block:: rust
+
+    fn main() {
+        // Have to go out of the way to get args
+        let args: Vec<String> = std::env::args();
+        // Have to explicitly exit if you want to control exit code
+        std::process::exit(0);
+        // Causes immediate termination; nothing runs here!
+        // This means that the Vec and String are never `Drop`'d!
+    }
+
+You can return a Result though:
+
+.. code-block:: rust
+
+    // Box is scoped, heap allocated memory.
+    //
+    // dyn means "dynamic dispatch". It's basically like passing a pointer/reference to a pure virtual interface.
+    // You're saying "I don't know exactly what this thing is, but it at least adheres to this contract".
+    //
+    // std::error::Error is an interface for describing errors. Rust uses this to print the error.
+    fn main() -> Result<(), Box<dyn std::error::Error>>
+
+You might be able to request rust to give you access to ``pub extern fn main(argc: i32, argv: *const *const u8) -> i32``. But I can't find a lot of info on it:
+
+- https://doc.rust-lang.org/1.7.0/book/no-stdlib.html
+- https://docs.rust-embedded.org/book/intro/no-std.html
+- https://docs.rust-embedded.org/embedonomicon/smallest-no-std.html
+
+https://www.codestudy.net/blog/why-does-rust-not-have-a-return-value-in-the-main-function-and-how-to-return-a-value-anyway/
+
 -----
 rustc
 -----
