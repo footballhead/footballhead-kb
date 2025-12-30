@@ -7,6 +7,7 @@ I'm a full-time software developer so I have a lot to say when it comes to progr
    :maxdepth: 2
 
    3d-graphics.rst
+   bootstrapping.rst
    gif.rst
    jpexs-free-flash-decompiler.rst
    git-lfs.rst

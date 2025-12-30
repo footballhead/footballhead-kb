@@ -1,6 +1,8 @@
 gn
 ==
 
+Meta-build system used by Chromium, Fuschia, pigweed. Stands for "generate ninja".
+
 Build from https://gn.googlesource.com/gn/::
 
     git clone https://gn.googlesource.com/gn
@@ -21,16 +23,22 @@ Then you build::
 
     ninja -C out
 
+The generation phases parses the .gn and creates build.ninja files. This is where functions and variables are evaluated and expanded. Substitutions are turned into ninja variables.
+
+The build phase uses build.ninja to actually invoke the compiler. This is when substitutions are expanded (via ninja variables)
+
 Terminology
 -----------
 
 - dotfile: the ``.gn`` in your source root. Used by gn to find the build config
 - build config: describes the toolchain
-- toolchain: the linker, compiler ,etc
-- buildfile: Describes targets
+- toolchain: the linker, compiler, etc
+- buildfile: ``BUILD.gn``, describes targets
+- targets: how to turn inputs into outputs. gn is prescriptive about how, e.g. ``executable()`` uses the ``"cc"`` and ``"link"`` tools, etc.
 - function
 - label
 - variable
+- substitution: ``{{foo}}``, done when the command is executed. Expansion is differed until when ``ninja`` is run; ``gn`` can't access these values
 
 Setting up Minimal configuration
 --------------------------------
@@ -173,3 +181,40 @@ A minimal working C toolchain for MSVC::
             outputs = ["{{target_out_dir}}/{{source_name_part}}.obj"]
         }
     }
+
+Default vs all target
+---------------------
+
+``ninja -C out`` invokes the ``default`` target. You can change the default target by defining a target called ``"default"``
+
+``ninja -C out all`` invokes the ``all``. This is everything in your ``BUILD.gn`` and all of its dependencies.
+
+Example::
+
+    # The defalt target (`ninja -C out`). This makes it so that nothing happens by default
+    group("default") {}
+
+    # The `all` target includes `default` and `others`. This will cause `//foo` and `//bar` to be generated (and all its deps)
+    group("others") {
+        deps = ["//foo", "//bar"]
+    }
+
+    # If you have //baz/BUILD.gn, you can't build it since it's not listed here.
+
+Generating gn from CMake
+------------------------
+
+NOTE: This will be config dependent; will want to do this on every supported OS
+
+First, run the CMake build with the ``ninja`` generator.
+
+Second run ``ninja -t commands``. This will do a "dry run" of building which prints all commands. This will include linker and compiler output so you get:
+
+- linker flags
+- linker inputs
+- source files
+- compiler flags
+
+This should give you enough information to construct a gn file.
+
+TODO: Can this be scripted?
