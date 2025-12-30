@@ -218,3 +218,36 @@ Second run ``ninja -t commands``. This will do a "dry run" of building which pri
 This should give you enough information to construct a gn file.
 
 TODO: Can this be scripted?
+
+gn check
+--------
+
+gn check validates that source files are only including public headers, not private ones.
+
+This needs to be manually run::
+
+    gn check out
+
+Set up by defining ``check_targets`` in your ``.gn``. This is a ``list[str]``::
+
+    # Check everything. Can also specify only specific targets
+    check_targets = ["*"]
+
+Then, need to define public and private headers inside your targets. E.g.::
+
+    source_set("foo") {
+      # All dependent targets can #include "foo.h"
+      public = [ "foo.h" ]
+      # Trying to #include "bar.h" or "foo_private.h" will generate gn check failures
+      sources = [
+        "bar.c",
+        "bar.h",
+        "foo.c",
+        "foo_private.h",
+      ]
+    }
+
+Quirks:
+
+- If a file is in neither public nor sources then it is not checked.
+- Needs to be manually run. Add to your presubmit hook?
