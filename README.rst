@@ -28,6 +28,6 @@ Viewing::
 Deploying
 ---------
 
-Run ``upload.sh``::
+Run ``upload`` (requires ``rsync``)::
 
-    ./upload.sh foo@bar.com:kb
+    ./upload foo@bar.com:kb
