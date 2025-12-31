@@ -2,13 +2,19 @@
 
 set -eux
 
-if [ $# -ne 1 ]
+if [ $# -ne 3 ]
 then
-	echo Usage: $0 USER@SERVER:DIR/
+	echo Usage: $0 USER HOST DIR
+	echo rsync the HTML output to an SSH remote.
+	echo E.g. $0 admin example.com kb
 	exit 1
 fi
+
+USER="$1"
+HOST="$2"
+DIR="$3"
 
 # If we don't clean then the table of contents in the sidebar may be out-of-date.
 pipenv run make clean
 pipenv run make html
-rsync -r -P --exclude-from rsync-excludes.txt build/html/ "$1"
+rsync -r -P --exclude-from rsync-excludes.txt build/html/ "${USER}@${HOST}:${DIR}"

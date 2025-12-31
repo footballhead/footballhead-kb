@@ -30,4 +30,4 @@ Deploying
 
 Run ``upload`` (requires ``rsync``)::
 
-    ./upload foo@bar.com:kb
+    ./upload user example.com kb
