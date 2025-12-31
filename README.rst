@@ -21,12 +21,13 @@ Viewing::
 
     cd build/html
     python -m http.server 8000
+    # Open http://localhost:8000 in your browser
+
+(Alternatively, open ``build/html/index.html`` in a browser.)
 
 Deploying
 ---------
 
-Sometimes Sphinx doesn't generate the sitemap properly on all pages. I recommend cleaning before making and deploying::
+Run ``upload.sh``::
 
-    pipenv run make clean
-    pipenv run make html
-    rsync -r -P --exclude-from rsync-excludes.txt build/html DEST
+    ./upload.sh foo@bar.com:kb
