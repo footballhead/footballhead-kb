@@ -210,10 +210,10 @@ First, run the CMake build with the ``ninja`` generator.
 
 Second run ``ninja -t commands``. This will do a "dry run" of building which prints all commands. This will include linker and compiler output so you get:
 
-- linker flags
-- linker inputs
 - source files
 - compiler flags
+
+If you're missing anything, look at build.ninja in CMAKE_BINARY_DIR. For some reason, ``-t commands`` doesn't show the libraries needed to link.
 
 This should give you enough information to construct a gn file.
 
