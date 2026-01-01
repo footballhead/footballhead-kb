@@ -62,7 +62,7 @@ player.swf
 
 Download: http://classic.battle.net/player.swf
 
-.. tip:: New to Flash decompiling? Consider :doc:`programming/jpexs-free-flash-decompiler`
+.. tip:: New to Flash decompiling? Consider :doc:`../programming/jpexs-free-flash-decompiler`
 
 .. image:: player_swf.png
 

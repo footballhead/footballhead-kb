@@ -6,7 +6,7 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
 .. toctree::
    :maxdepth: 2
 
-   diablo.rst
+   diablo/index.rst
    other.rst
    programming/index.rst
    video-games.rst
