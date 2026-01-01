@@ -6,8 +6,47 @@ Sphinx generates a website from text markdown.
 Why Sphinx?
 -----------
 
-- Write markup, render HTML
+- Write markup (reStructuredText), render HTML
 - Python-based (my personal preference)
+
+Terminology
+-----------
+
+reStructuredText:
+
+-   Directive: generic block-level elements of `explicit markup <https://docutils.sourceforge.io/docs/user/rst/quickref.html#explicit-markup>`_. Designed as a `"a general-purpose extension mechanism" <https://docutils.sourceforge.io/docs/user/rst/quickref.html#directives>`_.
+
+    -   reStructuredText directives: https://docutils.sourceforge.io/docs/ref/rst/directives.html.
+    -   Sphinx directives: https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html
+    -   reStructuredText guide for creating directives: https://docutils.sourceforge.io/docs/howto/rst-directives.html
+    -   Sphinx guide for creating directives: https://www.sphinx-doc.org/en/master/development/tutorials/extending_build.html
+
+-   Role: inline elements of interpreted text.
+
+    - reStructuredText roles: https://docutils.sourceforge.io/docs/ref/rst/roles.html
+    - Sphinx guide for creating roles: https://www.sphinx-doc.org/en/master/development/tutorials/extending_syntax.html#tutorial-extending-syntax
+
+Easily create external link roles via sphinx.ext.extlinks
+---------------------------------------------------------
+
+Sometimes, you want to refer to subpages of reference documentation but don't want to spell out the entire link over and over. You can create custom roles that include the base link for you.
+
+#.  Open ``conf.py``.
+
+#.  Find the ``extentions`` list. Add ``sphinx.ext.extlinks``
+
+#.  Define `extlinks <https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html>`_
+
+    .. code-block:: python
+
+        extlinks = {'issue': ('https://github.com/sphinx-doc/sphinx/issues/%s',
+                        'issue %s')}
+
+#.  In your ``.rst``, use like::
+
+        :issue:`123`
+
+https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
 
 Making a new Sphinx Site
 ------------------------
