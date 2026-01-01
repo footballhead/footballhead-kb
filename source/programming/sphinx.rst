@@ -6,8 +6,8 @@ Sphinx generates a website from text markdown.
 Why Sphinx?
 -----------
 
-- Write markup (reStructuredText), render HTML
-- Python-based (my personal preference)
+-   Write markup (reStructuredText), render HTML
+-   Python-based (my personal preference)
 
 Terminology
 -----------
@@ -23,8 +23,8 @@ reStructuredText:
 
 -   Role: inline elements of interpreted text.
 
-    - reStructuredText roles: https://docutils.sourceforge.io/docs/ref/rst/roles.html
-    - Sphinx guide for creating roles: https://www.sphinx-doc.org/en/master/development/tutorials/extending_syntax.html#tutorial-extending-syntax
+    -   reStructuredText roles: https://docutils.sourceforge.io/docs/ref/rst/roles.html
+    -   Sphinx guide for creating roles: https://www.sphinx-doc.org/en/master/development/tutorials/extending_syntax.html#tutorial-extending-syntax
 
 Easily create external link roles via sphinx.ext.extlinks
 ---------------------------------------------------------
@@ -79,9 +79,9 @@ Using Read the Docs theme
 
 There are many built-in themes and many community themes. My personal go-to at the moment is the Read the Docs theme. I think it's the most clean, modern, and widely recognizable.
 
-#. ``pipenv install sphinx-rtd-theme``
-#. Open ``source/conf.py``, change ``html_theme`` to ``sphinx_rtd_theme``
-#. Rebuild: ``pipenv run make html``
+#.  ``pipenv install sphinx-rtd-theme``
+#.  Open ``source/conf.py``, change ``html_theme`` to ``sphinx_rtd_theme``
+#.  Rebuild: ``pipenv run make html``
 
 Picking a theme
 ---------------
