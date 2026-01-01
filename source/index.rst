@@ -9,4 +9,4 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
    diablo/index.rst
    other.rst
    programming/index.rst
-   video-games.rst
+   video-games/index.rst
