@@ -13,7 +13,7 @@ author = 'Michael Hitchens'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['sphinx.ext.extlinks']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -25,3 +25,11 @@ exclude_patterns = []
 
 html_theme = 'furo'
 html_static_path = ['_static']
+
+# -- sphinx.ext.extlinks -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
+
+extlinks = {
+    'sdl': ("https://wiki.libsdl.org/SDL3/%s", "%s"),
+    'vk': ("https://docs.vulkan.org/refpages/latest/refpages/source/%s.html", "%s"),
+}
