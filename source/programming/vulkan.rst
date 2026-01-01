@@ -127,3 +127,18 @@ High-level Steps
 .. _"vulkan-1.dll": https://github.com/KhronosGroup/Vulkan-Loader/blob/main/docs/LoaderApplicationInterface.md#windows-dynamic-library-usage
 .. _GetProcAddress: https://learn.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress
 .. _"vkGetInstanceProcAddr": https://github.com/KhronosGroup/Vulkan-Loader/blob/main/docs/LoaderApplicationInterface.md#indirectly-linking-to-the-loader
+
+--------
+MoltenVK
+--------
+
+Apple only supports Metal. So MoltenVK rose as a compatability layer to run Vulkan on Metal.
+
+If you're following tutorials, you're likely going to encounter :vk:`vkCreateInstance` failing with this error:
+
+    vkCreateInstance: Found drivers that contain devices which support the portability subset, but the instance does not enumerate portability drivers! Applications that wish to enumerate portability drivers must set the VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR bit in the VkInstanceCreateInfo flags and enable the VK_KHR_portability_enumeration instance extension.
+
+Do what it says. In :vk:`VkInstanceCreateInfo`:
+
+1. Add :vk:`VK_KHR_portability_enumeration` to ppEnabledExtensionNames (and update enabledExtensionCount appropriately)
+2. Set flags to VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR
