@@ -60,28 +60,34 @@ High-level Steps
             PFN_vkCreateInstance vkCreateInstance =
                 vkGetInstanceProcAddr(VK_NULL_HANDLE, "vkCreateInstance");
 
-#.  (WSI) Depending on your library, you might need to create a window to get instance extensions. E.g. :sdl:`SDL_Vulkan_GetInstanceExtensions` requires an :sdl:`SDL_Window`. If you know your platform already, you might be able to defer this.
-
-    .. note::
-        
-        With SDL, :sdl:`SDL_CreateWindow` with :sdl:`SDL_WINDOW_VULKAN` will call :sdl:`SDL_Vulkan_LoadLibrary`. If you want to call it (for whatever reason) then make sure to create the window after loading the vulkan lib.
-
 #.  Collect layers and extensions
 
-    #.  (Optional) Add validation layer
-    #.  Extensions should include WSI like surface. If you're using a library like SDL or GLFW, there's a dedicated function for this. In SDL, it's :sdl:`SDL_Vulkan_GetInstanceExtensions`.
+    #.  (Optional) Add validation layer :vk:`VK_LAYER_KHRONOS_validation` for better debugging.
+    #.  Extensions should include at least the platform-specific surface extension for WSI. If you're using a library like SDL or GLFW, there's a dedicated function for this.
+    
+        With SDL, call :sdl:`SDL_Vulkan_GetInstanceExtensions`.
+
+        On Windows, include :vk:`VK_KHR_win32_surface`.
 
         .. note::
             
             On macOS, include the :vk:`VK_KHR_portability_enumeration` extension in order to use MoltenVK
 
-#.  Create an instance and load instance pointers.
+#.  Create a :vk:`VkInstance` and load instance pointers.
 
-    (optional) Add debug utils messenger create info to :vk:`VkInstanceCreateInfo` pNext for more debug info.
+    (Optional) Add :vk:`VkDebugUtilsMessengerCreateInfoEXT` to :vk:`VkInstanceCreateInfo` pNext for more debug info.
 
 #.  (Optional) Create a :vk:`VkDebugUtilsMessengerEXT` to get validation layer errors
 
-#.  (Detour) Create WSI surface. This isn't necessary if you're headless but is something you likely want to do and can do now that you have an instance. This can be deferred until right before the rendering loop.
+#.  Create WSI surface. This only requires a :vk:`VkInstance` (and a window); we need supported sizes, formats, and whatnot to create the swapchain later.
+
+    For SDL, call :sdl:`SDL_Vulkan_CreateSurface`.
+
+    .. note::
+
+        Normally, the :vk:`VkSurface` is freed with :vk:`vkDestroySurfaceKHR`. However, with SDL, you need to call :sdl:`SDL_Vulkan_DestroySurface` instead.
+
+    For Windows, call :vk:`vkCreateWin32SurfaceKHR` 
 
 .. code:: c
 
@@ -93,7 +99,7 @@ High-level Steps
         vkGetInstanceProcAddr(/*instance=*/VK_NULL_HANDLE, "vkCreateInstance");
 
     // Collect layers and extensions
-    const char* layers[] ={ "VK_LAYER_KHRONOS_validation" }; // Optional
+    const char* layers[] = { "VK_LAYER_KHRONOS_validation" }; // Optional
     const char* extensions[] = {
         "VK_KHR_win32_surface", // WSI, Win32
         "VK_EXT_debug_utils" // for debug utils messenger (validation layer)
