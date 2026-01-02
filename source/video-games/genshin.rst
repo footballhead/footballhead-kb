@@ -2,7 +2,7 @@
 Genshin Impact
 ==============
 
-Yes, I play Genshin Impact. No, I will be taking not be taking further questions at this time.
+Yes, I played Genshin Impact. No, I will not be taking further questions.
 
 .. toctree::
     genshin-rv.rst

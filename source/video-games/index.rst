@@ -14,3 +14,4 @@ I play a lot of video games.
    time-bandit.rst
    steam-deck.rst
    minecraft.rst
+   zzz.rst
