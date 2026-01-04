@@ -5,21 +5,21 @@ Ice, Defense
 
 Summary:
 
--   +5% Max HP to squad (in Ether Veil)
--   +700 ATK to squad (opening Ether Veil)
--   +40% DMG to squad (at "initial" 27000 Max HP, in Ether Veil)
--   Consumes fewer assist points on perfect assist (Defence Agent)
+-   +700 ATK
+-   +40% DMG (at 27000 initial Max HP)
+-   +5% Max HP (Ether Veil)
+-   Consumes fewer Assist Points on Perfect Assist (Defence Agent)
 -   Ends current Ether Veil before opening again (synergizes with Ye Shunguang better than Lucia)
 -   Source of Quick Assists for Astral Voice
 
-.. note:: Zhao's Core Skill Additional Ability caps at 27000 Max HP. This is the number on the Agent Base Stats page.
+.. note:: Need 27000 initial Max HP for full Additional Ability effect.
 
-    -   9117 HP at Level 60 with Core Skill A/C/E.
-    -   2200 HP from Drive Disk Slot 1.
+    -   9117 at Level 60 with Core F
+    -   2200 from Drive Disk Slot 1
     -   +25% from Original Transformpher W-Engine main stat
-    -   +30% from level 15 S-rank Drive Disk slot 4
-    -   +30% from level 15 S-rank Drive Disk slot 5
-    -   +30% from level 15 S-rank Drive Disk slot 6
+    -   +30% from slot 4
+    -   +30% from slot 5
+    -   +30% from slot 6
     -   +10% from Yunkui Tales 2PC
 
     That's 25463.25 HP. Since an HP% roll is +3% HP (339.51 HP), the remaining 1536.75 can be achieved with around 4.5 HP% substat rolls.

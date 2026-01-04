@@ -7,16 +7,16 @@ Summary:
 
 -   15% Ice/Fire RES Shred for 30s
 -   +3s to Stun duration
--   +75% Ice/Fire DMG
-+   +30% CRIT DMG (King of the Summit 4PC)
+-   +75% Ice/Fire DMG (at 270 Impact; Additional Ability)
+-   +30% CRIT DMG (King of the Summit 4PC)
 -   +30% CRIT DMG for Fire/Ice DMG (Blazing Laurel S1)
 -   Decent personal damage
 
-.. note:: Need 270 Impact to maximize Additional Ability
+.. note:: Need 270 Impact for full Additional Ability effect.
 
     Compared to other stats, there are few sources of Impact. Out of combat:
 
-    -   137 from Lighter Level 60, Core F
+    -   137 at Level 60, Core F
     -   +18% from S-Rank W-Engine main stat
     -   +6% from Shockstar Disco 2PC
     -   +18% from Impact Slot 6:
@@ -29,11 +29,6 @@ Summary:
     -   +25% from S1 Blazing Laurel W-Engine effect
 
     137 + 97% = 269 (``floor(137 * (1 + 0.18 + 0.18 + 0.06 + 0.2 + 0.25)) = floor(269.89) = 269``)
-
-    Other options:
-
-    -   S5 Hellfire Gears (Koleda's weapon): +40%
-    -   S1 Ice-Jade Teapot (Qingyi's Weapon): +21%
 
 Core Passive:
 
