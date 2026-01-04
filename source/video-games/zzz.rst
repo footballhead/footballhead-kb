@@ -248,27 +248,36 @@ Summary:
 
 -   +5% Max HP to squad (in Ether Veil)
 -   +700 ATK to squad (opening Ether Veil)
--   +40% DMG to squad (at 27000 Max HP, in Ether Veil)
+-   +40% DMG to squad (at "initial" 27000 Max HP, in Ether Veil)
 -   Consumes fewer assist points on perfect assist (Defence Agent)
 -   Ends current Ether Veil before opening again (synergizes with Ye Shunguang better than Lucia)
 -   Source of Quick Assists for Astral Voice
 
-.. note:: Zhao's Core Skill Additional Ability caps at 27000 Max HP. Aim for 23300 on the Agent Base Stats screen.
+.. note:: "Initial" Max HP includes:
 
-    Zhao has 9117 HP at Level 60. She gets 2200 from Drive Disk Slot 1. Either Veil gives +5%. Core Skill A/C/E gives +18% total.
+    -   Agent stats and core
+    -   Drive Disk 2PC
+    -   Drive Disk main and substats
+    -   W-Engine main stats
 
-    Max HP% from gear:
+    If it affects the Agent Base Stats page, then it couns as the "initial" value.
 
+.. note:: Zhao's Core Skill Additional Ability caps at 27000 Max HP. This is the number on the Agent Base Stats page.
+
+    -   9117 HP at Level 60 with Core Skill A/C/E.
+    -   2200 HP from Drive Disk Slot 1.
     -   +25% from Original Transformpher W-Engine main stat
-    -   +12.5 from Original Transformpher W-Engine effect
     -   +30% from level 15 S-rank Drive Disk slot 4
     -   +30% from level 15 S-rank Drive Disk slot 5
+    -   +30% from level 15 S-rank Drive Disk slot 6
+    -   +10% from Yunkui Tales 2PC
 
-    11317 + 120.5% is 24953.985 HP. To reach 27000, just need ~6 rolls of HP% substats.
+    That's 25463.25 HP. Since an HP% roll is +3% HP (339.51 HP), the remaining 1536.75 can be achieved with around 4.5 HP% substat rolls.
 
-    Since the W-Engine effect and Ether Veil are not shown on the Agent Base Stats screen, shoot for 23300.
+    -   Can replace Yunkui Tales with 2PC Energy Regen if you make up the 3.33 HP% substat rolls
+    -   Can replace slot 6 with Energy Regen if you make up the 10 HP% substat rolls. Note that an ER Slot 6 can roll HP% up to 6 times; the other 4 need to be covered by others
 
-    Use Energy Regen slot 6, Also, prefer a 2PC that gives energy regen since it can't be rolled; you might be tempted to use Yunkui Tale 2PC (+10% HP) but that can be made up with 3.33 rolls of +HP%. Since each EX Special Attack gives 20 Frostbite points, this means you do more damage, open Ether Veil more often (and give Ye Shunguang more swords)
+    To use ER 2PC and slot 6 and hit 27000 HP, you need ~19 rolls of HP%; this averages to around 5 rolls per piece (since you can't roll HP% on slot 4 or 5). This is incredibly high so good luck!
 
 Core skill:
 
@@ -289,7 +298,6 @@ Sets:
 -   4PC Astral Voice: +ATK% from Quick Assist
 -   4PC : +ATK% from Defensive Assists
 -   2PC : + Energy regen
-
 
 Ye Shunguang (2.5) - Honed Edge (Physical), Attack
 ==================================================
@@ -340,32 +348,34 @@ Drive Disks:
 Lucia - Ether, Support
 ======================
 
+Ether, Support (Rupture)
+
 Summary:
 
 -   Aftershock every 8s
 -   +5% Max HP from Ether Veil
 -   +20% DMG (skill upgrade or after shock)
 -   +30% CRIT DMG
--   +900 Sheer Force (at 24000 Max HP)
+-   +900 Sheer Force (at "initial" 24000 Max HP)
 
-.. note:: Darkbreaker caps out at 24000 Max HP. Aim for 22400 HP (without Dreamlit Hearth) or 20800 HP (with Dreamlit Hearth) on the Agent Base Stats screen.
-
-    Level 60 Lucia has 8477 HP. Drive Disk slot 1 gives 2200 HP. Ether Veil gives +5%.
+.. note:: Darkbreaker caps out at 24000 initial Max HP.
 
     HP% from gear:
 
+    -   8477 HP at Level 60
+    -   2200 HP from Drive Disk slot 1
     -   +30% from Drive Disk slot 4
     -   +30% from Drive Disk slot 5
     -   +30% from Drive Disk slot 6
     -   +10% from Yunkui Tales 2PC set effect
  
-    10677 + 105% HP is 21887.85. The remaining 2112.15 HP can be made up with 7 HP% substat rolls.
+    That's 10677 + 100% = 21354. Since an HP% roll (+3% HP) is 320.32 HP, the remaining 2646 HP can be made up with 8.26 HP% substat rolls.
 
     After that, you can focus on CRIT Rate/CRIT DMG to make her aftershocks hit harder. With Dreamlit Hearth (her signature W-Engine which gives +45% HP at P1), consider a CRIT Rate slot 6.
 
-    You Base Stats should read roughly 22400 HP (since the +15% from Ether Veil and Yuikui Tales 2PC only show in combat). With Dreamlit Hearth (another +15% only shown in combat), aim for 20800 HP.
+    Since Yunkui Tales 2PC is worth 3.33 HP% substat rolls, you could consider another 2PC set like CRIT Rate; this all depends on the substats that you roll.
 
-    Since Yunkui Tales 2PC with worth 3.33 HP% substat rolls, you could consider another 2PC set like CRIT Rate.
+    Lucia doesn't need energy regen slot 6 or 2PC. It takes 24s to use all her Dream Points with aftershocks; if you use an energy regen F2P weapon or Dreamlit Hearth, you should get enough energy in that time.
 
 Core Skill Core Passive:
 
@@ -386,3 +396,48 @@ Playstyle:
 -   When not in the dream state, use her EX (+60 Dream Points) followed by Basic Attack (+40 Dream Points) to reach 100 Dream Points and enter Dream state
 -   When in dream state, let her do her thing. It doesn't make a lot of sense to sit on her to drain Dream Points faster opportunity cost dictates that you should probably be attacking with another character
 -   Use EX Special Attack 
+
+Yuzuha
+======
+
+Physical, Support (Anomaly)
+
+Summary:
+
+-   1200 ATK
+-   +15% DMG
+-   +20% Anomaly Buildup Rate
+-   +20% Anomaly DMG
+-   +20% Disorder DMG
+-   Aftershock every 8s
+-   Incrased Anomaly application via Sugarburst Sparkles (ticks every 1s, has +25% buildup)
+-   Coordinated attacks from Tanuki
+-   Time-based Assist Followup for a lot more damage
+-   Choice of show or long EX Special Attack based on 
+-   Ultimate gives energy to squad
+
+.. note:: Core Passive caps at 3000 ATK. Since Yuzuha is an anomaly support, the more the better!
+
+.. note:: Core Skill Additional Ability caps at 200 AM. The best you can do F2P is 171.
+
+    AM is not a rollable substat. It only comes from:
+
+    -   Agent stats/core skill. At Level 60 with Core A/C/E, Yuzuha has 124.
+    -   Her signature W-Engine: 30/34/39/43/48 AM at P1/2/3/4/5
+    -   2PC Phaethon Melody: +8%
+    -   Drive Disk slot 6: 30%
+
+    Without her W-Engine, you can only hit 171. With her signture W-Engine at P1, this configuration hits 212 AM.
+
+Core Skill Core Passive:
+
+-   1200 ATK for 40s from EX Special/Ultimate
+-   +15% DMG for 40s from EX Special/Ultimate
+
+Core Skill Additional Ability (Anomaly, Spook Shack):
+
+-   +20% Anomaly Buildup Rate (caps at 200 AM)
+-   +20% Anomaly DMG (caps at 200 AM)
+-   +20% Disorder DMG (caps at 200 AM)
+
+.. note:: As F2P, since you can only hit 171 AM, these are capped at 17.2%
