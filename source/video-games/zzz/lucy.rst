@@ -5,7 +5,7 @@ Fire, Support
 
 Summary:
 
--   +600 ATK (at 1923 ATK) (200 Sheer Force)
+-   +600 ATK (at 1923 ATK) (180 Sheer Force)
 -   +10% CRIT DMG
 -   +20% ATK (Kaboom the Cannon S5)
 -   +18% DMG (Moonlit Lullaby 4PC)
@@ -34,5 +34,5 @@ W-Engines:
 
 Drive Disks:
 
--   See Disk Drives page. May not provide enough Quick Assists to consistenyl hit max Astral Voice stacks.
+-   See Disk Drives page. May not provide enough Quick Assists to consistently hit max Astral Voice stacks.
 -   2PC Puffer Electro: +8% PEN Ratio (Lucy personal damage)

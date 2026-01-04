@@ -24,7 +24,7 @@ Summary:
     -   +30% from slot 6
     -   +10% from Yunkui Tales 2PC
  
-    That's 10677 + 100% = 21354. Since an HP% roll is 320.32 HP, the remaining 2646 HP can be made up with 8.26 rools of HP% substat. This is ~3 rolls per Disk Drive (assuming HP% slot 4/5/6).
+    That's 10677 + 100% = 21354. Since an HP% roll is 320.32 HP, the remaining 2646 HP can be made up with 8.26 rolls of HP% substat. This is ~3 rolls per Disk Drive (assuming HP% slot 4/5/6).
 
     After that, you can focus on CRIT Rate/CRIT DMG to make her aftershocks hit harder. Dreamlit Hearth gives +30% Max HP (the same as a Drive Disk) so you can substitute slot 6 for CRIT Rate.
 

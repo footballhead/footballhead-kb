@@ -4,7 +4,7 @@ Drive Disks
 The maximum number of rolls an artifact can have is 9
 
 -   S rank artifacts start with either 3 or 4 rolls.
--   Since a new stat rools at levels 3/6/9/12/15, that means you get 5 rolls.
+-   Since a new stat rolls at levels 3/6/9/12/15, that means you get 5 rolls.
 
 Some stats are better than others. One rule of thumb to simplify analysis is to subdivide rolls into:
 
