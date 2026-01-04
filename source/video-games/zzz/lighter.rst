@@ -8,7 +8,32 @@ Summary:
 -   15% Ice/Fire RES Shred for 30s
 -   +3s to Stun duration
 -   +75% Ice/Fire DMG
--   
++   +30% CRIT DMG (King of the Summit 4PC)
+-   +30% CRIT DMG for Fire/Ice DMG (Blazing Laurel S1)
+-   Decent personal damage
+
+.. note:: Need 270 Impact to maximize Additional Ability
+
+    Compared to other stats, there are few sources of Impact. Out of combat:
+
+    -   137 from Lighter Level 60, Core F
+    -   +18% from S-Rank W-Engine main stat
+    -   +6% from Shockstar Disco 2PC
+    -   +18% from Impact Slot 6:
+
+    With 137 + 42%, Agent Base Stats page should show ``194`` (``floor(137 * (1 + 0.18 + 0.18 + 0.06)) = floor(194.54) = 194``). This is currently his max Impact out of combat.
+
+    In combat:
+
+    -   +20% from Core F Passive Morale consumption
+    -   +25% from S1 Blazing Laurel W-Engine effect
+
+    137 + 97% = 269 (``floor(137 * (1 + 0.18 + 0.18 + 0.06 + 0.2 + 0.25)) = floor(269.89) = 269``)
+
+    Other options:
+
+    -   S5 Hellfire Gears (Koleda's weapon): +40%
+    -   S1 Ice-Jade Teapot (Qingyi's Weapon): +21%
 
 Core Passive:
 
@@ -18,36 +43,20 @@ Core Passive:
 Additional Ability (Attack, Sons of Calydon)
 
 -   +25% Ice/Fire DMG 
--   +50% Ice/Fire DMG (270 impact)
-
-.. note:: Need 270 Impact to maximize Additional Ability
-
-    There are few sources of Impact (since it's not a Drive Disk substat). Out of combat:
-
-    -   Lighter Level 60, Core F: 137 Impact
-    -   W-Engine main stat: +18% with S-Rank
-    -   Drive Disk 2PC Set effects: +6% with Shockstar Disco
-    -   Impact Drive Disk Slot 6: +18%
-
-    With 137 + 42%, Agent Base Stats page should show ``194`` (``floor(137 * (1 + 0.18 + 0.18 + 0.06)) = floor(194.54) = 194``). This is currently his max Impact out of combat.
-
-    In combat:
-
-    -   Core F Passive morale consumption: +20%
-    -   W-Engine effect: +25% from Blazing Laurel (S1)
-
-    137 + 97% = 269 (``floor(137 * (1 + 0.18 + 0.18 + 0.06 + 0.2 + 0.25)) = floor(269.89) = 269``)
-
-    Other options:
-
-    -   Hellfire Gears: Gives +40% at S5 (at the cost of the other Blazing Laurel's other effectss)
-    -   Qinyi's Weapon
+-   +50% Ice/Fire DMG (270 Impact)
 
 .. note:: "Every 10 Impact over 170 increases Elation stack effect by 0.25%" can be modeled as:
 
     ``+75% Fire/Ice DMG = 20 Elation stacks * (1.25% base + 0.25% * max(floor((x - 170) / 10), 0)) Fire/Ice DMG per stack`` where ``x`` is Impact.
 
     Solve for ``x``.
+
+Drive Disks:
+
+-   4PC King of the Summit: Should be the default since it gives +30% CRIT DMG
+-   2PC Shockstar Disco: Only source of Impact%. 6% of 137 is 8.22. This is unfortunately <10% but could still help you to hit the next breakpoint on the Additional Ability.
+-   2PC ER: More EX Special Attacks (source of Daze)
+-   2PC Woodpecker Electro: If you need the 8% CRIT Rate to hit the King of the Summit 50% CRIT Rate threshold.
 
 Synergies:
 
