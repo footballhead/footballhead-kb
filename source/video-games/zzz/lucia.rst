@@ -5,7 +5,7 @@ Ether, Support (Rupture)
 
 Summary:
 
--   Aftershock every 8s
+-   Aftershock every 8s. Each Aftershock is randomly either a Basic, Special, or Assist skill.
 -   +5% Max HP from Ether Veil
 -   +20% DMG (skill upgrade or after shock)
 -   +30% CRIT DMG
@@ -22,11 +22,11 @@ Summary:
     -   +30% from Drive Disk slot 6
     -   +10% from Yunkui Tales 2PC set effect
  
-    That's 10677 + 100% = 21354. Since an HP% roll (+3% HP) is 320.32 HP, the remaining 2646 HP can be made up with 8.26 HP% substat rolls.
+    That's 10677 + 100% = 21354. Since an HP% roll is 320.32 HP, the remaining 2646 HP can be made up with 8.26 HP% substat rolls.
 
-    After that, you can focus on CRIT Rate/CRIT DMG to make her aftershocks hit harder. With Dreamlit Hearth (her signature W-Engine which gives +45% HP at P1), consider a CRIT Rate slot 6.
+    After that, you can focus on CRIT Rate/CRIT DMG to make her aftershocks hit harder. With Dreamlit Hearth (her signature W-Engine, +30% initial Max HP), consider a CRIT Rate slot 6.
 
-    Since Yunkui Tales 2PC is worth 3.33 HP% substat rolls, you could consider another 2PC set like CRIT Rate; this all depends on the substats that you roll.
+    Since Yunkui Tales 2PC is worth 3.33 HP% substat rolls, you could consider another 2PC set like CRIT Rate (depending on substats).
 
     Lucia doesn't need energy regen slot 6 or 2PC. It takes 24s to use all her Dream Points with aftershocks; if you use an energy regen F2P weapon or Dreamlit Hearth, you should get enough energy in that time.
 
@@ -43,6 +43,11 @@ Core Skill Additional Ability (Rupture, Stun):
 Special Attack:
 
 -   +900 Sheer Force (24000 Max HP)
+
+Weapons:
+
+-   Dreamlit Hearth: Signature S-Rank. HP% main stat with other bonuses
+-   Kaboom the Canon: Energy Regen main stat, ATK% effect
 
 Playstyle:
 

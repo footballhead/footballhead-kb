@@ -12,15 +12,6 @@ Summary:
 -   Ends current Ether Veil before opening again (synergizes with Ye Shunguang better than Lucia)
 -   Source of Quick Assists for Astral Voice
 
-.. note:: "Initial" Max HP includes:
-
-    -   Agent stats and core
-    -   Drive Disk 2PC
-    -   Drive Disk main and substats
-    -   W-Engine main stats
-
-    If it affects the Agent Base Stats page, then it couns as the "initial" value.
-
 .. note:: Zhao's Core Skill Additional Ability caps at 27000 Max HP. This is the number on the Agent Base Stats page.
 
     -   9117 HP at Level 60 with Core Skill A/C/E.

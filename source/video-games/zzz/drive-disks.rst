@@ -153,3 +153,40 @@ Rupture
 See Attack but replace ATK% with HP%
 
 Since Attack is converted to Sheer Force, maybe ATK% is a half stat?
+
+Support
+-------
+
+Supports can be kind of flexible, depending on what they can do and who else is in the team:
+
+-   4PC Astral Voice: +24% DMG for 15s (requires Quick Assists)
+
+    Since this requires frequent Quick Assists, not all characters max out the effect. This is only +8/16% DMG at 1/2 stacks
+
+    The 2PC effect is +10% ATK, which helps agents like Astra hit her breakpoints
+
+-   4PC Moonlit Lullaby: +18% DMG for 25s (requires EX Special Attack or Ultimate)
+
+    This is a much easier condition to satisfy but the payoff is lower. The 2PC effect is Energy Regen as well, which doesn't help all agents equally as much.
+
+-   4PC Swing Jazz: +15% DMG for 12s (requires Chain Attack or Ultimate)
+
+    Compared to Astral Voice: less DMG% at 3 stacks, about equal at 2 stacks, better at 1 stack. Similar(ish) uptimes. However, needs time to come online (need enough Decibels for Ultimate, enough Impact to Stun enemies)
+
+    Compared to Moonlit Lullaby: less DMG%, shorter duration, more restrictive
+
+    Compared to Proto Punk: 2PC ER is better for agents using the set.
+
+-   4PC Proto Punk: +15% DMG for 10s (requires Defensive or Evasive Assist)
+
+    Can be better than Astral voice if you don't get enough Quick Assists or if someone else is already using Astral Voice.
+
+    Can be better than Moonlit Lullaby if someone is already using it.
+
+    Requires Assist Points to maintain. Depending on the boss and team composition, you may only get 3 per stun
+
+    2PC gives +15% shield effect, which is worthless outside a few characters.
+
+-   4PC Freedom Blues: -20% Anomaly Buildup RES for 8s (based on equipper's attribute, requires EX Special)
+
+    Niche Anomaly set.

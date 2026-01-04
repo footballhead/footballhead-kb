@@ -19,7 +19,7 @@ Summary:
     -   +30% from Core Skill Passive Effect at F
     -   +20% from 4PC White Water Ballad Drive Disk set effect
 
-    This means you only need 13 CRIT Rate substats to reach 100% CRIT Rate! (Average of around 2 substats per drive disk)
+    This means you only need 13 CRIT Rate substats to reach 100% CRIT Rate! (Average of ~2 substats per drive disk, assuming CRIT DMG slot 6)
 
     (Since Core Skill Passive Effect and White Water Ballad are not shown on the Base Stats screen, imagine that 50% is actually 100%. Therefore, don't got over 50%!)
 
