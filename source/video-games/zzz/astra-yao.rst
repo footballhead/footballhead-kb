@@ -5,9 +5,11 @@ Ether, Support
 
 Summary:
 
--   +1200 ATK (at 3429 initial ATK)
+-   +1200 ATK (at 3429 initial ATK) (360 Sheer Force)
 -   +20% DMG
 -   +25% CRIT DMG
+-   +20% ATK (Kaboom the Cannon S5)
+-   +24% DMG (Astral Voice 4PC)
 -   Lots of Quick Assists
 -   Ultimate turns the next Quick Assist into a Chain Attack, up to 2 times
 -   Ultimate heals
@@ -17,7 +19,7 @@ Summary:
 
     -   715 at level 60 with Core F
     -   624 from Kaboom the Cannon
-    -   316 from Drive Disk slot 2
+    -   316 from slot 2
     -   +10% from Astral Voice 2PC
     -   +10% from Hormone Punk 2PC
     -   +30% from slot 4

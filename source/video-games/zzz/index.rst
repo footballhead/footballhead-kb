@@ -52,3 +52,7 @@ Glossary
 -   Daze
 
 -   Impact
+
+-   Sheer Force: Stat that determines Rupture agent Sheer DMG. 30% of Agent ATK is converted to Sheer Force.
+
+-   Sheer DMG: Damage done by Rupture agents. Ignores enemy defense, making Rupture agents more effective against enemies with inherently high DEF or with Miasmic Shield. This makes PEN and DEF shred (e.g. Nicole) useless. Calculated based on Sheer Force. Current Rupture agents: Yixuan (Auric Ink, a.k.a Ether), Yidhari (Ice), Manato (Fire), Banyu (Fire)

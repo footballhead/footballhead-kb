@@ -12,6 +12,7 @@ Playable avatars.
     yuzuha.rst
     astra-yao.rst
     lighter.rst
+    lucy.rst
 
 All calcs assume P5 for A-Rank W-Engine, P1 for S-Rank W-Engines, level 15 S-Rank Drive Disks.
 
