@@ -19,7 +19,7 @@ Summary:
     -   137 at Level 60, Core F
     -   +18% from S-Rank W-Engine main stat
     -   +6% from Shockstar Disco 2PC
-    -   +18% from Impact Slot 6:
+    -   +18% from Slot 6:
 
     With 137 + 42%, Agent Base Stats page should show ``194`` (``floor(137 * (1 + 0.18 + 0.18 + 0.06)) = floor(194.54) = 194``). This is currently his max Impact out of combat.
 

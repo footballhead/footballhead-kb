@@ -7,6 +7,7 @@ Summary:
 
 -   +30% DMG
 -   +30% CRIT DMG (King of the Summit 4PC)
+-   Requires less field time compared to other Stun agents
 -   While Pulchra has some supportive utility, she really just deals damage and Daze. Most of her mindscapes improve her personal damage.
 -   PITA to play
 -   Evasive Assist makes bosses tougher

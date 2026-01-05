@@ -33,15 +33,25 @@ Glossary
 
 -   Basic Attack
 
--   Dodge Counter
+-   Dodge: Attempt to evade enemy attack. Start with 2 dodges; dodges regenerate over time. Successful dodges trigger Perfect Dodge.
 
--   Perfect Assist: Pressing Basic Attack after Dodge Counter
+-   Perfect Dodge: Use Dodge at the right time in response to red/yellow flash. Ignores enemy attack. Press Bassic Attack to perform Dodge Counter
 
--   Quick Assist
+-   Dodge Counter: Press Basic attack right after Perfect Dodge.
 
--   Defensive Assist
+-   Perfect Assist: Use Assist at the right time during a yellow flash. One of two effects based on Agent: Defensive and Evasive. Requires Assist Points. Consumes 1 or 2 depending on enemy attack.
 
--   Evasive Assist
+-   Assist Points: Required to perform Perfect Assist. Starts at 6. Gain 3 when enemy is stunned. Some agents may consume as part of their kit (e.g. Pulchra, Caesar). Yellow flashes become red if insufficient Assist Points.
+
+-   Quick Assist: Use Assist when a Quick Assist prompt is a active. Prompts when agent is launched. Some Agents trigger prompt as part of their kit (e.g. Astra).
+
+-   Defensive Assist: Perform Perfect Assist with agents with a Defensive Assist. Parries the attack
+
+-   Evasive Assist: Perform Perfect Assist with agents with a Defensive Assist. Dodges the attack and enters Vital View.
+
+-   Vital View: slow mo for x seconds
+
+-   Assist Follow-up: Use Basic attack right after Perfect Assist is performed.
 
 -   Chain Attack
 
