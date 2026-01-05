@@ -46,8 +46,8 @@ Alternatives
 
 Things that I've tried and discarded for one reason or another:
 
-- Bullet journal (and other physical notebooks)
-- TiddlyWiki
-- Zim
-- Obsidian
-- Foam (* I actually use this at work just not personally)
+-   Bullet journal (and other physical notebooks)
+-   TiddlyWiki
+-   Zim
+-   Obsidian
+-   Foam (* I actually use this at work just not personally)

@@ -53,9 +53,9 @@ Making a new Sphinx Site
 
 Install ``sphinx``. I use ``pipenv`` to manage dependencies (but you could easily install via ``pip``):
 
-#. Install pipenv: https://github.com/pypa/pipenv
-#. ``mkdir my-sphinx-project && cd my-sphinx-project``
-#. ``pipenv install sphinx``
+#.  Install pipenv: https://github.com/pypa/pipenv
+#.  ``mkdir my-sphinx-project && cd my-sphinx-project``
+#.  ``pipenv install sphinx``
 
 Generate a template site::
 

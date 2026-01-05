@@ -131,8 +131,8 @@ Most of the classes that you use will be from the Cocoa app framework, designed 
 
 For example, using GCC, you:
 
-- Subclass ``Object`` from ``objc/Object.h`` (instead of ``NSObject``)
-- Call ``new`` instead of ``alloc``.
+-   Subclass ``Object`` from ``objc/Object.h`` (instead of ``NSObject``)
+-   Call ``new`` instead of ``alloc``.
 
 ``id`` is like a special ``void*`` for objects
 ----------------------------------------------
@@ -182,22 +182,22 @@ Memory Management and Initialization Idioms
 
 Each class defines the ``alloc``, ``init``, ``retain``, and ``release`` methods.
 
-#. alloc (new)
-#. init (constructo)
-#. retain (increase refcount)
-#. release (decrement refcount)
+#.  alloc (new)
+#.  init (constructo)
+#.  retain (increase refcount)
+#.  release (decrement refcount)
 
 TODO
 
-* ``@autoreleasepool`` (https://stackoverflow.com/questions/14677049/what-is-autoreleasepool)
-* NSAutoreleasePool (https://developer.apple.com/documentation/foundation/nsautoreleasepool)
-* Automatic reference counting (`Transitioning to ARC Release Notes (2013)`_)
+-   ``@autoreleasepool`` (https://stackoverflow.com/questions/14677049/what-is-autoreleasepool)
+-   NSAutoreleasePool (https://developer.apple.com/documentation/foundation/nsautoreleasepool)
+-   Automatic reference counting (`Transitioning to ARC Release Notes (2013)`_)
 
 ARC resources:
 
-* Overview: https://en.wikipedia.org/wiki/Automatic_Reference_Counting
-* clang docs: https://releases.llvm.org/20.1.0/tools/clang/docs/AutomaticReferenceCounting.html
-* Added in 2011 https://theapplewiki.com/wiki/Automatic_Reference_Counting
+-   Overview: https://en.wikipedia.org/wiki/Automatic_Reference_Counting
+-   clang docs: https://releases.llvm.org/20.1.0/tools/clang/docs/AutomaticReferenceCounting.html
+-   Added in 2011 https://theapplewiki.com/wiki/Automatic_Reference_Counting
 
 NIB
 ---
@@ -213,13 +213,17 @@ Packages are folders that macOS treats like files (e.g. ``.app``). Bundle is the
 
 E.g. here's the basics layout of any .app:
 
-* Contents/
-    * Info.plist (optional)
-    * MacOS/
-        * my_binary
-    * Resources/ (optional)
-        * foo.jpg
-        * ... etc
+-   Contents/
+
+    -   Info.plist (optional)
+    -   MacOS/
+
+        -   my_binary
+
+    -   Resources/ (optional)
+
+        -   foo.jpg
+        -   ... etc
 
 Applications launched outside a bundle may not have their windows shown in the doc or brought forward. This is goverened the the activation policy: https://developer.apple.com/documentation/appkit/nsapplication/activationpolicy-swift.enum?language=objc
 
@@ -310,26 +314,26 @@ Selectors are kinda like run-time function pointers? It's like "there's a method
 See Also
 --------
 
-* `Cocoa Drawing Guide (2012)`_
-* `Advanced Memory Management Programming Guide (2012)`_
-* `Concepts in Objective-C Programming (2012)`_
-* `The Objective-C Programming Language (2013)`_
-* `Transitioning to ARC Release Notes (2013)`_
-* `Exception Programming Topics (2013)`_
-* `Coding Guidelines for Cocoa (2013) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CodingGuidelines/>`_
-* `Getting Pixels onto the Screen (2013) <https://www.objc.io/issues/3-views/moving-pixels-onto-the-screen/>`_
-* `Programming with Objective-C (2014)`_
-* `Adopting Modern Objective-C (2014) <https://developer.apple.com/library/archive/releasenotes/ObjectiveC/ModernizationObjC/>`_
-* `Thread Programming Guide (2014) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/>`_
-* `Mac App Programming Guide (2015)`_
-* `Resource Programming Guide (2016)`_
-* `Bundle Programming Guide (2017)`_
-* `Quartz2D Programming Guide (2017) <https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/>`_
-* `Information Property List Key Reference (2018)`_
-* `Foundation Reference`_
-* `AppKit Reference`_
-* `CoreGraphics Reference <https://developer.apple.com/documentation/coregraphics?language=objc>`_
-* `Microsoft Objective-C style guide <https://microsoft.github.io/objc-guide/>`_
+-   `Cocoa Drawing Guide (2012)`_
+-   `Advanced Memory Management Programming Guide (2012)`_
+-   `Concepts in Objective-C Programming (2012)`_
+-   `The Objective-C Programming Language (2013)`_
+-   `Transitioning to ARC Release Notes (2013)`_
+-   `Exception Programming Topics (2013)`_
+-   `Coding Guidelines for Cocoa (2013) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CodingGuidelines/>`_
+-   `Getting Pixels onto the Screen (2013) <https://www.objc.io/issues/3-views/moving-pixels-onto-the-screen/>`_
+-   `Programming with Objective-C (2014)`_
+-   `Adopting Modern Objective-C (2014) <https://developer.apple.com/library/archive/releasenotes/ObjectiveC/ModernizationObjC/>`_
+-   `Thread Programming Guide (2014) <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/>`_
+-   `Mac App Programming Guide (2015)`_
+-   `Resource Programming Guide (2016)`_
+-   `Bundle Programming Guide (2017)`_
+-   `Quartz2D Programming Guide (2017) <https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/>`_
+-   `Information Property List Key Reference (2018)`_
+-   `Foundation Reference`_
+-   `AppKit Reference`_
+-   `CoreGraphics Reference <https://developer.apple.com/documentation/coregraphics?language=objc>`_
+-   `Microsoft Objective-C style guide <https://microsoft.github.io/objc-guide/>`_
 
 .. _Cocoa Drawing Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/
 .. _Advanced Memory Management Programming Guide (2012): https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/

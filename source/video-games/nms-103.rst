@@ -7,52 +7,50 @@ The first public version on Steam is 1.03; there is no 1.00.
 
 .. note:: You can use this method to get any version.
 
-#. Log into Steam.
+#.  Log into Steam.
 
-#. (If you don't own the game) Buy No Man's Sky.
+#.  (If you don't own the game) Buy No Man's Sky.
 
-#. (If you own the game) Back up saves in ``%appdata%\HelloGames`` and delete the folder.
-    .. note::
-        
-        Steam Cloud Sync will upload 1.03 saves if you're not in offline mode
+#.  (If you own the game) Back up saves in ``%appdata%\HelloGames`` and delete the folder.
 
-#. Open SteamDB. Sign in to see more info. Search for "No Man's Sky" (app ``275850``). Click Depots. Find No Man's Sky Content for Windows (``275851``). Find earliest manifest (``4186508802612155038``).
-    .. note::
+    .. note:: Steam Cloud Sync will upload 1.03 saves if you're not in offline mode
 
-        Since we already know the app/depot/manifest information, we can skip to the next step. However, I'm including it so you know how to find other manifests.
+#.  Open SteamDB. Sign in to see more info. Search for "No Man's Sky" (app ``275850``). Click Depots. Find No Man's Sky Content for Windows (``275851``). Find earliest manifest (``4186508802612155038``).
 
-    .. note::
+    .. note:: Since we already know the app/depot/manifest information, we can skip to the next step. However, I'm including it so you know how to find other manifests.
 
-        The manifests are unlabelled apart from upload time. For specific versions, you'll need to match up the timestamp with the release announcement. I use the `No Man's Sky wiki <https://nomanssky.fandom.com/wiki/No_Man%27s_Sky_Wiki>`_ for that.
+    .. note:: The manifests are unlabelled apart from upload time. For specific versions, you'll need to match up the timestamp with the release announcement. I use the `No Man's Sky wiki <https://nomanssky.fandom.com/wiki/No_Man%27s_Sky_Wiki>`_ for that.
 
-#. Use DepotDownloader to download that manifest. Move the files somewhere memorable (like ``C:\``).
+#.  Use DepotDownloader to download that manifest. Move the files somewhere memorable (like ``C:\``).
+
     .. code-block::
         
         depotdownloader -app 275850 -depot 275851 -manifest 4186508802612155038
 
-#. Launch ``Binaries\NMS.exe``. First launch could take a while due to antivirus, shader compile, etc.
+#.  Launch ``Binaries\NMS.exe``. First launch could take a while due to antivirus, shader compile, etc.
 
 TODO:
 
-- Controller support? I swear that I got this working once.
+-   Controller support? I swear that I got this working once.
 
 Bugs:
 
-- Don't alt-tab in fullscreen mode!
-- Before you land, there's no indication about whether the game will use a launchpad or not (saving launch thruster fuel on take off). Oddly, you can see in 1.00 PS4 footage that there is an indicator...
+-   Don't alt-tab in fullscreen mode!
+-   Before you land, there's no indication about whether the game will use a launchpad or not (saving launch thruster fuel on take off). Oddly, you can see in 1.00 PS4 footage that there is an indicator...
 
 Tricks:
 
-- Money: get Plasma Launcher, camp out minor settlements, destroy sentinels, sell Neutrino Modules.
-- Save scum to get desired outcomes.
-- Get upgraded Atlas Pass for free stuff: v1 from quests, v2 and v3 from manufacturing facilities.
-    - Find manufacturing facilities with beacons.
+-   Money: get Plasma Launcher, camp out minor settlements, destroy sentinels, sell Neutrino Modules.
+-   Save scum to get desired outcomes.
+-   Get upgraded Atlas Pass for free stuff: v1 from quests, v2 and v3 from manufacturing facilities.
+
+    -   Find manufacturing facilities with beacons.
 
 Other Versions
 --------------
 
 1.30:
 
-- Running the binary will launch the steam game, so you need to install over that .
-- Some shaders don't compile on modern gpus so you'll be left with black objects.
-- First launch takes 1-2 minutes to compiles shaders.
+-   Running the binary will launch the steam game, so you need to install over that .
+-   Some shaders don't compile on modern gpus so you'll be left with black objects.
+-   First launch takes 1-2 minutes to compiles shaders.

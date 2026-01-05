@@ -5,9 +5,9 @@ Blizzard released Diablo II music as MP3s to the `Arreat Summit <http://classic.
 
 I have done my best to catalogue the liner notes and working links to get the files. The liner notes are from `Arreat Summit <http://classic.battle.net/diablo2exp/mp3/>`_ but I've also included the notes from the ``.zip`` file if they are different. Most of the links come from the Wayback Machine but I also have other sources:
 
-* https://archive.org/details/matt-uelmen-diablo-ii-soundtrack-outtakes
-* https://tl.net/blogs/431201-blizzard-old-games-music
-* http://classic.battle.net/diablo2exp/mp3/
+-   https://archive.org/details/matt-uelmen-diablo-ii-soundtrack-outtakes
+-   https://tl.net/blogs/431201-blizzard-old-games-music
+-   http://classic.battle.net/diablo2exp/mp3/
 
 Additionally, I've annotated each track with its similarity to tracks in the final game.
 

@@ -4,16 +4,16 @@ Diablo Beta Quest Text
 
 The Diablo Beta only contains 10 quests:
 
-- The Butcher
-- Butcher Portal (partial)
-- Poison Water
-- The Skeleton King
-- The Maze (not really a quest)
-- Stones of Blood (partial)
-- The Magic Rock
-- The Bone Chamber
-- Halls of the Blind
-- Zhar the Mad
+-   The Butcher
+-   Butcher Portal (partial)
+-   Poison Water
+-   The Skeleton King
+-   The Maze (not really a quest)
+-   Stones of Blood (partial)
+-   The Magic Rock
+-   The Bone Chamber
+-   Halls of the Blind
+-   Zhar the Mad
 
 But there's just over 100 lines of quest text in the beta EXE! There were clearly ideas for other quests that are missing in the beta. Either they were in the caves and beyond, or still in development.
 
@@ -63,10 +63,10 @@ Talking to Ogden after killing the Skeleton King:
 
 The major differences from the Pre-release Demo are The Undead Crown:
 
-- The Undead Crown is dropped!
-- It has different graphics.
-- It has the usual unique item mouse-over text. It just says "Life Stealing".
-- I believe that it crashes on mouse-over after game save + load...
+-   The Undead Crown is dropped!
+-   It has different graphics.
+-   It has the usual unique item mouse-over text. It just says "Life Stealing".
+-   I believe that it crashes on mouse-over after game save + load...
 
 Additionally, after killing The Skeleton King, your character remarks "Rest well, Leoric. I'll find your son."
 
@@ -98,9 +98,9 @@ Returning to Griswold after finding the Magic Rock:
 
 Compared to the Pre-release Demo, only the Infravision Ring is different:
 
-- New graphic!
-- Has mouse-over text "See with Infravision"
-- Crashes on mouse-over after save + load
+-   New graphic!
+-   Has mouse-over text "See with Infravision"
+-   Crashes on mouse-over after save + load
 
 The Bone Chamber
 ================
@@ -117,9 +117,9 @@ Reading the Book of Novaness:
 
 Compared to the Pre-release Demo:
 
-- The stairs actually work!
-- They say "to the Bone Chamber" on mouse-over.
-- You get Nova level 1 (not level 0)
+-   The stairs actually work!
+-   They say "to the Bone Chamber" on mouse-over.
+-   You get Nova level 1 (not level 0)
 
 ---------------------------------
 "Functioning" Beta Quest Variants
@@ -138,8 +138,8 @@ Talking to Wirt:
 
 Remarks:
 
-- Looking for Wirt? He has only a 1 in 3 chance of showing up.
-- I dug through the disassembly and couldn't find anything of note past this video.
+-   Looking for Wirt? He has only a 1 in 3 chance of showing up.
+-   I dug through the disassembly and couldn't find anything of note past this video.
 
 Poison Water
 ============
@@ -160,11 +160,11 @@ Clearing all the monsters:
 
 Remarks:
 
-- Unfortunatly, the reward is missing from the game...
-- There's an old screenshot of the level in the Prima Strategy Guide on page 95 that doesn't match the final game.
-- The automap is broken in the second video because the caves didn't have a functioning automap at the time. The Pre-release Demo suffers from the same problem.
-- The water changes color when the level is beaten but there's no stinger sound effect
-- Town portals to setlevels are broken. The Pre-release Demo suffers from the same problem.
+-   Unfortunatly, the reward is missing from the game...
+-   There's an old screenshot of the level in the Prima Strategy Guide on page 95 that doesn't match the final game.
+-   The automap is broken in the second video because the caves didn't have a functioning automap at the time. The Pre-release Demo suffers from the same problem.
+-   The water changes color when the level is beaten but there's no stinger sound effect
+-   Town portals to setlevels are broken. The Pre-release Demo suffers from the same problem.
 
 Garbud
 ======
@@ -189,8 +189,8 @@ Walking offscreen and coming back again again:
 
 Remarks:
 
-- Yes, Garbud! Not Gharbad!
-- You can talk to Garbud from across the screen... an interesting bug. However, this is very handy for activating him as a Rogue to gain some distance.
+-   Yes, Garbud! Not Gharbad!
+-   You can talk to Garbud from across the screen... an interesting bug. However, this is very handy for activating him as a Rogue to gain some distance.
 
 Stones of Blood
 ===============
@@ -214,10 +214,10 @@ Reading the Book of the Blind:
 
 The Optic Amulet has a unique graphic and the following stats:
 
-- +20% Light Radius
-- Another Ability (NW)
-- Another Ability (NW)
-- Spell Cost --10% Less Mana
+-   +20% Light Radius
+-   Another Ability (NW)
+-   Another Ability (NW)
+-   Spell Cost --10% Less Mana
 
 Zhar the Mad
 ============
@@ -234,10 +234,10 @@ Revisiting Zhar:
 
 Compared to the final game:
 
-- Zhar is in a random place in the level, not confined to a library
-- He uses the skeleton AI since the mage AI isn't implemented.
-- We're missing the mage walk cycle.
-- You can spawn infinite books by repeatedly talking to him.
+-   Zhar is in a random place in the level, not confined to a library
+-   He uses the skeleton AI since the mage AI isn't implemented.
+-   We're missing the mage walk cycle.
+-   You can spawn infinite books by repeatedly talking to him.
 
 ---------
 Text-Only
@@ -268,7 +268,7 @@ While neither Andariel nor succubi are explicitly mentioned, “demons that look
 
 The second line, based on the voice of the text, seems to be something spoken by the boss.
 
-The other lines are likely delivered by the quest-giving NPC. It's unknown who that NPC is, but it's assumed to be Gillian. Gillian is not in the beta but - since ``Bmaid31.wav`` is in the MPQ - she was definitely planned. The first line is the initiation of the quest, and the third and fourth look like nags. It's weird that there are two nags (probably based on whether you've found the problem), typically there's only one. This makes me think that the fourth line is the completion of the quest but it's not quite worded to make it sound that way.
+The other lines are likely delivered by the quest-giving NPC. It's unknown who that NPC is, but it's assumed to be Gillian. Gillian is not in the beta but--since ``Bmaid31.wav`` is in the MPQ--she was definitely planned. The first line is the initiation of the quest, and the third and fourth look like nags. It's weird that there are two nags (probably based on whether you've found the problem), typically there's only one. This makes me think that the fourth line is the completion of the quest but it's not quite worded to make it sound that way.
 
 The Imprisoned Warlock
 ======================

@@ -10,8 +10,8 @@ SDK
 
 There's two flavors:
 
-#. Lua. Seems like they expect you to use this one. It provides more goodies and a cleaner workflow.
-#. C. Technically more performant than Lua but more DIY... And you need to know C.
+#.  Lua. Seems like they expect you to use this one. It provides more goodies and a cleaner workflow.
+#.  C. Technically more performant than Lua but more DIY... And you need to know C.
 
 I would highly recommend reading the Lua SDK reference (even if you only plan on using C) since important details like using ``pdc`` are only mentioned there.
 
@@ -19,10 +19,10 @@ I would highly recommend reading the Lua SDK reference (even if you only plan on
 Workflow
 --------
 
-#. Put all assets (except C code) into ``Source/`` dir. This includes fonts, sounds, images, and Lua code. Technically, you can name this whatever you want... except the makefile support in the SDK assumes that this is the name for that folder
-#. Put C source wherever. Use either Make or CMake to compile.
-#. Run ``pdc Source myproject.pdx`` to assemble the final app
-#. Use the simulator to sideload the code onto a Playdate
+#.  Put all assets (except C code) into ``Source/`` dir. This includes fonts, sounds, images, and Lua code. Technically, you can name this whatever you want... except the makefile support in the SDK assumes that this is the name for that folder
+#.  Put C source wherever. Use either Make or CMake to compile.
+#.  Run ``pdc Source myproject.pdx`` to assemble the final app
+#.  Use the simulator to sideload the code onto a Playdate
 
 ``Source/pdxinfo`` is your metadata file.
 
@@ -30,8 +30,8 @@ Workflow
 C SDK
 -----
 
-- Download: https://play.date/dev/
-- Reference: https://sdk.play.date/2.0.3/Inside%20Playdate%20with%20C.html
+-   Download: https://play.date/dev/
+-   Reference: https://sdk.play.date/2.0.3/Inside%20Playdate%20with%20C.html
 
 I wrote a docker file since this can be annoying to get working on Windows. Unfortunately, this won't build for the simulator. Also, this assumes that you're using Makefiles:
 

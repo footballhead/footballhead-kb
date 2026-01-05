@@ -42,7 +42,7 @@ Vulkan objects that are used together can often be created without knowledge of 
     #.  Create a graphics :vk:`VkPipeline`
     #.  Create resources to be used during the frame loop (:vk:`VkCommandBuffer`, :vk:`VkSemaphore`, etc.)
 
-#. Frame loop: acquire, record, submit, present
+#.  Frame loop: acquire, record, submit, present
 
 Device
 ======
@@ -114,25 +114,17 @@ Work is submitted to the device through one or more queues. The physical device 
 
 #.  List physical devices with :vk:`vkEnumeratePhysicalDevices`. The instance owns the physical devices and uses them to advertise the Vulkan implementations on your computer (along with their capabilities). This could be a graphics driver for your GPU, or it could be software like MoltenVk. For simplicity, examples often choose the first one. This is a good assumption in desktop towers where there is likely only one GPU. However, sometimes you might have two. For example, a laptop might have a weaker integrated graphics but more powerful discrete graphics; these show up as two devices. There may also be none: your graphics card is too old, you're running macOS without MoltenVK, etc.
 
-    .. warning::
-
-        How does one choose the "best" physical device? E.g. the fastest.
+    .. warning:: How does one choose the "best" physical device? E.g. the fastest.
 
 #.  Graphics queues handle rendering primitives. You can query graphics support with :vk:`vkGetPhysicalDeviceQueueFamilyProperties2`; check that queueFamilyProperties.queueFlags contains VK_QUEUE_GRAPHICS_BIT.
 
 #.  Presentation queues handle showing the results to the user. Along with :vk:`vkGetPhysicalDeviceSurfaceSupportKHR`, there are platform-specific APIs that don't require a surface (like :vk:`vkGetPhysicalDeviceWin32PresentationSupportKHR`)
 
-.. note::
+.. note:: The distinction between graphics and presentation exists because certain applications are headless (no window) but still use the device. The `spec <https://docs.vulkan.org/spec/latest/chapters/VK_KHR_surface/wsi.html#_querying_for_wsi_support>`_ claims that "not all physical devices will include WSI support. Within a physical device, not all queue families will support presentation"
 
-    The distinction between graphics and presentation exists because certain applications are headless (no window) but still use the device. The `spec <https://docs.vulkan.org/spec/latest/chapters/VK_KHR_surface/wsi.html#_querying_for_wsi_support>`_ claims that "not all physical devices will include WSI support. Within a physical device, not all queue families will support presentation"
+.. note:: For simple examples, you can use one queue that supports both graphics and presentation. This allows you to use "exclusive" ownership of resources and makes some things easier. However, for large applications, this might not be as efficient.
 
-.. note::
-
-    For simple examples, you can use one queue that supports both graphics and presentation. This allows you to use "exclusive" ownership of resources and makes some things easier. However, for large applications, this might not be as efficient.
-
-.. note::
-
-    The graphics queue is implicitly a transfer queue. This is useful later.
+.. note:: The graphics queue is implicitly a transfer queue. This is useful later.
 
 #.  Create a :vk:`VkDevice`, and load its functions via :vk:`vkGetDeviceProcAddr`. Then get your queues via :vk:`vkGetDeviceQueue`.
 
@@ -142,9 +134,7 @@ Work is submitted to the device through one or more queues. The physical device 
 
     For SDL, call :sdl:`SDL_Vulkan_CreateSurface`.
 
-    .. note::
-
-        Normally, the :vk:`VkSurface` is freed with :vk:`vkDestroySurfaceKHR`. However, with SDL, you need to call :sdl:`SDL_Vulkan_DestroySurface` instead.
+    .. note:: Normally, the :vk:`VkSurface` is freed with :vk:`vkDestroySurfaceKHR`. However, with SDL, you need to call :sdl:`SDL_Vulkan_DestroySurface` instead.
 
     For Windows, call :vk:`vkCreateWin32SurfaceKHR` 
 

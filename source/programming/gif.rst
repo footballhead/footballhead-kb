@@ -2,8 +2,8 @@
 GIF
 ===
 
-- Wikipedia: https://en.wikipedia.org/wiki/GIF
-- Spec: https://www.w3.org/Graphics/GIF/spec-gif89a.txt
+-   Wikipedia: https://en.wikipedia.org/wiki/GIF
+-   Spec: https://www.w3.org/Graphics/GIF/spec-gif89a.txt
 
 -------------------------------------------
 Quilt Design as 46x46 uncompressed GIF.gif
@@ -77,10 +77,10 @@ Global Color Table (Chapter 19)
 
 We know from the Logical Screen Descriptor that:
 
-- Yes, we have a global color table
-- The original image had ``7+1`` bit color (does this matter???)
-- It's not sorted
-- There's ``3 x 2^(6+1)`` bytes
+-   Yes, we have a global color table
+-   The original image had ``7+1`` bit color (does this matter???)
+-   It's not sorted
+-   There's ``3 x 2^(6+1)`` bytes
 
 Here they are in order::
 
@@ -335,8 +335,8 @@ Image Data...
 
 Wait so how does this work to prevent LZW compression? Think about it from the decoder's point of view:
 
-#. We need to constantly CLEAR the LZW dictionary only because this is a variable-length encoding; if it was fixed length then the dictionary would fill up and nothing spectacular would happen outside of the algorithm not generating new entries. However, with a variable-length encoding, if the size of the dictionary exceeds 0xFF then it will generate a 9-bit code and the decoder will start treating our 8-bit palettes as 9-bit! Chaos would ensue! The constant CLEARing of the table means the variable-length compression never exceeds 8 bits. We use 7-bit color so the global color table takes codes 0x00-0x7F. CLEAR takes 0x80. STOP takes 0x81. That leaves 0x82-0xFF for new entires. As long as we clear before 126 new entires then we're good. In this example we clear every 46 entires.
-#. The decoder will generate new entries however it will never attempt to use them because our data doesn't contain them. That's because the original palette is less than 0x7F and the new dictionary entires are all greater than 0x82.
+#.  We need to constantly CLEAR the LZW dictionary only because this is a variable-length encoding; if it was fixed length then the dictionary would fill up and nothing spectacular would happen outside of the algorithm not generating new entries. However, with a variable-length encoding, if the size of the dictionary exceeds 0xFF then it will generate a 9-bit code and the decoder will start treating our 8-bit palettes as 9-bit! Chaos would ensue! The constant CLEARing of the table means the variable-length compression never exceeds 8 bits. We use 7-bit color so the global color table takes codes 0x00-0x7F. CLEAR takes 0x80. STOP takes 0x81. That leaves 0x82-0xFF for new entires. As long as we clear before 126 new entires then we're good. In this example we clear every 46 entires.
+#.  The decoder will generate new entries however it will never attempt to use them because our data doesn't contain them. That's because the original palette is less than 0x7F and the new dictionary entires are all greater than 0x82.
 
 Trailer (Chapter 27)
 ====================

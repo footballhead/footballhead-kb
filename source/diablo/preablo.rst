@@ -8,10 +8,10 @@ Play Rogue
 
 There's no reason not to play Rogue:
 
-- She can get enough magic (with equipment bonuses) to learn every spell
-- She walks faster
-- She call kill things from afar
-- One of her skills is Identify. Over time, this saves a lot of hassle and money.
+-   She can get enough magic (with equipment bonuses) to learn every spell
+-   She walks faster
+-   She call kill things from afar
+-   One of her skills is Identify. Over time, this saves a lot of hassle and money.
 
 The only reason not to play Rogue is that ranged weapons don't proc the life steal on the Undead Crown.
 

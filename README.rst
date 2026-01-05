@@ -10,8 +10,8 @@ Developing
 
 Setup:
 
-* Install pipenv: https://github.com/pypa/pipenv
-* ``pipenv install`` to get Sphinx
+-   Install pipenv: https://github.com/pypa/pipenv
+-   ``pipenv install`` to get Sphinx
 
 Building::
 

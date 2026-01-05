@@ -3,9 +3,9 @@ Modern 3D Graphics in a Nutshell
 
 There are three major modern graphics APIs:
 
-#. Direct3D 12 (a.k.a DirectX 12, DX12, D3D12) - Microsoft - Windows - C++
-#. Metal - Apple - macOS - Objective-C/Swift/C++
-#. Vulkan - Khronos - Cross-platform - C
+#.  Direct3D 12 (a.k.a DirectX 12, DX12, D3D12) - Microsoft - Windows - C++
+#.  Metal - Apple - macOS - Objective-C/Swift/C++
+#.  Vulkan - Khronos - Cross-platform - C
 
 Fortunately, at a high level, they all use similar concepts; learning one gives you a huge leg up in learning the other. I wish to highlight those similarities here. You may find yourself making a game on Windows with Direct3D 12 but need to port it to macOS.
 
@@ -56,9 +56,7 @@ Vulkan and Direct3D 12 require you to know up front which graphics card you want
 
 In Direct3D 12, call ``D3D12CreateDevice()``. This requires an adapter, which you get from DXGI.
 
-.. tip::
-    
-    New to COM? here's a primer: it's IPC that dates back to early versions of Windows (think 3.1 or 95). It effectively adds objects to C. Each object implements one or more interfaces, each represented by a UUID. Being C, it has explicit ref counting via AddRef and Release.
+.. tip:: New to COM? here's a primer: it's IPC that dates back to early versions of Windows (think 3.1 or 95). It effectively adds objects to C. Each object implements one or more interfaces, each represented by a UUID. Being C, it has explicit ref counting via AddRef and Release.
 
     ``ComPtr`` is a smart pointer that does the AddRef and Release for you. (Though it looks like it's been replaced with ``winrt::com_ptr``)
 

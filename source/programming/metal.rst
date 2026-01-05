@@ -15,9 +15,9 @@ Getting Started
 
 The command-line tools don't provide the Metal shader compilers. From what I can tell, you can only get this after you install Xcode.
 
-#. Install Xcode (from app store, etc)
-#. ``xcodebuild -downloadComponent MetalToolchain``
-#. ``xcrun metal`` to verify that it installed
+#.  Install Xcode (from app store, etc)
+#.  ``xcodebuild -downloadComponent MetalToolchain``
+#.  ``xcrun metal`` to verify that it installed
 
 TODO: Can this be installed without xcode?
 
@@ -50,9 +50,9 @@ loadNibNamed will reconstitute Main.storyboard (found via Info.plist)
 
 Main.storyboard creates:
 
-* a NSApplication
-* a NSWindowController and NSWindow
-* a ViewController (custom class) and MTKView
+-   a NSApplication
+-   a NSWindowController and NSWindow
+-   a ViewController (custom class) and MTKView
 
 ViewController is-a NSViewController. The viewDidLoad method of ViewController makes a MetalKitViewDelegate using the superclass `view` property.
 
@@ -74,11 +74,11 @@ CMakeLists.txt
 
 As a fun exercise, and to dispell the magic, I rewrote the Xcode build in CMakeLists.txt. Generating a working application bundle requires
 
-#. Compiling the storyboard (the UI)
-#. Compiling the shaders
-#. Compiling the Objective-C code
-#. Putting the compiled shaders and storyboard in the Resources folder
-#. Fixes for Info.plist and the application bundle dir to make the clean target work as expected.
+#.  Compiling the storyboard (the UI)
+#.  Compiling the shaders
+#.  Compiling the Objective-C code
+#.  Putting the compiled shaders and storyboard in the Resources folder
+#.  Fixes for Info.plist and the application bundle dir to make the clean target work as expected.
 
 CMake will generate an app bundle if the executable has the MACOSX_BUNDLE property set. By default, this will create an Info.plist and put the built executable in the appropriate folder. You can specify the Info.plist be made based on a template (set via the MACOSX_BUNDLE_INFO_PLIST property) or generated from new based on properties. Resources must be specified both in the executable sources and in the RESOURCES property. To put things in subdirectories of the Resource folder, need to use ``set_source_files_properties(foo PROPERTIES MACOSX_PACKAGE_LOCATION "Resources/bar")``.
 
@@ -259,6 +259,6 @@ CMake will generate an app bundle if the executable has the MACOSX_BUNDLE proper
 See Also
 ========
 
-* A tutorial that uses metal-cpp: https://metaltutorial.com/Setup/ uses metal-cpp
-* Apple Developer landing page: https://developer.apple.com/metal/
-* Metal reference docs: https://developer.apple.com/documentation/metal?language=objc
+-   A tutorial that uses metal-cpp: https://metaltutorial.com/Setup/ uses metal-cpp
+-   Apple Developer landing page: https://developer.apple.com/metal/
+-   Metal reference docs: https://developer.apple.com/documentation/metal?language=objc

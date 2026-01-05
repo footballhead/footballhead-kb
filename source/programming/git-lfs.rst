@@ -9,9 +9,9 @@ That said, you can use LFS with a local clone from a bare repo. The file will be
 
 See the `git-lfs`_ manual.
 
-#. Use ``git lfs`` to tell git which files should use LFS
-#. Commit ``.gitattributes``
-#. Use like normal git
+#.  Use ``git lfs`` to tell git which files should use LFS
+#.  Commit ``.gitattributes``
+#.  Use like normal git
 
 Ideally, you'd decide what is in/out of LFS at repo creation time.
 
@@ -20,6 +20,6 @@ On Windows
 
 If you want Windows to be the host of Git LFS, note the following:
 
-- There is no SSH-only version. If you want something equivalent: use ``sshfs`` to mount the bare git repo directory then clone from that.
+-   There is no SSH-only version. If you want something equivalent: use ``sshfs`` to mount the bare git repo directory then clone from that.
 
 .. _git-lfs: https://git-lfs.com/

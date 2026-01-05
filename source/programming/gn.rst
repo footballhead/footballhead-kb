@@ -30,15 +30,15 @@ The build phase uses build.ninja to actually invoke the compiler. This is when s
 Terminology
 -----------
 
-- dotfile: the ``.gn`` in your source root. Used by gn to find the build config
-- build config: describes the toolchain
-- toolchain: the linker, compiler, etc
-- buildfile: ``BUILD.gn``, describes targets
-- targets: how to turn inputs into outputs. gn is prescriptive about how, e.g. ``executable()`` uses the ``"cc"`` and ``"link"`` tools, etc.
-- function
-- label
-- variable
-- substitution: ``{{foo}}``, done when the command is executed. Expansion is differed until when ``ninja`` is run; ``gn`` can't access these values
+-   dotfile: the ``.gn`` in your source root. Used by gn to find the build config
+-   build config: describes the toolchain
+-   toolchain: the linker, compiler, etc
+-   buildfile: ``BUILD.gn``, describes targets
+-   targets: how to turn inputs into outputs. gn is prescriptive about how, e.g. ``executable()`` uses the ``"cc"`` and ``"link"`` tools, etc.
+-   function
+-   label
+-   variable
+-   substitution: ``{{foo}}``, done when the command is executed. Expansion is differed until when ``ninja`` is run; ``gn`` can't access these values
 
 Setting up Minimal configuration
 --------------------------------
@@ -47,8 +47,8 @@ gn doesn't come with anything by default, you have to set it up yourself. (Thoug
 
 You need:
 
-- a build configuration which specifies the toolchain
-- build rules for your target
+-   a build configuration which specifies the toolchain
+-   build rules for your target
 
 Hierarchy::
 
@@ -67,9 +67,7 @@ Create ``.gn`` file in source root. Define the ``buildconfig`` variable, which t
     # Look at the provided file for the default toolchain
     buildconfig = "//build/BUILDCONFIG.gn"
 
-.. tip::
-
-    Putting gn related files in ``//build`` is a common convention. Make sure this isn't in your ``.gitignore``!
+.. tip:: Putting gn related files in ``//build`` is a common convention. Make sure this isn't in your ``.gitignore``!
 
     Typically, ``//out`` is used as the build directory. Make sure that is in your ``.gitignore`` ;)
 
@@ -210,8 +208,8 @@ First, run the CMake build with the ``ninja`` generator.
 
 Second run ``ninja -t commands``. This will do a "dry run" of building which prints all commands. This will include linker and compiler output so you get:
 
-- source files
-- compiler flags
+-   source files
+-   compiler flags
 
 If you're missing anything, look at build.ninja in CMAKE_BINARY_DIR. For some reason, ``-t commands`` doesn't show the libraries needed to link.
 
@@ -249,5 +247,5 @@ Then, need to define public and private headers inside your targets. E.g.::
 
 Quirks:
 
-- If a file is in neither public nor sources then it is not checked.
-- Needs to be manually run. Add to your presubmit hook?
+-   If a file is in neither public nor sources then it is not checked.
+-   Needs to be manually run. Add to your presubmit hook?

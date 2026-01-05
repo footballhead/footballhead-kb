@@ -3,8 +3,8 @@ Hosting a Local Git Server on Windows
 
 Here's my setup:
 
-- I have a very beefy Windows computer that has a bunch of storage attached. I effectively treat this as a combination game PC/central server. I want other nodes on the network to be able to talk to it.
-- I also have a M1 MacBook Air. I do photo editing on it, use it while I'm watching TV on the couch, etc.
+-   I have a very beefy Windows computer that has a bunch of storage attached. I effectively treat this as a combination game PC/central server. I want other nodes on the network to be able to talk to it.
+-   I also have a M1 MacBook Air. I do photo editing on it, use it while I'm watching TV on the couch, etc.
 
 I want the MacBook to be able to push/pull from my Windows PC. How hard can it be?
 

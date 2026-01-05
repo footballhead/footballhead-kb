@@ -4,9 +4,9 @@ Arreat Summit MP3 Player
 
 The Arreat Summit includes a basic MP3 player coded in Flash. It's conceptually simple:
 
-#. Sound metadata (title, arist, MP3 URL) is stored in an XML file that is hosted on their server. This makes adding and removing music trivial
-#. The MP3 URL points to an MP3 file hosted on their server. These files still exist despite the fact that the player is unusable!
-#. A simple Flash program plays music from that URL using the built-in AS2 Sound class. It also handles the playlist, showing title and artist, and transport controls. This could probably be pretty easily replaced with a network playlist for VLC, or a custom HTML5 client.
+#.  Sound metadata (title, arist, MP3 URL) is stored in an XML file that is hosted on their server. This makes adding and removing music trivial
+#.  The MP3 URL points to an MP3 file hosted on their server. These files still exist despite the fact that the player is unusable!
+#.  A simple Flash program plays music from that URL using the built-in AS2 Sound class. It also handles the playlist, showing title and artist, and transport controls. This could probably be pretty easily replaced with a network playlist for VLC, or a custom HTML5 client.
 
 If you go to `Arreat Summit <http://classic.battle.net/diablo2exp/files.shtml#>`_ and click on the MP3 player link it will open a new window at http://classic.battle.net/window.shtml.
 
@@ -210,8 +210,8 @@ Running
 
 You can get this working:
 
-#. Download `player.swf <http://classic.battle.net/player.swf>`_ and `sounds.xmls <http://classic.battle.net/sounds.xmls>`_
-#. Put ``player.swf`` and ``sounds.xmls`` in the same directory
-#. Modify ``<audioURL>`` in ``sounds.xmlns``. Currently it's treated as an absolute path to Unix root ``/supersecrest/foo.mp3``. You can use any path you want; the simplist (fewest modifications) is local relative files with ``./supersecrest/foo.mp3`` or ``supersecrest/foo.mp3``. You can download the MP3s using the sample Python script above. (Unfortunately, it doesn't work with files hosted on ``http://classic.battle.net/supersecrest/foo.mp3`` due to sandboxing and Flash security.)
-#. Launch the projector.
-#. Open ``player.swf``
+#.  Download `player.swf <http://classic.battle.net/player.swf>`_ and `sounds.xmls <http://classic.battle.net/sounds.xmls>`_
+#.  Put ``player.swf`` and ``sounds.xmls`` in the same directory
+#.  Modify ``<audioURL>`` in ``sounds.xmlns``. Currently it's treated as an absolute path to Unix root ``/supersecrest/foo.mp3``. You can use any path you want; the simplist (fewest modifications) is local relative files with ``./supersecrest/foo.mp3`` or ``supersecrest/foo.mp3``. You can download the MP3s using the sample Python script above. (Unfortunately, it doesn't work with files hosted on ``http://classic.battle.net/supersecrest/foo.mp3`` due to sandboxing and Flash security.)
+#.  Launch the projector.
+#.  Open ``player.swf``

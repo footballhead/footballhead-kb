@@ -22,8 +22,8 @@ Ghost Buffet
 
 The base stem is ``fallingfalling.wav``. There are two layers:
 
-#. 50% speed with Unity's "Psychotic" reverb preset
-#. 25% speed with Unity's "Psychotic" reverb preset
+#.  50% speed with Unity's "Psychotic" reverb preset
+#.  25% speed with Unity's "Psychotic" reverb preset
 
 .. _Crypt Underworld: https://lilithzone.itch.io/crypt-underworld
 .. _ESPer99: https://www.esper99.org/

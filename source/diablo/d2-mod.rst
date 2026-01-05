@@ -12,11 +12,11 @@ Link: http://plugy.free.fr/en/index.html
 
 This is a great "quality of life" singleplayer mod:
 
-- Infinite stash spash
-- Shared stash
-- Reset skills/stats
-- Ladder runewords
-- Ubers
+-   Infinite stash spash
+-   Shared stash
+-   Reset skills/stats
+-   Ladder runewords
+-   Ubers
 
 Mod makers tend to make their mods PlugY compatible (or otherwise intentionally incompatible); it's a big deal.
 
@@ -42,8 +42,8 @@ Link:
 
 This is kinda like a (better?) Sven's Glide Wrapper that includes SGD2FreeRes. Improvements over Sven's Glide Wrapper:
 
-- Higher FPS, especially felt with the smoothness of the mouse cursor
-- Widescreen thanks to SGD2FreeRes
+-   Higher FPS, especially felt with the smoothness of the mouse cursor
+-   Widescreen thanks to SGD2FreeRes
 
 Configuration is done via ``d2dx.cfg``
 
@@ -69,31 +69,31 @@ Source: https://github.com/tlentz/d2modmaker
 
 This is a combination:
 
-- item randomizer (random affix/suffix on unique/sets, etc)
-- Sh*tfest (IncreaseMonsterDensity)
+-   item randomizer (random affix/suffix on unique/sets, etc)
+-   Sh*tfest (IncreaseMonsterDensity)
 
 This *kinda* (not really) replaces the randomizer and Sh*tfest links below.
 
 Installing:
 
-- Copy ``data`` folder into ``C:\Program Files (x86)\Diablo II\Mod Plugy``
-- Create a shortcut to ``PlugY.exe``
-- Modify that shortcut; add ``-direct -txt`` to Target
+-   Copy ``data`` folder into ``C:\Program Files (x86)\Diablo II\Mod Plugy``
+-   Create a shortcut to ``PlugY.exe``
+-   Modify that shortcut; add ``-direct -txt`` to Target
 
 Generator vs Randomizer
 =======================
 
 These are mutally exclusive:
 
-- Generator will make new uniques, sets, and runewords. This is dynamic: e.g. Rixot's Keen will always be different.
-- Randomizer will shuffle existing properties. This is static: e.g. Rixot's Keen will always be the same.
+-   Generator will make new uniques, sets, and runewords. This is dynamic: e.g. Rixot's Keen will always be different.
+-   Randomizer will shuffle existing properties. This is static: e.g. Rixot's Keen will always be the same.
 
 --------
 Sh*tfest
 --------
 
-- Link: https://d2mods.info/forum/viewtopic.php?f=5&t=66548 (DOWNLOAD LINK IS DEAD)
-- Archived link: https://www.dropbox.com/s/kc9i671ozpwfuxs/SHIFTFEST%20FOR%20D2SE.zip?dl=1 (just copy data/ into D2 folder)
+-   Link: https://d2mods.info/forum/viewtopic.php?f=5&t=66548 (DOWNLOAD LINK IS DEAD)
+-   Archived link: https://www.dropbox.com/s/kc9i671ozpwfuxs/SHIFTFEST%20FOR%20D2SE.zip?dl=1 (just copy data/ into D2 folder)
 
 The tl;dr is that areas are PACKED with monsters. It's like Vampire Survivors before Vampire Survivors.
 

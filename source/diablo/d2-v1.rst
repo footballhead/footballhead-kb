@@ -8,8 +8,8 @@ I have a strange fascination with playing older versions of games. Diablo 2 is n
 Installing v1.0
 ---------------
 
-- I have ISOs of the original discs from the game launch. 
-- Due to SecuROM, I have the best luck running Alcohol 52% on Windows XP with "Sub-Data Channel Fixed and Emulation"
+-   I have ISOs of the original discs from the game launch. 
+-   Due to SecuROM, I have the best luck running Alcohol 52% on Windows XP with "Sub-Data Channel Fixed and Emulation"
 
 -----------------
 Other Multiplayer
@@ -25,13 +25,13 @@ Follow Microsoft's guide called "`How to install the Microsoft Loopback Adapter 
 
 There are a couple of drawbacks of running v1.0:
 
-- No ``/players X``
-- Stash space is small and can't use PlugY
+-   No ``/players X``
+-   Stash space is small and can't use PlugY
 
 You can get around this by running multiple copies of the game in Other Multiplayer. This gives you:
 
-- Analog to ``/players X``: increase difficulty by joining with additional characters
-- Effectively infinite stash space via mules
+-   Analog to ``/players X``: increase difficulty by joining with additional characters
+-   Effectively infinite stash space via mules
 
 You can run multiple copies of the game using Sandboxie. If you're running on Windows XP then download ``SandboxieInstall32_xp.exe``: https://github.com/sandboxie-plus/Sandboxie/releases/tag/v5.40
 
@@ -55,5 +55,5 @@ See also
 
 These old forum threads document the experience of some people also playing v1.0:
 
-- http://web.archive.org/web/20210225050032/https://www.diabloii.net/forums/threads/the-time-travelers-vortex-part-1-a-guide-to-spf-time-travel.933724/
-- http://web.archive.org/web/20210225030823/https://www.diabloii.net/forums/threads/the-time-travelers-vortex-part-2-a-guide-to-version-1-00.933726/
+-   http://web.archive.org/web/20210225050032/https://www.diabloii.net/forums/threads/the-time-travelers-vortex-part-1-a-guide-to-spf-time-travel.933724/
+-   http://web.archive.org/web/20210225030823/https://www.diabloii.net/forums/threads/the-time-travelers-vortex-part-2-a-guide-to-version-1-00.933726/

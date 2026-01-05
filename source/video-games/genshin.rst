@@ -11,11 +11,11 @@ Yes, I played Genshin Impact. No, I will not be taking further questions.
 Tools
 -----
 
-- `Project Amber <https://ambr.top/en>`_: Need to look up a character's talents but don't want to go to the intrusively ad-ladden Fandom wiki? Project Amber is your website.
-- `Keqing Mains <https://keqingmains.com/>`_: Best character and team build guides.
-- `Genshin Optimizer <https://frzyc.github.io/genshin-optimizer/>`_: A tool to find the best artifacts for a given character. Can help you sort through your artifacts to find the best piece, or make suggestions that you wouldn't have thought of.
-- `Enka Network <https://enka.network/>`_: Share summary card of your character's stats using your public profile. Just input your UID!
-- `Akasha <https://akasha.cv>`_: Genshin leader board using Enka data. Rank your builds against other participants!
+-   `Project Amber <https://ambr.top/en>`_: Need to look up a character's talents but don't want to go to the intrusively ad-ladden Fandom wiki? Project Amber is your website.
+-   `Keqing Mains <https://keqingmains.com/>`_: Best character and team build guides.
+-   `Genshin Optimizer <https://frzyc.github.io/genshin-optimizer/>`_: A tool to find the best artifacts for a given character. Can help you sort through your artifacts to find the best piece, or make suggestions that you wouldn't have thought of.
+-   `Enka Network <https://enka.network/>`_: Share summary card of your character's stats using your public profile. Just input your UID!
+-   `Akasha <https://akasha.cv>`_: Genshin leader board using Enka data. Rank your builds against other participants!
 
 Genshin Optimizer
 =================

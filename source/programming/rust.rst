@@ -171,9 +171,9 @@ You can return a Result though: https://doc.rust-lang.org/book/ch09-02-recoverab
 
 You might be able to request rust to give you access to ``pub extern fn main(argc: i32, argv: *const *const u8) -> i32``. But I can't find a lot of info on it:
 
-- https://doc.rust-lang.org/1.7.0/book/no-stdlib.html
-- https://docs.rust-embedded.org/book/intro/no-std.html
-- https://docs.rust-embedded.org/embedonomicon/smallest-no-std.html
+-   https://doc.rust-lang.org/1.7.0/book/no-stdlib.html
+-   https://docs.rust-embedded.org/book/intro/no-std.html
+-   https://docs.rust-embedded.org/embedonomicon/smallest-no-std.html
 
 https://www.codestudy.net/blog/why-does-rust-not-have-a-return-value-in-the-main-function-and-how-to-return-a-value-anyway/
 
@@ -207,11 +207,11 @@ Libraries
 
 ``rustc --crate-type`` can be used to change what rustc produces. It seems to use ``bin`` by default but can also make:
 
-* ``lib`` (currently an alias for rlib)
-* ``rlust``: rust static library
-* ``dylib``: rust dynamic library
-* ``staticlib``: native static library (e.g. ``.a``)
-* ``cdylib``: native dynamic library (e.g. ``.so``)
+-   ``lib`` (currently an alias for rlib)
+-   ``rlust``: rust static library
+-   ``dylib``: rust dynamic library
+-   ``staticlib``: native static library (e.g. ``.a``)
+-   ``cdylib``: native dynamic library (e.g. ``.so``)
 
 -----
 Cargo
@@ -227,10 +227,13 @@ Config is in Cargo.toml. Files are `auto-discovered <https://doc.rust-lang.org/c
 
 Hierarchy of terms:
 
-* Workspace
-    * Package (workspace member)
-        * Target (crate)
-            * Modules
+-   Workspace
+
+    -   Package (workspace member)
+
+        -   Target (crate)
+
+            -   Modules
 
 Workspace
 =========
@@ -239,10 +242,10 @@ A workspace is a collection of packages (called "members").
 
 By defaut, there is no workspace since there's just one package. You need to add ``[workspace]`` to the top of the TOML. When you do, the ``[package]`` becomes the *root package* (I guess the thing that cargo builds and runs). If you want other packages, you need to:
 
-* create new subdirectories for each package
-* ensure those subdirectories follows the package layout (i.e. it needs a Cargo.toml)
-* to get them build, they need to be path dependencies of the root project
-* NOTE: The package is implicitly available for use; don't need to explicitly import it somehow (i.e. no ``mod`` or ``use``).
+-   create new subdirectories for each package
+-   ensure those subdirectories follows the package layout (i.e. it needs a Cargo.toml)
+-   to get them build, they need to be path dependencies of the root project
+-   NOTE: The package is implicitly available for use; don't need to explicitly import it somehow (i.e. no ``mod`` or ``use``).
 
 (Just run ``cargo new my_package`` again. This also adds the package as a workspace member in Cargo.toml)
 
@@ -290,10 +293,10 @@ Build scripts
 
 Build scripts are run before ``rustc`` is run on the package. They are written in Rust.
 
-#. Put ``build.rs`` in the root of the package (alongside Cargo.toml).
-#. Define ``fn main()``.
-#. Tell cargo what you made by printing lines starting with ``cargo::`` (.e.g ``cargo::rerun-if-changed=src/foo.c``).
-#. Specify any ``build.rs`` depencencies in ``[build-dependencies]``.
+#.  Put ``build.rs`` in the root of the package (alongside Cargo.toml).
+#.  Define ``fn main()``.
+#.  Tell cargo what you made by printing lines starting with ``cargo::`` (.e.g ``cargo::rerun-if-changed=src/foo.c``).
+#.  Specify any ``build.rs`` depencencies in ``[build-dependencies]``.
 
 List of build-dependencies: https://crates.io/keywords/build-dependencies . E.g. CMake: https://crates.io/crates/cmake
 
@@ -309,16 +312,16 @@ Can call C from Rust and Rust from C!
 
 Challenges:
 
-* What is the type of a given enum?
-* What is the type of a bool?
-* How to choose types that are safe independent of OS?
+-   What is the type of a given enum?
+-   What is the type of a bool?
+-   How to choose types that are safe independent of OS?
 
 Calling C from Rust
 ===================
 
-#. Convert the C header into rust types.
-#. Wrap in ``unsafe extern "C" {}``. All foreign code is considered ``unsafe`` so needs to be marked as such. ``extern "C"`` sets the calling convetion.
-#. Add linker hint to find the C lib.
+#.  Convert the C header into rust types.
+#.  Wrap in ``unsafe extern "C" {}``. All foreign code is considered ``unsafe`` so needs to be marked as such. ``extern "C"`` sets the calling convetion.
+#.  Add linker hint to find the C lib.
 
 .. code-block:: rust
 
@@ -547,8 +550,8 @@ bindgen
 
 Making your own bindings is tedious and frought:
 
-- All functions, structs, typedefs need Rust equivalents
-- Need to know a lot of low level C details that change depending on the platform. What is the type of a given enum? how is struct packing and alignment handled? What's the calling convention?
+-   All functions, structs, typedefs need Rust equivalents
+-   Need to know a lot of low level C details that change depending on the platform. What is the type of a given enum? how is struct packing and alignment handled? What's the calling convention?
 
 bindgen steps in to fill these gaps.
 
@@ -576,8 +579,8 @@ Add bindgen to ``[build-dependencies]``
 
 Two steps:
 
-#. Use a ``bindgen::Builder`` to make ``bindgen::Bindings``
-#. Write ``bindgen::Bindings`` to disk
+#.  Use a ``bindgen::Builder`` to make ``bindgen::Bindings``
+#.  Write ``bindgen::Bindings`` to disk
 
 ``bindgen::Builder`` defines a Fluent interface. The C input goes into ``header()``. Then call ``generate()``. Once you have bindings, write them to a file so that you can use them.
 
