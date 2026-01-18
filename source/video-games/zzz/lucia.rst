@@ -15,23 +15,30 @@ Summary:
 -   Ultimate heals
 -   Aftershock every 8s. Each Aftershock is randomly either a Basic, Special, or Assist skill.
 
-.. note:: Need 24000 initial Max HP for full Darkbreaker effect.
+.. note:: Need 24000 initial Max HP for full Darkbreaker effect. F2P needs 19.06 rolls of HP% to reach that. Only 9.09 with Dreamlit Hearth.
+
+    Without Drive Disk Sub-Stats or W-Engine Advanced Stat (assuming you don't have Dreamlit Hearth):
 
     -   8477 at Level 60, Core F
     -   2200 from slot 1
-    -   +30% from slot 4
-    -   +30% from slot 5
-    -   +30% from slot 6
-    -   +10% from Yunkui Tales 2PC
+    -   2543.1 (30%) from slot 4
+    -   2543.1 (30%) from slot 5
+    -   2543.1 (30%) from slot 6
+    -   847.7 (10%) from Yunkui Tales 2PC
  
-    That's 10677 + 100% = 21354. Since an HP% roll is 320.32 HP, the remaining 2646 HP can be made up with 8.26 rolls of HP% substat. This is ~3 rolls per Disk Drive (assuming HP% slot 4/5/6).
+    This gives 19154 inital Max HP to start. Looking at potential Drive Disk Sub-Stat rolls
 
-    After that, you can focus on CRIT Rate/CRIT DMG to make her aftershocks hit harder. Dreamlit Hearth gives +30% Max HP (the same as a Drive Disk) so you can substitute slot 6 for CRIT Rate.
+    - 254.31 (3%) for HP%, totalling 4577.58 (assuming 18 rolls: slots 1/2/3, 1 initial roll, 5 rolls from leveling up) Can be found on slots 1/2/3. This gives (1 rolls on disk + 5 rolls from leveling)
+    - 112 for HP, totalling 2016 (assuming 18 rolls: slots 4/5/6, 1 initial roll, 5 rolls from leveling.)
 
-    Since Yunkui Tales 2PC is worth 3.33 HP% substat rolls, you could consider another 2PC set like Shining Aria.
+    (This means an 1 HP roll is worth 0.44 HP% rolls)
 
-    Lucia doesn't need energy regen slot 6 or 2PC. It takes 24s to use all her Dream Points with aftershocks; if you use an energy regen F2P weapon or Dreamlit Hearth, you should get enough energy in that time.
+    Without Dreamlit Heart, need 4846 HP (24000-19154) from Sub-Stats. This is 19.06 rolls of HP%; this is technically doable with some contribution from HP rolls.
+    
+    Dreamlit Hearth (30%) knocks 10 rolls off that for 9.06 rolls of HP%.
 
+    If you manage to hit that, focus on personal damage: CRIT Rate and CRIT DMG.
+    
 Core Skill Core Passive:
 
 -   +5% Max HP from Ether Veil
@@ -62,3 +69,32 @@ Playstyle:
 -   When not in the dream state, use her EX (+60 Dream Points) followed by Basic Attack (+40 Dream Points) to reach 100 Dream Points and enter Dream state
 -   When in dream state, let her do her thing. It doesn't make a lot of sense to sit on her to drain Dream Points faster opportunity cost dictates that you should probably be attacking with another character
 -   Use EX Special Attack 
+
+Building
+--------
+
+Stat priority:
+
+#.  HP%/HP: until 24000 initial Max HP (for full Darkbreaker effect)
+#.  CRIT Rate/CRIT DMG: more personal damage (aftershocks)
+#.  AP (?)/ATK%: slightly more personal damage (30% of ATK is converted to Sheer Force)
+#.  ATK: Not as much benefit as ATK%
+
+Full stats:
+
+-   HP%: Need 24000 initial Max HP for full Darkbreaker effect.
+-   CRIT Rate: More personal damage
+-   CRIT DMG: More personal damage
+
+Half stats:
+
+-   HP: Need 24000 initial Max HP for full Darkbreaker effect.
+-   ATK%: 30% of ATK becomes Sheer Force 
+-   AP: More anomaly damage?
+
+Useless stats:
+
+-   DEF: Don't get hit
+-   PEN: Sheer Force DMG ignores defence
+-   Impact:
+-   ER: She has enough with Moonlight Lullaby and Dreamlit Hearth

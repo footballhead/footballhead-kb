@@ -10,6 +10,7 @@ Yes, I play ZZZ. No, I will not be taking further questions.
     archetypes.rst
     drive-disks.rst
     agents.rst
+    builds.rst
 
 -----
 Tools
@@ -21,7 +22,56 @@ Tools
 Glossary
 --------
 
--   W-Engine: Analogous to a weapon in other videogames (Genshin, etc). Agents can have up to 1 W-Engine. Each W-Engine has an ATK value, main stat, and effect. The set effect get better with refinement. A W-Engine starts at refinement 1. You can sacrifice one W-Engine of the same name to increase the refiment by 1. Max refinement is 5. Shorthard is PX where X is the refinement.
+.. glossary::
+
+    Initial Max HP
+        HP shown on the Agent Base Stats screen.
+
+        .. math::
+
+            Initial Max HP = \left\lceil Base Max HP \times (1 + \frac{\sum HP\% Bonus}{100\%}) + \sum HP Bonus \right\rceil
+
+        where:
+
+        -   *Base Max HP* is the HP at Level 60, Core F. You can find this by removing your W-Engine and all Drive Disks, or subtracting the HP from the Stat Bonuses modal on the Agent Equipment screen from the HP on the Agent Base Stats screen. E.g. Lucia is 8477
+        -   *HP% Bonus* includes W-Engine Advanced Stat, 2PC/4PC Drive Disk Set Effects (e.g. Yunkai Tales is 10%), Drive Disk Main Stats (e.g. Slot 4/5/6 is 30% each, and Drive Disk Sub-Stats (3% for each roll)
+        -   *HP Bonus* includes Drive Disk Main Stat (e.g. Slot 1 is 2200), and Drive Disk Sub-Stats (112 for each roll)
+
+        Notice that the HP% bonuses is applied before the HP bonus!
+
+        For example, for my Lucia:
+
+        -   *Base Max HP* is 8477
+        -   *HP% Bonus* includes:
+
+            -   30% from Dreamlit Hearth
+            -   10% from Yunkui Tales 2PC
+            -   6% from slot 1 Sub-Stats (2 rolls)
+            -   9% from slot 2 Sub-Stats (3 rolls)
+            -   6% from slot 4 Sub-Stats (2 rolls)
+            -   30% from slot 4 Main Stat
+            -   30% from slot 5 Main Stat
+            -   30% from slot 6 Main Stat
+        
+        -   *HP Bonus* includes:
+
+            -   2200 from slot 1 Main Stat
+            -   224 from slot 3 Sub-Stats (2 rolls)
+            -   224 from slot 4 Sub-Stats (2 rolls)
+            -   224 from slot 5 Sub-Stats (2 rolls)
+
+        .. math::
+
+            \begin{array}{lcl}
+            Initial Max HP & = & \left\lceil Base Max HP \times (1 + \frac{\sum HP\% Bonus}{100\%}) + \sum HP Bonus \right\rceil \\
+            & = & \left\lceil 8477 \times (1 + \frac{30\%+10\%+6\%+9\%+6\%+30\%+30\%+30\%}{100\%}) + (2200 + 244 + 244 + 244) \right\rceil \\
+            & = & \left\lceil 8477 \times (1 + \frac{151\%}{100\%}) + 2872 \right\rceil \\
+            & = & \left\lceil 8477 \times 2.51 + 2872 \right\rceil \\
+            & = & 24150
+            \end{array}
+
+    W-Engine
+        Analogous to a weapon in other videogames (Genshin, etc). Agents can have up to 1 W-Engine. Each W-Engine has an ATK value, main stat, and effect. The set effect get better with refinement. A W-Engine starts at refinement 1. You can sacrifice one W-Engine of the same name to increase the refiment by 1. Max refinement is 5. Shorthard is PX where X is the refinement.
 
 -   Drive Disks: Analogous to artifacts in Genshin, or equipment in other video games. Agents have 6 Drive Disks slots that can each have up to 1 Drive Disk of the corresponding type. Each Drive Disk has a main stat and up to 4 unique substats. Drive Disks have set effects when an Agent has equipped 2+ pieces (shorthand is 2PC) or 4+ pieces (shorthand is 4PC)
 
