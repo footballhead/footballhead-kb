@@ -19,6 +19,8 @@ Building::
 
 This starts a process to rebuild when there are file changes. View at http://localhost:8000 in your browser
 
+In VSCode, you can preview output in editor using Simple Browser.
+
 Deploying
 ---------
 
