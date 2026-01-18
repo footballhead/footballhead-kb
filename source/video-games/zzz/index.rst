@@ -34,8 +34,18 @@ Glossary
         where:
 
         -   *Base Max HP* is the HP at Level 60, Core F. You can find this by removing your W-Engine and all Drive Disks, or subtracting the HP from the Stat Bonuses modal on the Agent Equipment screen from the HP on the Agent Base Stats screen. E.g. Lucia is 8477
-        -   *HP% Bonus* includes W-Engine Advanced Stat, 2PC/4PC Drive Disk Set Effects (e.g. Yunkai Tales is 10%), Drive Disk Main Stats (e.g. Slot 4/5/6 is 30% each, and Drive Disk Sub-Stats (3% for each roll)
-        -   *HP Bonus* includes Drive Disk Main Stat (e.g. Slot 1 is 2200), and Drive Disk Sub-Stats (112 for each roll)
+        -   *HP% Bonus* includes:
+        
+            -   Core Sill Enhancement (e.g. Zhao is 18% total)
+            -   W-Engine Advanced Stat (e.g. Half-Sugar Bunny is 30%)
+            -   2PC/4PC Drive Disk Set Effects (e.g. Yunkai Tales is 10%)
+            -   Drive Disk Main Stats (e.g. Slot 4/5/6 is 30% each)
+            -   Drive Disk Sub-Stats (3% for each roll)
+        
+        -   *HP Bonus* includes:
+        
+            -   Drive Disk Main Stat (e.g. Slot 1 is 2200)
+            -   Drive Disk Sub-Stats (112 for each roll)
 
         Notice that the HP% bonuses is applied before the HP bonus!
 

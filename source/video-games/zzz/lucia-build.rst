@@ -3,7 +3,7 @@ My Lucia Build
 
 Need 24000 initial Max HP. Currently 24150:
 
--   8477 HP: Level 60, Core F
+-   8477 HP: Level 60
 -   30%: Dreamlit Hearth
 -   10%: Yunkui Tales 2PC
 -   2200, 6%: Slot 1

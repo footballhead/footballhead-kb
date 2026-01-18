@@ -5,8 +5,11 @@ Ice, Defense
 
 Summary:
 
--   +700 ATK
+-   +1000 ATK (300 Sheer Force)
 -   +40% DMG (at 27000 initial Max HP)
+-   10% Max HP (Half-Sugar Bunny W-Engine)
+-   10% ATK (Half-Sugar Bunny W-Engine)
+-   30% CRIT DMG (Half-Sugar Bunny W-Engine)
 -   +5% Max HP (Ether Veil)
 -   Consumes fewer Assist Points on Perfect Assist (Defence Agent)
 -   Ends current Ether Veil before opening again (synergizes with Ye Shunguang better than Lucia)
@@ -14,20 +17,22 @@ Summary:
 
 .. note:: Need 27000 initial Max HP for full Additional Ability effect.
 
-    -   9117 at Level 60 with Core F
-    -   2200 from Drive Disk Slot 1
-    -   +25% from Original Transformpher W-Engine main stat
-    -   +30% from slot 4
-    -   +30% from slot 5
-    -   +30% from slot 6
-    -   +10% from Yunkui Tales 2PC
+    -   9117 at Level 60
+    -   1641.06 (18%) from Core Skill Enhancement F
+    -   2735.1 (30%) from Half-Sugar Bunny W-Engine Advanced Stat
+    -   2200 from Slot 1 Main Stat
+    -   2735.1 (30%) from slot 4 Main Stat
+    -   2735.1 (30%) from slot 5 Main Stat
+    -   2735.1 (30%) from slot 6 Main Stat
+    -   911.7 (10%) from Yunkui Tales 2PC
 
-    That's 25463.25 HP. Since an HP% roll is +3% HP (339.51 HP), the remaining 1536.75 can be achieved with around 4.5 HP% substat rolls.
+    This is ``ceil(24810.16)`` without Drive Disk Sub-Stats; need ``floor(2189.84)`` more.
+    
+    This is 8.01 HP% subs (since 3% HP is 273.51). This is avg 3 subs in each of slots 1/2/3 (discounted by any rolls in slot 4/5/6)
 
-    -   Can replace Yunkui Tales with 2PC Energy Regen if you make up the 3.33 HP% substat rolls
-    -   Can replace slot 6 with Energy Regen if you make up the 10 HP% substat rolls. Note that an ER Slot 6 can roll HP% up to 6 times; the other 4 need to be covered by others
+    (Each HP roll is 0.41 HP% subs)
 
-    To use ER 2PC and slot 6 and hit 27000 HP, you need ~19 rolls of HP%; this averages to around 5 rolls per piece (since you can't roll HP% on slot 4 or 5). This is incredibly high so good luck!
+    If you hit the cap, focus on ER to get more skill uses (more Ye Shunguang swords)? Swap 2PC for ER (need to make up 3.33 HP% subs)
 
 Core skill:
 

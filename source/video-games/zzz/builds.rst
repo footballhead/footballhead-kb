@@ -1,7 +1,8 @@
-ZZZ Agent Builds
+Builds
 ================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     lucia-build.rst
+    zhao-build.rst
