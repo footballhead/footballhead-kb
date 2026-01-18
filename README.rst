@@ -15,15 +15,9 @@ Setup:
 
 Building::
 
-    pipenv run make html
+    pipenv run make autobuild
 
-Viewing::
-
-    cd build/html
-    python -m http.server 8000
-    # Open http://localhost:8000 in your browser
-
-(Alternatively, open ``build/html/index.html`` in a browser.)
+This starts a process to rebuild when there are file changes. View at http://localhost:8000 in your browser
 
 Deploying
 ---------
