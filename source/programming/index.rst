@@ -4,7 +4,7 @@ Programming
 I'm a full-time software developer so I have a lot to say when it comes to programming.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     3d-graphics.rst
     bootstrapping.rst
@@ -19,6 +19,7 @@ I'm a full-time software developer so I have a lot to say when it comes to progr
     pacman.rst
     playdate.rst
     powershell.rst
+    restructuredtext.rst
     rsync.rst
     rust.rst
     sphinx.rst

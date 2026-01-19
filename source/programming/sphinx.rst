@@ -1,7 +1,7 @@
 Sphinx
 ======
 
-Sphinx generates a website from text markdown.
+Sphinx generates a website from reStructuredText markdown.
 
 Why Sphinx?
 -----------
@@ -11,6 +11,13 @@ Why Sphinx?
 
 Terminology
 -----------
+
+.. glossary::
+
+    reStructuredText
+        Text markup, part of `docutils`_
+
+.. _docutils: https://docutils.sourceforge.io/
 
 reStructuredText:
 
@@ -26,27 +33,6 @@ reStructuredText:
     -   reStructuredText roles: https://docutils.sourceforge.io/docs/ref/rst/roles.html
     -   Sphinx guide for creating roles: https://www.sphinx-doc.org/en/master/development/tutorials/extending_syntax.html#tutorial-extending-syntax
 
-Easily create external link roles via sphinx.ext.extlinks
----------------------------------------------------------
-
-Sometimes, you want to refer to subpages of reference documentation but don't want to spell out the entire link over and over. You can create custom roles that include the base link for you.
-
-#.  Open ``conf.py``.
-
-#.  Find the ``extentions`` list. Add ``sphinx.ext.extlinks``
-
-#.  Define `extlinks <https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html>`_
-
-    .. code-block:: python
-
-        extlinks = {'issue': ('https://github.com/sphinx-doc/sphinx/issues/%s',
-                        'issue %s')}
-
-#.  In your ``.rst``, use like::
-
-        :issue:`123`
-
-https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
 
 Making a new Sphinx Site
 ------------------------
@@ -74,6 +60,28 @@ View your site::
 
 Start modifying ``source/index.rst``
 
+Easily create external link roles via sphinx.ext.extlinks
+---------------------------------------------------------
+
+Sometimes, you want to refer to subpages of reference documentation but don't want to spell out the entire link over and over. You can create custom roles that include the base link for you.
+
+#.  Open ``conf.py``.
+
+#.  Find the ``extentions`` list. Add ``sphinx.ext.extlinks``
+
+#.  Define `extlinks <https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html>`_
+
+    .. code-block:: python
+
+        extlinks = {'issue': ('https://github.com/sphinx-doc/sphinx/issues/%s',
+                        'issue %s')}
+
+#.  In your ``.rst``, use like::
+
+        :issue:`123`
+
+https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
+
 Using Read the Docs theme
 -------------------------
 
@@ -86,7 +94,28 @@ There are many built-in themes and many community themes. My personal go-to at t
 Picking a theme
 ---------------
 
-Don't like the defaults? Try https://sphinx-themes.readthedocs.io/en/latest/
+There are many built-in themes and many community themes. My personal go-to at the moment is the `Read the Docs theme`_. I think it's the most clean, modern, and widely recognizable.
+
+#.  ``pipenv install sphinx-rtd-theme``
+#.  Open ``source/conf.py``, change ``html_theme`` to ``sphinx_rtd_theme``
+#.  Rebuild: ``pipenv run make html``
+
+.. _Read the Docs theme: https://sphinx-themes.readthedocs.io/en/latest/
+
+Autobuild
+---------
+
+``sphinx-autobuild`` will rebuild the docs when a file changes. It also starts a webserver so you can easily find the docs.
+
+#.  Install via pip: ``pip install sphinx-autobuild``
+#.  Run: ``sphinx-autobuild <source> <build>``
+#.  Open http://localhost:8000
+
+.. tip:: Use VSCode Simple Browser to preview the site inside VSCode.
+
+.. note:: Build errors are printed to ``sphinx-autobuild`` output; if something isn't working then check the terminal that you launched it in.
+
+.. note:: TODO: Find/make VSCode extension
 
 Quirks
 ------
