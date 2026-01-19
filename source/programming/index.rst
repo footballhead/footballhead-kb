@@ -16,10 +16,12 @@ I'm a full-time software developer so I have a lot to say when it comes to progr
     metal.rst
     monorepo.rst
     objective-c.rst
+    pacman.rst
     playdate.rst
     powershell.rst
     rsync.rst
     rust.rst
     sphinx.rst
+    steam-deck.rst
     vulkan.rst
     wsl.rst
