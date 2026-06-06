@@ -15,3 +15,4 @@ I play a lot of video games.
     steam-deck.rst
     minecraft.rst
     zzz/index.rst
+    nms-hdr-linux.rst
