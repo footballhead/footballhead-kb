@@ -14,6 +14,18 @@ Install dependencies with `pipenv`_:
 
     pipenv install
 
+To use the system Python on Ubuntu 26.04, I had to specify ``--python python3``:
+
+.. code:: shell
+    
+    pipenv install --python python3
+
+I also had to reinstall Furo:
+
+.. code:: shell
+
+    pipenv run pip install furo
+
 Build:
 
 .. code:: shell
