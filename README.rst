@@ -8,50 +8,28 @@ Hosted at http://www.michaelhitchens.com/kb
 Developing
 ----------
 
-Install dependencies with `pipenv`_:
+Install Python and virtualenv. Then:
 
 .. code:: shell
 
-    pipenv install
+    # Make a virtualenv; ./venv is ignored
+    python3 -m venv ./venv
 
-To use the system Python on Ubuntu 26.04, I had to specify ``--python python3``:
+    # Activate the virtualenv
+    # On Linux:
+    . ./venv/bin/activate
+    # On Windows (Powershell):
+    .\venv\Scripts\Activate.ps1
+    # On Windows (cmd.exe):
+    venv\Scripts\activate.bat
 
-.. code:: shell
-    
-    pipenv install --python python3
-
-I also had to reinstall Furo:
-
-.. code:: shell
-
-    pipenv run pip install furo
-
-Build:
-
-.. code:: shell
-
-    pipenv run make autobuild
-
-This starts a process whichs rebuilds the site when you save changes. View at http://localhost:8000 in your browser
-
-In VSCode, you can preview output in editor using Simple Browser.
-
-Developing (Steam Deck)
------------------------
-
-SteamOS provides Python 3.13 with virtualenv. Since it seems a little ridiculuous to install Pipenv in a virtualenv, just use the venv:
-
-.. code:: shell
-
-    python3 -m venv path/to/your/venv
-    . path/to/your/venv/bin/activate
+    # Install required dependencies inside venv
     pip install sphinx furo
 
-SteamOS doesn't provide make, so build by hand:
-
-.. code:: shell
-
+    # Build the docs
     sphinx-build source build 
+
+    # Open build/index.html
 
 (Optional) Install ``sphinx-autobuild`` so the site is regenerated as you modify the .rst files:
 
