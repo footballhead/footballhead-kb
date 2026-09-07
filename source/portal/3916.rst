@@ -1,0 +1,223 @@
+Portal 2 Beta Build 3916
+========================
+
+Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=355
+
+.. warning:: This is an old build of HL2 with unpatched vulnerabities. Only play multiplayer with people that you trust.
+
+AppID 852 v0
+------------
+
+Steam2 DB: https://femtendo.github.io/steam2-catalog/#depot-852
+
+Requires several fixes:
+
+-   Need to make a ``generic_actor`` with ``target_name`` of ``@glados`` in order for voice lines to play
+-   Need fixed ``engine.dll`` for ???
+-   Copy all sounds from ``game_sounds_manifest.txt``
+-   Copy HL2 scripts folder
+-   Extract HL2 assets from ``hl2_misc_dir.vpk``, ``hl2_textures_dir.vpk``, and ``hl2_sound_misc_dir.vpk``
+-   Import ``hl2/scripts/game_sounds_manifest.txt`` into ``portal2/scripts/game_sounds_manifest.txt``
+-   Add ``hl2`` to ``SearchPaths`` in ``portal2/gameinfo.txt``
+-   Run ``snd_rebuildaudiocache``
+-   Hammer fix gist.github.com/nikolan123/84be972003eceb3cf4a81caba7857f85
+
+.. code::
+
+    // Save me to portal2/scripts/vscripts/mapspawn.nut
+    function fixlines()
+    {
+        local existing = Entities.FindByName(null, "@glados")
+        if (!existing)
+        {    
+            local ent = Entities.CreateByClassname("generic_actor")
+            ent.__KeyValueFromString("targetname", "@glados")
+            ent.SetOrigin(Vector(16000, 16000, 16000))
+        }
+    }
+
+    // game literally crashes without waiting a second lol
+    EntFire("worldspawn", "CallScriptFunction", "fixlines", 1.0)
+
+Multiplayer
+-----------
+
+TODO
+
+Oddities
+--------
+
+-   Old Portal 2 logo
+-   Both portal open sounds play when a new portal is shot.
+-   ``prop_portal`` doesn't have particle effects
+-   Uses Mel character model (blue jump suit)
+-   All other assets are Portal retail (cube, button, etc)
+-   Portal 2 crosshair behavior (no indication of whether a surface is portalable)
+-   Portal "wallhacks" implemented using closed DX8 portal texture
+-   "Slowfield" slows down time (e.g. ``devtest``)
+-   Early versions of the light bridge, aerial faith plate, lasers (chonky!)
+-   Cubes don't have player physics (e.g. on aerial faith plate)
+-   ``devtest``: Many portal 2 map additions are connected via world portals
+-   No effect for shooting portal projectile at fizzler
+-   No portal shoot cooldown
+-   Portal shots are instantaneous
+-   Portal campaign with minor differences
+-   Still Alive campaign without level transitions
+-   Moving portals!
+
+Portal maps
+-----------
+
+The normal Portal maps are here but with some changes:
+
+-   testchmb_a_00: The relaxation vault lacks the mug and clipboard
+-   testchmb_a_00: The relaxation vault toilet can't be flushed
+-   testchmb_a_01: ``weapon_portalgun`` shooting lacks the "charge up" effect and sound before shooting
+-   testchmb_a_01: No voice line for detaching security cameras
+-   escape_00: Missing models and textures
+-   escape_02: Missing mud shader
+
+Map list
+--------
+
+Portal 2 new game campaign (in order)
+
+-   p2_lab_prehub_1.bsp: Dilapidated test chamber 00, dilapidated test chamber 05, dilapidated test chamber 08, dilapidated test chamber 12 (do wall textures use normal version? very bumpy)
+-   p2_lab_prehub_2.bsp: Dilapidated test chamber 13, GLaDOS, dip to black
+-   p2_lab_lasers_1.bsp: Abrupt start, smooth jazz (basically all laser retail levels), curiosity core, BIG PORTAL
+-   p2_lab_hub_1.bsp: bring curiosity core to GLaDOS room, dip to black
+-   p2_lab_slowfield_1.bsp: slowfield, gun upgrade press R for slowfield, Aquariam sphere (no new voice lines after GLaDOS tutorial text)
+-   p2_lab_hub_2.bsp: bring core to GLaDOS room, dip to black
+-   p2_lab_catapult.bsp: catapult puzzles, some of which aren't in the final game, cake sphere
+-   p2_lab_hub_3.bsp: bring core to GLaDOS room, dip to black
+-   p2_lab_wall_01.bsp: light bridge tutorials, ome of which aren't in the final game, curiosity sphere
+-   p2_lab_hub_4.bsp: bring core to GLaDOS room, dip to black
+-   p2_lab_mixup.bsp: puzzles not in retail, and rocket turrets? paranoid sphere
+-   p2_lab_hub_6.bsp: bring core to GLaDOS room, cut to test pattern
+
+Portal 2 unused maps
+
+-   p2_lab_prehub_2a.bsp: earlier version the GLaDOS area in p2_lab_prehub_2?
+-   p2_lab_start_01.bsp: mat_fullbright; portal 1 with some dilapidation; no elevators until level transition
+-   p2_lab_start_02.bsp: portal 1 with some dilapidation; chamber 12 lots of work (dynamic lights?); wabruptly ends after chamber 12
+-   p2_lab_suctionturrets_1.bsp: pneumatic diversity vent tutorial (suck and blow!); likes to crash; end abruptly with a picture of a rat
+-   p2_lab_turrets.bsp: rocket turrets tutorial; curiosity sphere; "Can't find connection to p2_lab_turrets from p2_lab_hub_6"
+-   p2_lab_hub_5.bsp: GLaDOS room; transitions to p2_lab_turrets
+
+Test maps:
+
+-   devtest: Portal leaked devtest with Portal 2 additions
+-   devtest_01: Portal leaked devtest
+-   videotest: One room with two video files playing
+
+Portal 2 early multiplayer (order?):
+
+-   mp_coop_button_tower.bsp
+-   mp_coop_catapult_1.bsp
+-   mp_coop_catapult_2.bsp
+-   mp_coop_catapult_wall_intro.bsp
+-   mp_coop_come_along.bsp
+-   mp_coop_doors.bsp
+-   mp_coop_double_catch.bsp
+-   mp_coop_fling_1.bsp
+-   mp_coop_fling_3.bsp
+-   mp_coop_laser_1.bsp
+-   mp_coop_laser_2.bsp
+-   mp_coop_laser_3.bsp
+-   mp_coop_laser_bypass.bsp
+-   mp_coop_laser_crusher.bsp
+-   mp_coop_laser_redirect.bsp
+-   mp_coop_mic_calibration.bsp
+-   mp_coop_race_1.bsp
+-   mp_coop_race_2.bsp
+-   mp_coop_race_3.bsp
+-   mp_coop_rat_maze.bsp
+-   mp_coop_start.bsp
+-   mp_coop_trap_1.bsp
+-   mp_coop_turret_walls.bsp
+-   mp_coop_vista.bsp
+-   mp_coop_wall_1.bsp
+-   mp_coop_wall_2.bsp
+-   mp_coop_wall_3.bsp
+-   mp_coop_wall_5.bsp
+-   mp_coop_wall_6.bsp
+-   mp_coop_wall_block.bsp
+-   mp_coop_wall_catch.bsp
+-   mp_coop_wall_intro.bsp
+-   mp_coop_wall_stop.bsp
+-   mp_coop_wall_straight_jump.bsp
+
+Portal background maps:
+
+-   background1.bsp
+-   background2.bsp
+
+Portal campaign:
+
+-   testchmb_a_00.bsp
+-   testchmb_a_01.bsp
+-   testchmb_a_02.bsp
+-   testchmb_a_03.bsp
+-   testchmb_a_04.bsp
+-   testchmb_a_05.bsp
+-   testchmb_a_06.bsp
+-   testchmb_a_07.bsp
+-   testchmb_a_08.bsp
+-   testchmb_a_09.bsp
+-   testchmb_a_10.bsp
+-   testchmb_a_11.bsp
+-   testchmb_a_13.bsp
+-   testchmb_a_14.bsp
+-   testchmb_a_15.bsp
+-   escape_00.bsp
+-   escape_01.bsp
+-   escape_02.bsp
+
+Portal retail advanced chambers:
+
+-   testchmb_a_08_advanced.bsp
+-   testchmb_a_09_advanced.bsp
+-   testchmb_a_10_advanced.bsp
+-   testchmb_a_11_advanced.bsp
+-   testchmb_a_13_advanced.bsp
+-   testchmb_a_14_advanced.bsp
+
+Still Alive campaign:
+
+-   stillalive_1.bsp
+-   stillalive_2.bsp
+-   stillalive_3.bsp
+-   stillalive_4.bsp
+-   stillalive_5.bsp
+-   stillalive_6.bsp
+-   stillalive_7.bsp
+-   stillalive_8.bsp
+-   stillalive_9.bsp
+-   stillalive_10.bsp
+-   stillalive_11.bsp
+-   stillalive_12.bsp
+-   stillalive_13.bsp
+-   stillalive_14.bsp
+
+Graphics settings
+-----------------
+
+.. code::
+    
+    Unknown command "mat_dxlevel"
+    Unknown command "mat_trilinear"
+    Unknown command "mat_reducefillrate"
+    Unknown command "mat_colorcorrection"
+
+Saving
+------
+
+The save/load dialog is busted. I wouldn't rely on quicksaves since sometimes the game places then at bad locations.
+
+To save to a file named: ``mysavefile``::
+
+    save mysavefile
+
+To load that file::
+
+    load my save file
