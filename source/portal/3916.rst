@@ -152,7 +152,7 @@ Portal background maps:
 -   background1.bsp
 -   background2.bsp
 
-Portal campaign:
+Portal campaign (largely the same but some minor differences):
 
 -   testchmb_a_00.bsp
 -   testchmb_a_01.bsp
@@ -221,3 +221,14 @@ To save to a file named: ``mysavefile``::
 To load that file::
 
     load my save file
+
+Still Alive
+-----------
+
+Seems kinda broken:
+
+-   No level transitions (dip to black then thrown to menu)
+-   Turrets only sometimes work?
+-   No effect on the big electricity field or lasers
+-   One test keeps dispensing spheres?
+-   No portal bumps makes some portal placement impossible
