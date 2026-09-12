@@ -16,3 +16,4 @@ I play a lot of video games.
     minecraft.rst
     zzz/index.rst
     nms-hdr-linux.rst
+    endfield.rst
