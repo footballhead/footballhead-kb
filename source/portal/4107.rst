@@ -29,6 +29,7 @@ Oddities:
 -   No Wheatley voice lines. Just on-screen text
 -   Can fire the portal gun as fast as you can click
 -   Portals appear instantaneously on the target surface (no projectile); means no portal peeking
+-   The map order is dumped to the console on map load
 
 Bugs:
 
@@ -88,117 +89,119 @@ Allow shooting all paint colors::
 Maps
 ----
 
-Single-player (campaign map order):
+Single-player (in order):
 
--   sp_intro_01.bsp: Wheatley wake up sequence
--   sp_intro_02.bsp
--   sp_intro_03.bsp
--   sp_intro_04.bsp: Chamber 02 (get blue portal gun)
--   sp_intro_05.bsp
--   sp_intro_06.bsp: Chamber 07 Wheatley meetup
--   sp_glados_01.bsp
--   sp_temp_portal_gun.bsp
--   sp_laser_redirect_intro.bsp
--   sp_laser_stairs.bsp
--   sp_laser_dual_lasers.bsp
--   sp_laser_powered_lift.bsp
--   sp_laser_over_goo.bsp
--   sp_catapult_intro.bsp
--   sp_assisted_angle_fling.bsp
--   sp_trust_fling.bsp
--   sp_catapult_fling_intro.bsp
--   sp_unassisted_angle_fling.bsp
--   sp_hole_in_the_sky.bsp
--   sp_bridge_intro.bsp
--   sp_bridge_climb.bsp
--   sp_shoot_through_wall.bsp
--   sp_bridge_the_gap.bsp
--   sp_temp_sphere_1.bsp
+-   sp_intro_01
+-   sp_intro_02
+-   sp_intro_03
+-   sp_intro_04
+-   sp_intro_05
+-   sp_intro_06
+-   sp_glados_01
+-   sp_temp_portal_gun
+-   sp_laser_redirect_intro
+-   sp_laser_stairs
+-   sp_laser_dual_lasers
+-   sp_laser_powered_lift
+-   sp_laser_over_goo
+-   sp_catapult_intro
+-   sp_assisted_angle_fling
+-   sp_trust_fling
+-   sp_catapult_fling_intro
+-   sp_unassisted_angle_fling
+-   sp_hole_in_the_sky
+-   sp_bridge_intro
+-   sp_bridge_climb
+-   sp_shoot_through_wall
+-   sp_bridge_the_gap
+-   sp_temp_sphere_1
+-   sp_turret_intro
+-   sp_turret_blocker_intro
+-   sp_column_blocker
+-   sp_laser_vs_turret_intro
+-   sp_laser_relays
+-   sp_ring_around_the_turrets
+-   sp_turret_tower
+-   sp_triple_laser
+-   sp_climb_for_los
+-   sp_angled_bridge
+-   sp_stop_the_box
+-   sp_turret_islands
+-   sp_catapult_course
+-   sp_box_over_goo
+-   sp_laserfield_intro
+-   sp_paint_speed_intro
+-   sp_paint_speed_ramp
+-   sp_paint_speed_flings
+-   sp_rocket_turret_intro
+-   sp_rocket_box_trigger
+-   sp_rocket_redirect
+-   sp_temp_sphere_2
+-   sp_security_intro
+-   sp_tbeam_intro
+-   sp_tbeam_trust_drop
+-   sp_tbeam_box_over_goo
+-   sp_tbeam_wall_button
+-   sp_paint_jump_trampoline_intro
+-   sp_paint_jump_redirect_bomb
+-   sp_paint_jump_wall_jumps
+-   sp_paint_jump_wall_jumps_gap
+-   sp_tbeam_cut
+-   sp_tbeam_goo_ride
+-   sp_tbeam_polarity
+-   sp_tbeam_get_height
+-   sp_tbeam_catch
+-   sp_temp_sphere_3
+-   sp_paint_stick_intro
+-   sp_paint_stick_cube_painting
+-   sp_paint_jump_artillery
+-   sp_paint_jump_tbeam
+-   sp_paint_jump_clean_box
+-   sp_paint_jump_tbeam_polarity
+-   sp_paint_speed_tb_catch
+-   sp_paint_stick_catapult
+-   sp_paint_jump_pinball
+-   sp_paint_stick_goo
+-   sp_paint_stick_climber
+-   sp_temp_sphere_4
+-   sp_tbeam_box_smuggle
+-   sp_paint_bridges
+-   sp_paint_jump_spiral_jumps
+-   sp_paint_stick_jump_fling
+-   sp_tbeam_turret_towers
+-   sp_suction_turrets
 
--   sp_stop_the_box.bsp
--   sp_angled_bridge.bsp
--   sp_box_over_goo.bsp
+Unused single-player maps:
+
 -   sp_building_the_floor.bsp
--   sp_catapult_course.bsp
--   sp_climb_for_los.bsp
--   sp_column_blocker.bsp
 -   sp_destroyed_still_alive.bsp
 -   sp_dual_laser.bsp
 -   sp_intro_07.bsp
 -   sp_intro_08.bsp
 -   sp_intro_09.bsp
--   sp_laserfield_intro.bsp
 -   sp_laser_intro.bsp
--   sp_laser_relays.bsp
 -   sp_laser_relay_bridges.bsp
--   sp_laser_vs_turret_intro.bsp
 -   sp_paint_box_slime_hop.bsp
--   sp_paint_bridges.bsp
 -   sp_paint_jump_angled_fling.bsp
--   sp_paint_jump_artillery.bsp
--   sp_paint_jump_clean_box.bsp
 -   sp_paint_jump_flings.bsp
 -   sp_paint_jump_intro.bsp
--   sp_paint_jump_pinball.bsp
--   sp_paint_jump_redirect_bomb.bsp
--   sp_paint_jump_spiral_jumps.bsp
--   sp_paint_jump_tbeam.bsp
--   sp_paint_jump_tbeam_polarity.bsp
--   sp_paint_jump_trampoline_intro.bsp
--   sp_paint_jump_wall_jumps.bsp
--   sp_paint_jump_wall_jumps_gap.bsp
--   sp_paint_speed_flings.bsp
--   sp_paint_speed_intro.bsp
--   sp_paint_speed_ramp.bsp
--   sp_paint_speed_tb_catch.bsp
--   sp_paint_stick_catapult.bsp
--   sp_paint_stick_climber.bsp
--   sp_paint_stick_cube_painting.bsp
 -   sp_paint_stick_fling.bsp
--   sp_paint_stick_goo.bsp
--   sp_paint_stick_intro.bsp
--   sp_paint_stick_jump_fling.bsp
 -   sp_proto_sphere_escape.bsp
 -   sp_proto_sphere_intro.bsp
 -   sp_proto_sphere_reroute.bsp
 -   sp_pull_the_rug.bsp
 -   sp_pull_to_fling.bsp
 -   sp_richard_sphere.bsp
--   sp_ring_around_the_turrets.bsp
--   sp_rocket_box_trigger.bsp
 -   sp_rocket_laser_lift.bsp
--   sp_rocket_redirect.bsp
 -   sp_rocket_turret.bsp
--   sp_rocket_turret_intro.bsp
--   sp_security_intro.bsp
 -   sp_sphere_intro.bsp
 -   sp_sphere_wall.bsp
--   sp_suction_turrets.bsp
--   sp_tbeam_box_over_goo.bsp
--   sp_tbeam_box_smuggle.bsp
--   sp_tbeam_catch.bsp
 -   sp_tbeam_ceil_button.bsp
--   sp_tbeam_cut.bsp
--   sp_tbeam_get_height.bsp
--   sp_tbeam_goo_ride.bsp
--   sp_tbeam_intro.bsp
--   sp_tbeam_polarity.bsp
--   sp_tbeam_trust_drop.bsp
--   sp_tbeam_turret_towers.bsp
--   sp_tbeam_wall_button.bsp
--   sp_temp_sphere_2.bsp
--   sp_temp_sphere_3.bsp
--   sp_temp_sphere_4.bsp
--   sp_triple_laser.bsp
 -   sp_tube_blockage.bsp
 -   sp_tube_vista.bsp
--   sp_turret_blocker_intro.bsp
--   sp_turret_intro.bsp
--   sp_turret_islands.bsp
--   sp_turret_tower.bsp
 -   sp_vista_placeholder.bsp
 
-Multiplayer:
+Multiplayer (alphabetical):
 
 -   mp_coop_button_tower.bsp
 -   mp_coop_catapult_1.bsp
