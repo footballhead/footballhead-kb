@@ -16,7 +16,7 @@ Install Python and virtualenv. Then:
     python3 -m venv ./venv
 
     # Activate the virtualenv
-    # On Linux:
+    # On Linux/macOS:
     . ./venv/bin/activate
     # On Windows (Powershell):
     .\venv\Scripts\Activate.ps1
