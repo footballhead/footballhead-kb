@@ -6,6 +6,15 @@ Approx Date: Feb 04 2010
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=366
 
+.. note::
+
+    The hl2-beta.ru page has incorrect paint gun information:
+    
+    -   The keys are not bound by default
+    -   There are only 3 paint colors
+    
+    This is likely a copy-paste error from other builds.
+
 Steam2 DB: https://femtendo.github.io/steam2-catalog/#depot-841
 
 .. warning::
@@ -84,6 +93,234 @@ Give paint gun::
 Allow shooting all paint colors::
 
     giveallpaintpowers
+
+---------
+Paint gun
+---------
+
+Basic usage:
+
+-   Left click: fire selected paint type
+-   Right click: fire cleanup paint
+
+Paint types (likely taken from Tag: The Power of Paint):
+
+-   Green: bounce (blue gel in retail)
+-   Red: speed (orange gel in retail)
+-   Blue: stick (cut from retail)
+
+Convars:
+
+``give weapon_paintgun``
+    Get the paint gun
+
+``giveallpaintpowers``
+    Unlock all paint types
+
+``prevpaint``
+    Select previous paint type
+
+``nextpaint``
+    Select next paint type
+
+``changepaintto (bounce|speed|stick)``
+    Select a specific paint type
+
+``+alt1``
+    Switch between portal gun and paint gun
+
+Suggsted keybinds (commented out in ``portal2/cfg/config_default.cfg``)::
+
+    bind MWHEELUP prevpaint
+    bind MWHEELDOWN nextpaint
+    bind 1 "changepaintto bounce"
+    bind 2 "changepaintto speed"
+    bind 3 "changepaintto stick"
+    bind f +alt1
+
+Could save to ``portal2/cfg/paint.cfg`` then ``exec paint``
+
+-------
+Gamepad
+-------
+
+Without Steam Input, Source kind of assumes that you're using an Xbox controller. However, there are some convars that can be set for the PS4 controller.
+
+This is the config that I use:
+
+.. code-block:: text
+
+    // Use joystick input
+    joystick 1
+
+    // Enable the ability to look up/down
+    +jlook
+    
+    // Use advanced joystick mapping so we can map the axes
+    joy_advanced 1
+
+    // Left stick horizontal axis moves left/right
+    joy_advaxisx 3
+
+    // Left stick vertical axis moves forward/back
+    joy_advaxisy 1
+
+    // Right stick horizontal axis looks left/right 
+    joy_advaxisz 4
+
+    // Right stick vertical axis looks up/down
+    joy_advaxisr 2
+
+    // X jumps
+    bind JOY1 +jump
+
+    // Circle crouches. There's no crouch toggle but we can make our own by
+    // redefining an alias.
+    bind JOY2 crouch_toggle
+    alias crouch_toggle crouch_on
+    alias crouch_on "alias crouch_toggle crouch_off; +duck; echo crouched"
+    alias crouch_off "alias crouch_toggle crouch_on; -duck; echo uncrouched"
+
+    // Square picks up/uses
+    bind JOY3 +use
+
+    // Triangle is slow time. Unlike duck, +slowtime acts as a toggle
+    bind JOY4 +slowtime
+
+    // L1 fires an orange portal
+    bind JOY5 +attack2
+
+    // R1 fires a blue portal
+    bind JOY6 +attack
+
+    // L2 swaps between portal gun and paint gun
+    bind JOY7 +alt1
+
+    // R2 changes paint color
+    bind JOY8 nextpaint
+
+    // D-Pad Up gives you the paint gun
+    bing POV_UP "sv_cheats 1;give weapon_paintgun;giveallpaintpowers"
+
+    // Apply all advanced joystick settings
+    joyadvancedupdate
+
+Save it to ``portal2/cfg/ps4controller.cfg`` and run ``exec ps4controller`` in-game.
+
+TODO:
+
+-   How to swap HUD reticle? equivalent to ``cl_quickinfo_swap 1``?
+-   Zoom?
+
+Explanation
+===========
+
+In this section, I will explain how I arrived at these settings
+
+Portal 2 controls: https://strategywiki.org/wiki/Portal_2/Controls
+
+Without Steam Input, Source kind of assumes that you're using an Xbox controller. However, there are some convars that can be set for the PS4 controller.
+
+.. tip::
+
+    Launch hl2.exe with ``+developer 3`` to get more controller diagnostics
+
+First, run this to enable gamepads::
+
+    joystick 1
+
+Advanced settings
+=================
+
+Source has two controller schemes: non-advanced and advanced. For non-advanced settings, the right control stick doesn't work. Thus, we need to enable advanced settings::
+
+    joy_advanced 1
+
+Any time an advanced setting is changed, need to run::
+    
+    joyadvancedupdate
+
+Stick configuration
+===================
+
+First, in order to be able to look up and down, need to run::
+
+    +jlook
+
+The gist is that you bind a stick axis to an action. Possible stick directions:
+
+-   ``joy_advaxisx``: PS4 left stick, horizontal axis
+-   ``joy_advaxisy``: PS4 left stick, vertical axis
+-   ``joy_advaxisz``: PS4 left stick, horizontal acis
+-   ``joy_advaxisr``: PS4 right stick, vertical axis
+-   ``joy_advaxisu``: ??? Always held
+-   ``joy_advaxisv``: ??? Always held
+
+Possible actions:
+
+-   ``0``: "unmapped"
+-   ``1``: "forward (absolute)": move forward or back
+-   ``2``: "pitch (absolute)": look up or down (requires ``+jlook``)
+-   ``3``: "strafe (absolute)": move left or right
+-   ``4``: "yaw (absolute)": look left or right
+
+.. warning::
+    
+    Anything outside 0-4 (e.g. 5) crashes the game
+
+Thus, I recommend::
+
+    joy_advaxisx 3
+    joy_advaxisy 1
+    joy_advaxisz 4
+    joy_advaxisr 2
+
+Everything else
+===============
+
+Some actions must be bound to a key. A list of key mappings from experimentation (and confirmed by https://developer.valvesoftware.com/wiki/Bind):
+
+-   Square is ``JOY1``
+-   X is ``JOY2``
+-   Circle is ``JOY3``
+-   Triangle is ``JOY4``
+-   L1 is ``JOY5``
+-   R1 is ``JOY6``
+-   L2 is ``JOY7``
+-   R2 is ``JOY8``
+-   Share is ``JOY9``
+-   Options is ``JOY10``
+-   L3 is ``JOY11``
+-   R3 is ``JOY12``
+-   Playstation button is ``JOY13``
+-   Touchpad is ``JOY14``
+-   D-Pad Up is ``POV_UP``
+-   D-Pad Down is ``POV_DOWN``
+-   D-Pad Left is ``POV_LEFT``
+-   D-Pad RIght is ``POV_RIGHT``
+
+I recommend::
+
+    bind JOY1 +jump
+    bind JOY2 crouch_toggle
+    alias crouch_toggle crouch_on
+    alias crouch_on "alias crouch_toggle crouch_off; +duck; echo crouched"
+    alias crouch_off "alias crouch_toggle crouch_on; -duck; echo uncrouched"
+    bind JOY3 +use
+    bind JOY4 +slowtime
+    bind JOY5 +attack2
+    bind JOY6 +attack
+    bind JOY7 +alt1
+    bind JOY8 nextpaint
+    bing POV_UP "sv_cheats;give weapon_paintgun;giveallpaintpowers"
+
+TODO:
+
+-   Zoom (JOY8?)
+
+.. note::
+
+    The duck toggling behavior was taken from this reddit post: https://www.reddit.com/r/HalfLife/comments/pnr8ak/how_to_implement_the_option_to_toggle_crouch/
 
 ----
 Maps
@@ -268,7 +505,7 @@ Dev maps:
 
 -   ali_toxicliquid_test.bsp
 -   devtest.bsp
--   devtest_stick.bsp
+-   devtest_stick.bsp: Small room with a moving platform and a pit for testing sticky gel
 -   devtest_01.bsp
 -   styleguide_bts_01.bsp
 -   styleguide_destruction_1.bsp
