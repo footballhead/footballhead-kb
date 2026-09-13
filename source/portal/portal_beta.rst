@@ -6,9 +6,10 @@ Portal Beta
 Leaks
 -----
 
--   NVidia shield leaked stuff
+-   The NVidia shield release leaked stuff.
 -   Someone got their hands on some old harddrives with early Portal content. This got leaked.
 -   At some point, VMFs were leaked: https://hl2-beta.ru/index.php?action=downloads;sa=view;down=70
+-   People working with Valve got access to pre-release assets. Which were eventually leaked.
 
 Assets:
 
@@ -20,22 +21,35 @@ Assets:
 Mods
 ----
 
-Portal: Project Beta (2010)
----------------------------
-
-Download: https://www.moddb.com/mods/portal-project-beta1/downloads/portal-project-beta-original-late-2010-version
-
-A fan mod for Portal which recreated early beta content from screenshots, video, etc. Some maps are entirely original.
-
 Portal: Project Alpha (2009)
-----------------------------
+============================
+
+.. note::
+
+    This mod was made before all the leaks.
 
 Download: https://www.moddb.com/mods/portal-project-beta1/downloads/portal-project-beta-original-early-feb-2009-demo
 
 An early demo for Portal: Project Beta (2010). Some maps are entirely original.
 
+
+Portal: Project Beta (2010)
+===========================
+
+.. note::
+
+    This mod was made before all the leaks.
+
+Download: https://www.moddb.com/mods/portal-project-beta1/downloads/portal-project-beta-original-late-2010-version
+
+A fan mod for Portal which recreated early beta content from screenshots, video, etc. Some maps are entirely original.
+
 Portal: Project Beta (2016)
----------------------------
+===========================
+
+.. note::
+
+    Requires the "upcoming" branch of Source SDK 2013
 
 Download (Moddb): https://www.moddb.com/mods/portal-project-beta1/downloads/portal-project-beta2
 
@@ -45,15 +59,27 @@ A reset of the Portal: Project Beta which incorporates leaked content. Has 2006 
 
 AFAICT, this uses a modified version of the leaked Portal source to restore the crosshair.
 
-Portal: Still Alive
--------------------
+Project Beta :sup:`2` (2024)
+============================
 
-Download: https://www.moddb.com/mods/portal-still-alive-pc/downloads/portal-still-alive-pc-release
+.. note::
 
-Commercial release of Portal: The Flash Version (TFV) mappack. Includes both Still Alive and TFV.
+    Requires the "upcoming" branch of Source SDK 2013
+
+Download: https://project-beta.com/
+
+Like Portal: Project Beta (2016), uses leaked content to recreate 2006-era demos. Actually two mods:
+
+#.  The trailer maps with the 2006 Leipzig demo. Uses the blue + purple crosshair with the "vine" portals.
+#.  The 2006 Barcelona demo. Uses the blue + purple crosshair with "swirl" portals (no particle effects).
+
+Unsure what the relation to Portal: Project Beta (2016) is. Uses the old crosshair so maybe same ``client.dll``?
 
 Portal: Prospekt
 ----------------
+.. note::
+
+    Requires the "upcoming" branch of Source SDK 2013
 
 Download: TODO
 

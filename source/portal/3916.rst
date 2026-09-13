@@ -1,14 +1,13 @@
-Portal 2 Beta Build 3916
-========================
+Portal 2 Beta Build 3916 (AppID 852 v0)
+=======================================
+
+Approx Date: July 28 2009
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=355
 
-.. warning:: This is an old build of HL2 with unpatched vulnerabities. Only play multiplayer with people that you trust.
-
-AppID 852 v0
-------------
-
 Steam2 DB: https://femtendo.github.io/steam2-catalog/#depot-852
+
+.. warning:: This is an old build of HL2 with unpatched vulnerabities. Only play multiplayer with people that you trust.
 
 Requires several fixes:
 
@@ -147,12 +146,12 @@ Portal 2 early multiplayer (order?):
 -   mp_coop_wall_stop.bsp
 -   mp_coop_wall_straight_jump.bsp
 
-Portal background maps:
+Portal 1 background maps:
 
 -   background1.bsp
 -   background2.bsp
 
-Portal campaign (largely the same but some minor differences):
+Portal 1 campaign (largely the same but some minor differences):
 
 -   testchmb_a_00.bsp
 -   testchmb_a_01.bsp
@@ -173,7 +172,7 @@ Portal campaign (largely the same but some minor differences):
 -   escape_01.bsp
 -   escape_02.bsp
 
-Portal retail advanced chambers:
+Portal 1 retail advanced chambers:
 
 -   testchmb_a_08_advanced.bsp
 -   testchmb_a_09_advanced.bsp
@@ -182,7 +181,7 @@ Portal retail advanced chambers:
 -   testchmb_a_13_advanced.bsp
 -   testchmb_a_14_advanced.bsp
 
-Still Alive campaign:
+Still Alive campaign (unfinished?):
 
 -   stillalive_1.bsp
 -   stillalive_2.bsp
