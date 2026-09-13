@@ -191,17 +191,17 @@ This is the config that I use:
     // Triangle is slow time. Unlike duck, +slowtime acts as a toggle
     bind JOY4 +slowtime
 
-    // L1 fires an orange portal
-    bind JOY5 +attack2
+    // L1 swaps between portal gun and paint gun
+    bind JOY5 +alt1
 
-    // R1 fires a blue portal
-    bind JOY6 +attack
+    // R1 changes paint color
+    bind JOY6 nextpaint
 
-    // L2 swaps between portal gun and paint gun
-    bind JOY7 +alt1
+    // L2 fires an orange portal
+    bind JOY7 +attack2
 
-    // R2 changes paint color
-    bind JOY8 nextpaint
+    // R2 fires a blue portal
+    bind JOY8 +attack
 
     // Options shows in-game menu (and pauses)
     bind JOY10 toggle_gameui
@@ -325,10 +325,10 @@ I recommend::
     alias crouch_on "alias crouch_toggle crouch_off; +duck; echo crouched"
     alias crouch_off "alias crouch_toggle crouch_on; -duck; echo uncrouched"
     bind JOY4 +slowtime
-    bind JOY5 +attack2
-    bind JOY6 +attack
-    bind JOY7 +alt1
-    bind JOY8 nextpaint
+    bind JOY5 +alt1
+    bind JOY6 nextpaint
+    bind JOY7 +attack2
+    bind JOY8 +attack
     bing POV_UP "sv_cheats;give weapon_paintgun;giveallpaintpowers"
 
 TODO:
@@ -338,6 +338,14 @@ TODO:
 .. note::
 
     The duck toggling behavior was taken from this reddit post: https://www.reddit.com/r/HalfLife/comments/pnr8ak/how_to_implement_the_option_to_toggle_crouch/
+
+-------
+Surveys
+-------
+
+Disabled by default. However, if deleted your ``config.cfg`` like I did, then you can disable them with::
+
+    cl_disable_survey_panel 1
 
 ----
 Maps
