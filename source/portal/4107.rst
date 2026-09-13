@@ -175,18 +175,18 @@ This is the config that I use:
     // Right stick vertical axis looks up/down
     joy_advaxisr 2
 
+    // Square picks up/uses
+    bind JOY1 +use
+
     // X jumps
-    bind JOY1 +jump
+    bind JOY2 +jump
 
     // Circle crouches. There's no crouch toggle but we can make our own by
     // redefining an alias.
-    bind JOY2 crouch_toggle
+    bind JOY3 crouch_toggle
     alias crouch_toggle crouch_on
     alias crouch_on "alias crouch_toggle crouch_off; +duck; echo crouched"
     alias crouch_off "alias crouch_toggle crouch_on; -duck; echo uncrouched"
-
-    // Square picks up/uses
-    bind JOY3 +use
 
     // Triangle is slow time. Unlike duck, +slowtime acts as a toggle
     bind JOY4 +slowtime
@@ -318,12 +318,12 @@ Some actions must be bound to a key. A list of key mappings from experimentation
 
 I recommend::
 
-    bind JOY1 +jump
-    bind JOY2 crouch_toggle
+    bind JOY1 +use
+    bind JOY2 +jump
+    bind JOY3 crouch_toggle
     alias crouch_toggle crouch_on
     alias crouch_on "alias crouch_toggle crouch_off; +duck; echo crouched"
     alias crouch_off "alias crouch_toggle crouch_on; -duck; echo uncrouched"
-    bind JOY3 +use
     bind JOY4 +slowtime
     bind JOY5 +attack2
     bind JOY6 +attack
