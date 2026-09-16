@@ -1,6 +1,6 @@
-=========================
-Build 4275 (July 22 2010)
-=========================
+========================
+Build 4275 (Jul 22 2010)
+========================
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=368
 

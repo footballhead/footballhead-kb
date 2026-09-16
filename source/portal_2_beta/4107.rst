@@ -33,6 +33,7 @@ Notable Changes
 -   Test elements that seem to have fallen out of favor: Suction, laser turrets, slowfield
 -   Story being reworked from corehub to being more focused on the cores themselves
 -   Get the portal gun in chamber 02 now (instead of 05)
+-   New toxic liquid shader present but only used in ``ali_toxicliquid_test``
 
 Bugs:
 
