@@ -25,6 +25,7 @@ Part of the single-player campaign:
 
 -   Rocket turret ("rocket") (cut)
 -   Security camera ("security") (cut): Scans an area of the level. Opens/closes a door when it sees the player.
+-   Checkpoints (cut): Triggers when the player walks through. Typically used in timing-based puzzles where the user needs to hit all checkpoints within a time limit.
 -   Paint: bounce, speed, stick. Stick paint was cut.
 -   Lasers
 -   Light bridge (internally called "walls")
