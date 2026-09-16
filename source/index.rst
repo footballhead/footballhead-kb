@@ -9,5 +9,6 @@ My personal pseudo-KB/digital garden/second brain. Mostly nonsense that I want t
     diablo/index.rst
     other.rst
     portal/index.rst
+    portal_2_beta/index.rst
     programming/index.rst
     video-games/index.rst

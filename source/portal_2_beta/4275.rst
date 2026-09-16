@@ -1,0 +1,9 @@
+=========================
+Build 4275 (July 22 2010)
+=========================
+
+Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=368
+
+.. warning::
+    
+    This is an old build of HL2 with unpatched vulnerabities. Only play multiplayer with people that you trust.

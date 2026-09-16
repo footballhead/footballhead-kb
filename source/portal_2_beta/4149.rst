@@ -1,0 +1,308 @@
+========================
+Build 4149 (Mar 18 2010)
+========================
+
+Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=367
+
+---------------
+Notable Changes
+---------------
+
+-   Major facelift to the first few chambers
+-   Small refire cooldown
+-   Paint colors changed: speed is orange, bounce is blue, stick is purple
+-   Portal gun dissappears when grabbing the cube (like retail)
+-   New button sounds: activating button is same as retail, deactivating button is this (cut) jarring buzzer
+
+-------------
+Test Elements
+-------------
+
+Part of the single-player campaign:
+
+-   Rocket turret ("rocket") (cut)
+-   Security camera ("security") (cut): Scans an area of the level. Opens/closes a door when it sees the player.
+-   Tractor beam ("tbeam") (cut): Activated when the player passes through. Typically used for time-based "touch all the points" style maps
+-   Paint: bounce, speed, stick. Stick paint was cut.
+-   Lasers
+-   Light bridge (internally called "walls")
+-   Aerial faith plate (internally called "catapult")
+-   Turrets
+-   Laserfield: kills the player on touch (likely inspired by TFV mappack)
+
+Present but not part of the playtest:
+
+-   Slow time (cut): player-controllable slowfield. Not actually used in any tests. Unbound by default.
+-   Rotating laser turret (Cut): Uses the personality core model, attached to the ceiling by a rope. Spins 360 degrees. Attacks the player on sight. Defeated by grabbing, yanking off tether, and throwing.
+-   Pneumatic diversity vent (internally called "suction") (cut): Showed off in a demo video but never released. Interestingly, only the suction part was demoed but some puzzles used a variant that blows air
+
+--------
+Map list
+--------
+
+Singleplayer:
+
+-   sp_angled_bridge.bsp
+-   sp_assisted_angle_fling.bsp
+-   sp_box_over_goo.bsp
+-   sp_bridge_climb.bsp
+-   sp_bridge_intro.bsp
+-   sp_bridge_laser.bsp
+-   sp_bridge_the_gap.bsp
+-   sp_building_the_floor.bsp
+-   sp_catapult_course.bsp
+-   sp_catapult_fling_intro.bsp
+-   sp_catapult_fling_sphere_peek.bsp
+-   sp_catapult_intro.bsp
+-   sp_catapult_multifling.bsp
+-   sp_catapult_over_tower.bsp
+-   sp_checkpoint_intro.bsp
+-   sp_climb_for_los.bsp
+-   sp_column_blocker.bsp
+-   sp_destroyed_still_alive.bsp
+-   sp_dual_laser.bsp
+-   sp_glados_01.bsp
+-   sp_hole_in_the_sky.bsp
+-   sp_incinerator_01.bsp
+-   sp_intro_01.bsp
+-   sp_intro_02.bsp
+-   sp_intro_03.bsp
+-   sp_intro_04.bsp
+-   sp_intro_05.bsp
+-   sp_intro_06.bsp
+-   sp_intro_07.bsp
+-   sp_intro_08.bsp
+-   sp_intro_09.bsp
+-   sp_laserfield_intro.bsp
+-   sp_laser_chaining.bsp
+-   sp_laser_dual_lasers.bsp
+-   sp_laser_intro.bsp
+-   sp_laser_over_goo.bsp
+-   sp_laser_powered_lift.bsp
+-   sp_laser_redirect_intro.bsp
+-   sp_laser_relays.bsp
+-   sp_laser_relay_bridges.bsp
+-   sp_laser_stairs.bsp
+-   sp_laser_vs_turret_intro.bsp
+-   sp_paint_box_slime_hop.bsp
+-   sp_paint_bridges.bsp
+-   sp_paint_jump_angled_fling.bsp
+-   sp_paint_jump_artillery.bsp
+-   sp_paint_jump_clean_box.bsp
+-   sp_paint_jump_flings.bsp
+-   sp_paint_jump_intro.bsp
+-   sp_paint_jump_pinball.bsp
+-   sp_paint_jump_redirect_bomb.bsp
+-   sp_paint_jump_spiral_jumps.bsp
+-   sp_paint_jump_tbeam.bsp
+-   sp_paint_jump_tbeam_polarity.bsp
+-   sp_paint_jump_trampoline_intro.bsp
+-   sp_paint_jump_wall_jumps.bsp
+-   sp_paint_jump_wall_jumps_gap.bsp
+-   sp_paint_speed_flings.bsp
+-   sp_paint_speed_intro.bsp
+-   sp_paint_speed_racer.bsp
+-   sp_paint_speed_ramp.bsp
+-   sp_paint_speed_rocket.bsp
+-   sp_paint_speed_tb_catch.bsp
+-   sp_paint_stick_catapult.bsp
+-   sp_paint_stick_climber.bsp
+-   sp_paint_stick_cube_painting.bsp
+-   sp_paint_stick_fling.bsp
+-   sp_paint_stick_goo.bsp
+-   sp_paint_stick_intro.bsp
+-   sp_paint_stick_jump_fling.bsp
+-   sp_proto_sphere_escape.bsp
+-   sp_proto_sphere_intro.bsp
+-   sp_proto_sphere_reroute.bsp
+-   sp_pull_the_rug.bsp
+-   sp_pull_to_fling.bsp
+-   sp_richard_sphere.bsp
+-   sp_ring_around_the_turrets.bsp
+-   sp_rocket_box_trigger.bsp
+-   sp_rocket_laser_lift.bsp
+-   sp_rocket_redirect.bsp
+-   sp_rocket_turret.bsp
+-   sp_rocket_turret_intro.bsp
+-   sp_security_intro.bsp
+-   sp_shoot_through_wall.bsp
+-   sp_sphere_2nd_encounter.bsp
+-   sp_sphere_intro.bsp
+-   sp_sphere_wall.bsp
+-   sp_stop_the_box.bsp
+-   sp_suction_turrets.bsp
+-   sp_tbeam_box_over_goo.bsp
+-   sp_tbeam_box_smuggle.bsp
+-   sp_tbeam_catch.bsp
+-   sp_tbeam_ceil_button.bsp
+-   sp_tbeam_cut.bsp
+-   sp_tbeam_get_height.bsp
+-   sp_tbeam_goo_ride.bsp
+-   sp_tbeam_intro.bsp
+-   sp_tbeam_polarity.bsp
+-   sp_tbeam_trust_drop.bsp
+-   sp_tbeam_turret_towers.bsp
+-   sp_tbeam_wall_button.bsp
+-   sp_temp_portal_gun.bsp
+-   sp_temp_sphere_1.bsp
+-   sp_temp_sphere_2.bsp
+-   sp_temp_sphere_3.bsp
+-   sp_temp_sphere_4.bsp
+-   sp_triple_laser.bsp
+-   sp_trust_fling.bsp
+-   sp_tube_blockage.bsp
+-   sp_tube_vista.bsp
+-   sp_turret_blocker_intro.bsp
+-   sp_turret_intro.bsp
+-   sp_turret_islands.bsp
+-   sp_turret_tower.bsp
+-   sp_turret_training_advanced.bsp
+-   sp_unassisted_angle_fling.bsp
+-   sp_vista_placeholder.bsp
+
+Multiplayer:
+
+-   mp_coop_2guns_bridges.bsp
+-   mp_coop_2guns_bridges2.bsp
+-   mp_coop_2guns_bridge_jump.bsp
+-   mp_coop_2guns_bridge_stick.bsp
+-   mp_coop_2guns_flingstick.bsp
+-   mp_coop_2guns_guardian.bsp
+-   mp_coop_2guns_intro.bsp
+-   mp_coop_2guns_longjumps.bsp
+-   mp_coop_2guns_longjump_intro.bsp
+-   mp_coop_2guns_swap.bsp
+-   mp_coop_2guns_walljumps.bsp
+-   mp_coop_button_tower.bsp
+-   mp_coop_catapult_1.bsp
+-   mp_coop_catapult_2.bsp
+-   mp_coop_catapult_wall_intro.bsp
+-   mp_coop_come_along.bsp
+-   mp_coop_crusher.bsp
+-   mp_coop_doors.bsp
+-   mp_coop_double_catch.bsp
+-   mp_coop_dueling_tbeams.bsp
+-   mp_coop_fling_1.bsp
+-   mp_coop_fling_3.bsp
+-   mp_coop_laser_1.bsp
+-   mp_coop_laser_2.bsp
+-   mp_coop_laser_3.bsp
+-   mp_coop_laser_bypass.bsp
+-   mp_coop_laser_crusher.bsp
+-   mp_coop_laser_redirect.bsp
+-   mp_coop_lobby.bsp
+-   mp_coop_mic_calibration.bsp
+-   mp_coop_paint_bridge.bsp
+-   mp_coop_paint_bridge_02.bsp
+-   mp_coop_paint_bridge_intro.bsp
+-   mp_coop_paint_come_along.bsp
+-   mp_coop_paint_fizzler_intro.bsp
+-   mp_coop_paint_redirect.bsp
+-   mp_coop_paint_red_racer.bsp
+-   mp_coop_paint_speed_catch.bsp
+-   mp_coop_paint_speed_fling.bsp
+-   mp_coop_race_1.bsp
+-   mp_coop_race_2.bsp
+-   mp_coop_race_3.bsp
+-   mp_coop_rat_maze.bsp
+-   mp_coop_rocket_block.bsp
+-   mp_coop_separation_1.bsp
+-   mp_coop_start.bsp
+-   mp_coop_tbeam_1.bsp
+-   mp_coop_trap_1.bsp
+-   mp_coop_turret_walls.bsp
+-   mp_coop_vertical_crushers.bsp
+-   mp_coop_vista.bsp
+-   mp_coop_wall_1.bsp
+-   mp_coop_wall_2.bsp
+-   mp_coop_wall_3.bsp
+-   mp_coop_wall_5.bsp
+-   mp_coop_wall_6.bsp
+-   mp_coop_wall_block.bsp
+-   mp_coop_wall_catch.bsp
+-   mp_coop_wall_intro.bsp
+-   mp_coop_wall_stop.bsp
+-   mp_coop_wall_straight_jump.bsp
+
+Press demos:
+
+-   pressdemo_coop_doors.bsp
+-   pressdemo_coop_laser_2.bsp
+-   pressdemo_coop_laser_crusher.bsp
+-   pressdemo_coop_paint.bsp
+-   pressdemo_coop_race_2.bsp
+-   pressdemo_coop_straight_jump.bsp
+-   pressdemo_coop_wall_5.bsp
+-   pressdemo_coop_wall_catch.bsp
+-   pressdemo_coop_wall_intro.bsp
+-   pressdemo_glados.bsp
+-   pressdemo_glados_styleguide.bsp
+-   pressdemo_laser_stairs.bsp
+-   pressdemo_paint_bounce.bsp
+-   pressdemo_paint_speed.bsp
+-   pressdemo_reconfigure.bsp
+-   pressdemo_sphere.bsp
+-   pressdemo_suction.bsp
+-   pressdemo_tbeams.bsp
+
+Dev maps:
+
+-   ali_toxicliquid_test.bsp
+-   devtest.bsp
+-   devtest_stick.bsp
+-   styleguide_bts_01.bsp
+-   styleguide_destruction_1.bsp
+-   styleguide_foliage01.bsp
+-   styleguide_foliage02.bsp
+-   styleguide_lush_foliage01.bsp
+-   styleguide_offices_1.bsp
+-   world_animation_zoo.bsp
+-   world_animation_zoo_simple.bsp
+-   zoo_foliage_01.bsp
+-   zoo_foliage_swaying_test01.bsp
+-   zoo_pinchers.bsp
+-   zoo_turret.bsp
+
+Portal 1:
+
+-   background1.bsp
+-   background2.bsp
+-   devtest_01.bsp
+-   escape_00.bsp
+-   escape_01.bsp
+-   escape_02.bsp
+-   stillalive_1.bsp
+-   stillalive_10.bsp
+-   stillalive_11.bsp
+-   stillalive_12.bsp
+-   stillalive_13.bsp
+-   stillalive_14.bsp
+-   stillalive_2.bsp
+-   stillalive_3.bsp
+-   stillalive_4.bsp
+-   stillalive_5.bsp
+-   stillalive_6.bsp
+-   stillalive_7.bsp
+-   stillalive_8.bsp
+-   stillalive_9.bsp
+-   testchmb_a_00.bsp
+-   testchmb_a_01.bsp
+-   testchmb_a_02.bsp
+-   testchmb_a_03.bsp
+-   testchmb_a_04.bsp
+-   testchmb_a_05.bsp
+-   testchmb_a_06.bsp
+-   testchmb_a_07.bsp
+-   testchmb_a_08.bsp
+-   testchmb_a_08_advanced.bsp
+-   testchmb_a_09.bsp
+-   testchmb_a_09_advanced.bsp
+-   testchmb_a_10.bsp
+-   testchmb_a_10_advanced.bsp
+-   testchmb_a_11.bsp
+-   testchmb_a_11_advanced.bsp
+-   testchmb_a_13.bsp
+-   testchmb_a_13_advanced.bsp
+-   testchmb_a_14.bsp
+-   testchmb_a_14_advanced.bsp
+-   testchmb_a_15.bsp

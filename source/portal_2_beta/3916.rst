@@ -1,13 +1,20 @@
-Portal 2 Beta Build 3916 (AppID 852 v0)
 =======================================
-
-Approx Date: July 28 2009
+Build 3916 (Jul 28 2009) (AppID 852 v0)
+=======================================
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=355
 
-Steam2 DB: https://femtendo.github.io/steam2-catalog/#depot-852
+--------
+Patching
+--------
 
-.. warning:: This is an old build of HL2 with unpatched vulnerabities. Only play multiplayer with people that you trust.
+.. tip::
+
+    A fixed copy with these patches is hosted on hl2-beta.ru: https://hl2-beta.ru/index.php?action=downloads;sa=view;down=355
+
+.. warning::
+
+    Even with the fixed repack, I still encounter the occasional crash.
 
 Requires several fixes:
 
@@ -38,11 +45,13 @@ Requires several fixes:
     // game literally crashes without waiting a second lol
     EntFire("worldspawn", "CallScriptFunction", "fixlines", 1.0)
 
+-----------
 Multiplayer
 -----------
 
 TODO
 
+--------
 Oddities
 --------
 
@@ -58,12 +67,36 @@ Oddities
 -   Cubes don't have player physics (e.g. on aerial faith plate)
 -   ``devtest``: Many portal 2 map additions are connected via world portals
 -   No effect for shooting portal projectile at fizzler
--   No portal shoot cooldown
--   Portal shots are instantaneous
--   Portal campaign with minor differences
+-   No portal refire cooldown; can shoot as fast as you can click
+-   Portal shots are instantaneous (no portal peek)
+-   Portal 1 campaign included with minor differences
 -   Still Alive campaign without level transitions
 -   Moving portals!
 
+-------
+Corehub
+-------
+
+During early Portal 2 development, the objective was to find the personality cores spread around Aperture Science and plug them back into GLaDOS to fix her. Prior to the leaks, the only info available about this early era of development came from interviews and The Final Hours of Portal 2. As such, this build has become notorious: it's the first time that anyone outside of Valve and early playtesters got hands-on with this iteration of story development.
+
+This succeeded F-Stop and preceeded development that became more focused on iterations with the cores themslves (Wheatley in particular).
+
+-------------
+Test Elements
+-------------
+
+This build pre-dates the acquisition of Tag: The Power of Paint so lacks the paint mechanics; those would show up in :doc:`4107`
+
+-   Slowfield (cut): 3D volume that slows down time. Denoted by a portalable wall with caution tape.
+-   Slow time (cut): player-controllable slowfield. Bound to ``R`` by default
+-   Rotating laser turret (Cut): Uses the personality core model, attached to the ceiling by a rope. Spins 360 degrees. Attacks the player on sight. Defeated by grabbing, yanking off tether, and throwing.
+-   Pneumatic iversity vent (internally called "suction") (cut): Showed off in a demo video but never released. Interestingly, only the suction part was demoed but some puzzles used a variant that blows air
+-   Lasers
+-   Light bridge (internally called "walls")
+-   Aerial faith plate (internally called "catapult")
+-   Turrets
+
+-----------
 Portal maps
 -----------
 
@@ -97,8 +130,8 @@ Portal 2 new game campaign (in order)
 Portal 2 unused maps
 
 -   p2_lab_prehub_2a.bsp: earlier version the GLaDOS area in p2_lab_prehub_2?
--   p2_lab_start_01.bsp: mat_fullbright; portal 1 with some dilapidation; no elevators until level transition
--   p2_lab_start_02.bsp: portal 1 with some dilapidation; chamber 12 lots of work (dynamic lights?); wabruptly ends after chamber 12
+-   p2_lab_start_01.bsp: ``mat_fullbright``; Portal 1 with some dilapidation; no elevators until level transition
+-   p2_lab_start_02.bsp: Portal 1 with some dilapidation; chamber 12 lots of work (dynamic lights?); abruptly ends after chamber 12
 -   p2_lab_suctionturrets_1.bsp: pneumatic diversity vent tutorial (suck and blow!); likes to crash; end abruptly with a picture of a rat
 -   p2_lab_turrets.bsp: rocket turrets tutorial; curiosity sphere; "Can't find connection to p2_lab_turrets from p2_lab_hub_6"
 -   p2_lab_hub_5.bsp: GLaDOS room; transitions to p2_lab_turrets
@@ -172,7 +205,7 @@ Portal 1 campaign (largely the same but some minor differences):
 -   escape_01.bsp
 -   escape_02.bsp
 
-Portal 1 retail advanced chambers:
+Portal 1 advanced chambers:
 
 -   testchmb_a_08_advanced.bsp
 -   testchmb_a_09_advanced.bsp
@@ -198,16 +231,18 @@ Still Alive campaign (unfinished?):
 -   stillalive_13.bsp
 -   stillalive_14.bsp
 
+-----------------
 Graphics settings
 -----------------
 
-.. code::
+.. code-block:: text
     
     Unknown command "mat_dxlevel"
     Unknown command "mat_trilinear"
     Unknown command "mat_reducefillrate"
     Unknown command "mat_colorcorrection"
 
+------
 Saving
 ------
 
@@ -221,6 +256,7 @@ To load that file::
 
     load my save file
 
+-----------
 Still Alive
 -----------
 
