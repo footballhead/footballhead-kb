@@ -17,3 +17,4 @@ I play a lot of video games.
     zzz/index.rst
     nms-hdr-linux.rst
     endfield.rst
+    rogue.rst

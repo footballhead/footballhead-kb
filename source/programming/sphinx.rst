@@ -43,7 +43,7 @@ Install ``sphinx``. I use ``pipenv`` to manage dependencies (but you could easil
 #.  ``mkdir my-sphinx-project && cd my-sphinx-project``
 #.  ``pipenv install sphinx``
 
-Generate a template site::
+Generate a template site:
 
     pipenv run sphinx-quickstart
     # Fill out the CLI wizard. I used separate source and build dirs
