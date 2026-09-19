@@ -1,5 +1,5 @@
-========================
-Build 4339 (Sep 26 2010)
-========================
+=======================================
+Build 4339 (Sep 26 2010) (AppID 841 v2)
+=======================================
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=370

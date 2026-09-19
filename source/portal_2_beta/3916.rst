@@ -72,6 +72,7 @@ Oddities
 -   Portal 1 campaign included with minor differences
 -   Still Alive campaign without level transitions
 -   Moving portals!
+-   Thick lasers.
 
 -------
 Corehub
@@ -85,16 +86,23 @@ This succeeded F-Stop and preceeded development that became more focused on iter
 Test Elements
 -------------
 
-This build pre-dates the acquisition of Tag: The Power of Paint so lacks the paint mechanics; those would show up in :doc:`4107`
+Cut:
 
--   Slowfield (cut): 3D volume that slows down time. Denoted by a portalable wall with caution tape.
--   Slow time (cut): player-controllable slowfield. Bound to ``R`` by default
--   Rotating laser turret (Cut): Uses the personality core model, attached to the ceiling by a rope. Spins 360 degrees. Attacks the player on sight. Defeated by grabbing, yanking off tether, and throwing.
--   Pneumatic iversity vent (internally called "suction") (cut): Showed off in a demo video but never released. Interestingly, only the suction part was demoed but some puzzles used a variant that blows air
+-   Slowfield: 3D volume that slows down time. Denoted by a portalable wall with caution tape.
+-   Slow time: player-controllable slowfield. Bound to ``R`` by default
+-   Rotating laser turret: Uses the personality core model, attached to the ceiling by a rope. Spins 360 degrees. Attacks the player on sight. Defeated by grabbing, yanking off tether, and throwing.
+-   Pneumatic diversity vent ("suction"): Showed off in a demo video but never released. Interestingly, only the suction part was demoed but some puzzles used a variant that blows air
+
+Other:
+
 -   Lasers
--   Light bridge (internally called "walls")
--   Aerial faith plate (internally called "catapult")
+-   Light bridge ("walls")
+-   Aerial faith plate ("catapult")
 -   Turrets
+
+.. note::
+
+    This build pre-dates the acquisition of Tag: The Power of Paint so lacks the paint mechanics; those would show up in :doc:`4107`
 
 -----------
 Portal maps
@@ -254,7 +262,7 @@ To save to a file named: ``mysavefile``::
 
 To load that file::
 
-    load my save file
+    load mysavefile
 
 -----------
 Still Alive

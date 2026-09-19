@@ -1,6 +1,6 @@
-========================
-Build 4149 (Mar 18 2010)
-========================
+=======================================
+Build 4149 (Mar 18 2010) (AppID 852 v1)
+=======================================
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=367
 

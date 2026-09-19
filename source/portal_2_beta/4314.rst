@@ -1,5 +1,5 @@
-========================
-Build 4314 (Aug 30 2010)
-========================
+========================================
+Build 4314 (Aug 30 2010)  (AppID 852 v3)
+========================================
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=369

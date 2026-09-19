@@ -17,6 +17,7 @@ Builds
     4275.rst
     4314.rst
     4339.rst
+    4364.rst
 
 ------------
 General Info
@@ -33,7 +34,18 @@ General Info
 
 App ID 852: https://femtendo.github.io/steam2-catalog/#depot-852
 
+-   v0: :doc:`3916`
+-   v1: :doc:`4149`
+-   v2: :doc:`4275`
+-   v3: :doc:`4314`
+-   v4: :doc:`4364`
+-   v5: :doc:`4364`
+
 App ID 841: https://femtendo.github.io/steam2-catalog/#depot-841
+
+-   v0: :doc:`4107`
+-   v1: ?
+-   v2: :doc:`4339`
 
 ---------------
 Useful Commands
