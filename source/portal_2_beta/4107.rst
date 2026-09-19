@@ -4,36 +4,24 @@ Build 4107 (Feb 04 2010) (AppID 841 v0)
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=366
 
-.. note::
-
-    The hl2-beta.ru page has incorrect paint gun information:
-
-    -   The keys are not bound by default
-    -   There are only 3 switchable paint colors bound to the left mouse button (``+attack``): bounce, speed, and stick. The cleaning paint is bound to right mouse button (``+attack2``).
-
-    This is likely a copy-paste error from other builds.
-
-Steam2 DB: https://femtendo.github.io/steam2-catalog/#depot-841
-
-.. warning::
-
-    This is an old build of HL2 with unpatched vulnerabities. Only play multiplayer with people that you trust.
-
+``paintinmap``?: No (can use gels in all maps)
 
 ---------------
 Notable Changes
 ---------------
 
--   Portal 2 grabbing mechanics
+-   Grabbing mechanics closer to Portal 2 retail
 -   Aesthetic closer to retail than :doc:`3916` (broken glass, lighting via projected textures)
 -   Portals no longer have particle effects
 -   Portals have the colored glow effect that was cut from retail
 -   No Wheatley voice lines. Just on-screen text
 -   The map order is dumped to the console on map load
--   Test elements that seem to have fallen out of favor: Suction, laser turrets, slowfield
+-   Test elements that seem to have fallen out of favor: suction, laser turrets, slowfield
 -   Story being reworked from corehub to being more focused on the cores themselves
 -   Get the portal gun in chamber 02 now (instead of 05)
 -   New toxic liquid shader present but only used in ``ali_toxicliquid_test``
+-   New test elements: rocket turret; security camera; laserfield; gels
+-   Paint added with Tag: The Power of Paint colors (red, green, blue)
 
 Bugs:
 
@@ -56,22 +44,26 @@ Bugs:
 Test Elements
 -------------
 
-Part of the single-player campaign:
+Used in playtest; cut in retail:
 
--   Rocket turret (cut)
--   Security camera (cut): Scans an area of the level. Opens/closes a door when it sees the player.
--   Paint: bounce, speed, stick. Stick paint was cut.
+-   Rocket turret: Very similar to Portal 1 but only faces one direction and instantly fires the rocket (with a cool down)
+-   Security camera: Scans an area of the level. Opens/closes a door when it sees the player.
+-   "stick" paint: blue; let you walk on walls
+
+Used in playtest; not cut:
+
+-   Gels: repulsion (aka "bounce") (green), propulsion (aka "speed") (red)
 -   Lasers
--   Light bridge (internally called "walls")
--   Aerial faith plate (internally called "catapult")
+-   Light bridge ("walls")
+-   Aerial faith plate ("catapult")
 -   Turrets
 -   Laserfield: kills the player on touch (likely inspired by TFV mappack)
 
-Present but not part of the playtest:
+Not used in playtest; cut in retail:
 
--   Slow time (cut): player-controllable slowfield. Not actually used in any tests. Unbound by default.
--   Rotating laser turret (Cut): Uses the personality core model, attached to the ceiling by a rope. Spins 360 degrees. Attacks the player on sight. Defeated by grabbing, yanking off tether, and throwing.
--   Pneumatic diversity vent (internally called "suction") (cut): Showed off in a demo video but never released. Interestingly, only the suction part was demoed but some puzzles used a variant that blows air
+-   Slowfield/slow time
+-   Rotating laser turret
+-   Pneumatic diversity vent ("suction")
 
 ----
 Maps

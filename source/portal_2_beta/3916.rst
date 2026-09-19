@@ -4,6 +4,10 @@ Build 3916 (Jul 28 2009) (AppID 852 v0)
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=355
 
+.. warning::
+
+    This build is pretty unstable for me and crashes in seemingly random places. I find that the ``suction`` maps are particularly bad.
+
 --------
 Patching
 --------
@@ -102,7 +106,7 @@ Other:
 
 .. note::
 
-    This build pre-dates the acquisition of Tag: The Power of Paint so lacks the paint mechanics; those would show up in :doc:`4107`
+    This build pre-dates the acquisition of Tag: The Power of Paint so lacks gels. Gels first shows up in :doc:`4107`
 
 -----------
 Portal maps

@@ -4,41 +4,48 @@ Build 4149 (Mar 18 2010) (AppID 852 v1)
 
 Download link (repack with fixes): https://hl2-beta.ru/index.php?action=downloads;sa=view;down=367
 
+``paintinmap``? Yes (can only use gels in certain maps)
+
 ---------------
 Notable Changes
 ---------------
 
 -   Major facelift to the first few chambers
--   Small refire cooldown
+-   Portal gun now has a small refire cooldown
 -   Paint colors changed: speed is orange, bounce is blue, stick is purple
 -   Portal gun dissappears when grabbing the cube (like retail)
 -   New button sounds: activating button is same as retail, deactivating button is this (cut) jarring buzzer
 -   New toxic liquid shader used throughout most maps. However, fluid flow not configured and uses default (outside of ``ali_toxicliquid_test``)
--   Paints only works in certain chambers (e.g. paint gun doesn't work in ``devtest_stick``). I think this is controlled by the ``paintinmap`` keyvalue on ``worldspawn``. This might be readonly since ``ent_keyvalue 0 paintinmap 1`` doesn't seem to do anything.
+-   Paints only works in certain chambers (e.g. paint gun doesn't work in ``devtest_stick``). I think this is controlled by the ``paintinmap`` keyvalue on ``worldspawn``.
 -   Too much paint can crash on level change
+-   New testing elements: checkpoints (cut), excursion funnel ("tbeam")
 
 -------------
 Test Elements
 -------------
 
-Part of the single-player campaign:
+Used in playtest; cut in retail:
 
--   Rocket turret ("rocket") (cut)
--   Security camera ("security") (cut): Scans an area of the level. Opens/closes a door when it sees the player.
+-   Rocket turret ("rocket")
+-   Security camera ("security")
 -   Checkpoints (cut): Triggers when the player walks through. Typically used in timing-based puzzles where the user needs to hit all checkpoints within a time limit.
--   Paint: bounce, speed, stick. Stick paint was cut.
+-   Adhesion gel
+
+Used in playtest; not cut:
+
+-   Paint: bounce, speed
 -   Lasers
 -   Light bridge (internally called "walls")
 -   Aerial faith plate (internally called "catapult")
 -   Turrets
--   Laserfield: kills the player on touch (likely inspired by TFV mappack)
--   Tractor beam ("tbeam")
+-   Laserfield
+-   Excursion funnel ("tbeam")
 
-Present but not part of the playtest:
+Not used in playtest; cut in retail:
 
--   Slow time (cut): player-controllable slowfield. Not actually used in any tests. Unbound by default.
--   Rotating laser turret (Cut): Uses the personality core model, attached to the ceiling by a rope. Spins 360 degrees. Attacks the player on sight. Defeated by grabbing, yanking off tether, and throwing.
--   Pneumatic diversity vent (internally called "suction") (cut): Showed off in a demo video but never released. Interestingly, only the suction part was demoed but some puzzles used a variant that blows air
+-   Slow time/slowfield
+-   Rotating laser turret
+-   Pneumatic diversity vent
 
 -------
 ConVars
