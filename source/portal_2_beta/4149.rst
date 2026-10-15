@@ -153,6 +153,11 @@ Singleplayer (play order):
 -   sp_paint_stick_goo
 -   sp_paint_stick_climber
 -   sp_temp_sphere_4
+
+    .. note::
+
+        I get "End of playtest" when entering the elevator; accessing the following levels requires console commands
+
 -   sp_tbeam_box_smuggle
 -   sp_paint_jump_spiral_jumps
 -   sp_paint_stick_jump_fling
