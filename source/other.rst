@@ -10,3 +10,4 @@ A catch-all bucket for content
     crypt-underworld-ost.rst
     remote-play.rst
     knitting-socks.rst
+    media.rst
