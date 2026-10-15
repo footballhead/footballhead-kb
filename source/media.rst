@@ -44,7 +44,7 @@ The "easy" solution is `ImgBurn`_
 
 I've had one bad disk: it was DVD video that stopped reading tracks half-way through. VLC will play it up to the bad track. DVD decrypter and ImgBurn error out. I think DVD Decrypter will let me read the first few good tracks. I haven't tried to clean the CD, nor have I tried making a binary dump of the disk (if that's even possible).
 
-CDs are a bit of a rabbit hole. There are actually many kinds data that can be stored on CDs that need to be treated separately:
+Optical media is a bit of a rabbit hole. Apart from the kinds of disk (CD-R, CD-RW, DVD+R, ...) There are actually many kinds data that can be stored on CDs that need to be treated separately:
 
 -   Audio aka CD-DA aka `Red Book`_: think music CDs from HMV. The oldest kind of CD.
 -   Data aka CD-ROM aka `Yellow Book`_: think computer software on disk, or disks you burn yourself (sometimes called `ISO9660`_)
