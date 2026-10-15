@@ -48,7 +48,7 @@ Used in playtest; cut in retail:
 
 -   Rocket turret: Very similar to Portal 1 but only faces one direction and instantly fires the rocket (with a cool down)
 -   Security camera: Scans an area of the level. Opens/closes a door when it sees the player.
--   "stick" paint: blue; let you walk on walls
+-   Adhesion gel (aka "stick"): blue; let you walk on walls
 
 Used in playtest; not cut:
 
