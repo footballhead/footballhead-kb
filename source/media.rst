@@ -66,7 +66,30 @@ Each ``.VOB`` contains video data. You can demux each track using `PgcDemux <htt
 PgcDemux
 --------
 
-PgcDemux won't find any video tracks if you don't actually open a video file. E.g. there are no video tracks in ``VIDEO_TS.IFO``; you likely want to start at ``VTS_01_0.IFO``. Make sure you select:
+`PgcDemux <https://download.videohelp.com/jsoto/dvdtools.htm>`_ is a Windows program for demuxing DVD video titles into component video and audio files. Works as a GUI by default but offers CLI support. From ``ReadmePcgDemux.txt`` (included in source)::
+
+    PgcDemux [option1] [option2] ... [option12] <ifo_input_file> <destination_folder>
+    option1: [-pgc, <pgcnumber>].      Selects the PGC number (from 1 to nPGCs). Default 1
+    option2: [-ang, <angnumber>].      Selects the Angle number (from 1 to n). Default 1
+    option3: [-vid, <vobid>].          Selects the Angle number (from 1 to n). Default 1
+    option4: [-cid, <vobid> <cellid>]. Selects a cell vobid (from 1 to n). Default 1
+    option5: {-m2v, -nom2v}. Extracts/No extracts video file. Default NO
+    option6: {-aud, -noaud}. Extracts/No extracts audio streams. Default YES
+    option7: {-sub, -nosub}. Extracts/No extracts subs streams. Default YES
+    option8: {-vob, -novob}. Generates a single PGC VOB. Default NO
+    option9: {-customvob <flags>}. Generates a custom VOB file. Flags:
+            b: split VOB: one file per vob_id
+            n: write nav packs
+            v: write video packs
+            a: write audio packs
+            s: write subs packs
+            i: only first Iframe
+            l: patch LBA number
+    option10:{-cellt, -nocellt}. Generates a Celltimes.txt file. Only in PGC/VID mode. Default YES
+    option11:{-log, -nolog}. Generates a log file. Default YES
+    option12:{-menu, -title}. Domain. Default Title (except if filename is VIDEO_TS.IFO)
+
+It won't find any video tracks if you don't actually open a video file. E.g. there are no video tracks in ``VIDEO_TS.IFO``; you likely want to start at ``VTS_01_0.IFO``. Make sure you select:
 
 -   Mode: by VOB ID
 -   VOB Id Selection: Titles
@@ -79,6 +102,10 @@ PgcDemux won't find any video tracks if you don't actually open a video file. E.
 Use the combobox under the VOB Id Selection group to make sure that you are dumping all videos!
 
 You'll have to manually open each ``VTS_*.IFO`` and manually dump each video track.
+
+.. note::
+
+    Source is available from the developer's website: https://download.videohelp.com/jsoto/dvdtools.htm
 
 TODO automate this
 
