@@ -63,19 +63,41 @@ Non-copy-protected discs are easy to rip to ``.ISO`` with ImgBurn then extract w
 
 Each ``.VOB`` contains video data. You can demux each track using `PgcDemux <https://www.videohelp.com/software/PgcDemux>`_ (PGC is short for Program Chain, a core part of the ``.IFO`` file) to retrieve the MPEG2 video as a ``.MV2`` file and AC3 audo as a ``.AC3`` file. You can then mux these into a more modern container like ``.MVK`` with `MKVToolnix <https://mkvtoolnix.download/index.html>`_. I personally find that the individual ``.MKV`` videos extracted this way are easier to store, sort, and play compared to the ``.ISO`` itself. The only "downside" is that you lose the menus (which are typically bad for home videos anyway).
 
+PgcDemux
+--------
+
+PgcDemux won't find any video tracks if you don't actually open a video file. E.g. there are no video tracks in ``VIDEO_TS.IFO``; you likely want to start at ``VTS_01_0.IFO``. Make sure you select:
+
+-   Mode: by VOB ID
+-   VOB Id Selection: Titles
+-   Options:
+
+    -   Check Demux video stream
+    -   Check Demux all audio streams
+    -   The others you can check or uncheck as you like
+
+Use the combobox under the VOB Id Selection group to make sure that you are dumping all videos!
+
+You'll have to manually open each ``VTS_*.IFO`` and manually dump each video track.
+
+TODO automate this
+
+Slideshows
+==========
+
+There are many slideshows. It would be easier to manage if they were decomposed back into individual images. You could manually screen grab each new frame. Or you can try to automate by dumping the I-frames then discarding any duplicates.
+
+To dump I-frames with FFMPEG:
+
+.. code-block:: shell
+
+    ffmpeg -skip_frame nokey -i mux.mkv -vsync vfr frame_%04d.png
+
 .. note::
 
-    PgcDemux won't find any video tracks if you don't actually open a video file. E.g. there are no video tracks in ``VIDEO_TS.IFO``; you likely want to start at ``VTS_01_0.IFO``. Make sure you select:
+    Lightroom does a bad job at identifying duplicates so that's not an option...
 
-    -   Mode: by VOB ID
-    -   VOB Id Selection: Titles
-    -   Options:
-
-        -   Check Demux video stream
-        -   Check Demux all audio streams
-        -   The others you can check or uncheck as you like
-
-    Use the combobox under the VOB Id Selection group to make sure that you are dumping all videos!
+TODO: discard duplicates and images mid-transition
 
 Backups
 -------
